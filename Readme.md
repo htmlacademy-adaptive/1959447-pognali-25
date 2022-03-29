@@ -1,7 +1,7 @@
-# Личный проект «Погнали» 
+# Личный проект «Погнали»
 
-* Студент: [Elena Mihailova](https://up.htmlacademy.ru/adaptive/25/user/1959447).
-* Наставник: `Неизвестно`.
+- Студент: [Elena Mihailova](https://up.htmlacademy.ru/adaptive/25/user/1959447).
+- Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol-fw).
 
 ---
 
