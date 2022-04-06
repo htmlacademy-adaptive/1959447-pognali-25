@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Погнали - Направления</title>
+</head>
+<body class="page__body">
+  <header class="form-header">
+    <a class="form-header__logo">
+      <img class="form-header__logo-image" src="image/logo_mobile.svg" width="96" height="15" alt="Логотип Погнали." />
+    </a>
+
+    <!-- Блок навигации пока одинаковый на всех страницах -->
+    <nav class="form-nav">
+      <button class="form-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="form-nav__wrapper">
+        <ul class="form-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list-link" href="#">О сервисе</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list-link" href="#">Направления</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list-link" href="#">Попутчики</a>
+          </li>
+        </ul>
+        <div class="form-nav__list user-list">
+          <p class="user-list__login login">
+            <a class="login__link" href="#">Авторизация</a>
+          </p>
+          <p class="user-list__tel contacts-phone">
+            <a class="contacts-phone__link" href="tel:+78005558628">8 800 555-86-28</a>
+          </p>
+          <p class="user-list__mail mail">
+            <a class="mail__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+        </div>
+        <ul class="form-nav__list social">
+          <li class="social__item">
+            <a class="social-link social-link--fb" href=""><span class="visually-hidden">Fb</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social-link social-link--vk" href=""><span class="visually-hidden">Vk</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social-link social-link--inst" href=""><span class="visually-hidden">Instagram</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<!-- Название в headere. ок? -->
+    <h1 class="form-header__title">Направления</h1>
+
+  </header>
+  <main class="form-container">
+
+    <section class="person">
+      <h2 class="person__title vissually-hidden">Страница пользователя</h2>
+      <div class="person__info person-space">
+        <h3 class="person-space__name vissually-hidden">Петя Демин</h3>
+        <p class="person-space__level">80 <span>level</span></p>
+        <!-- Фото пользователя с кнопкой смены - это модификация элемента юзерпик. Докрутить! -->
+        <div class="person-space__img person-space__img--button">
+          <img class="person-space__img-avatar" src="image/petya.jpg" alt="Петя Демин." />
+          <button class="person-space__img-change button" type="button">Сменить фото</button>
+        </div>
+      </div>
+
+      <ul class="person-space__tag hashtag">
+        <li class="hashtag__item">
+          <a class="hashtag__link" href="#">#бургер</a>
+        </li>
+        <li class="hashtag__item">
+          <a class="hashtag__link" href="#">#бар</a>
+        </li>
+        <li class="hashtag__item">
+          <a class="hashtag__link" href="#">#футбол</a>
+        </li>
+        <li class="hashtag__item">
+          <a class="hashtag__link" href="#">#концерт</a>
+        </li>
+        <li class="hashtag__item">
+          <a class="hashtag__link" href="#">#крафт</a>
+        </li>
+      </ul>
+
+      <ul class="person-space__move moving">
+        <li class="moving__item">
+          <a class="moving__link moving__link--current"><span class="vissually-hidden">Самолет</span></a>
+        </li>
+        <li class="moving__item">
+          <a class="moving__link moving__link--current"><span class="vissually-hidden">Машина</span></a>
+        </li>
+        <li class="moving__item">
+          <a class="moving__link "><span class="vissually-hidden">Велосипед</span></a>
+        </li>
+        <li class="moving__item">
+          <a class="moving__link moving__link--current"><span class="vissually-hidden">Пешком</span></a>
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="plan">
+      <h2 class="plan__title">Мои планы</h2>
+      <ol class="plan__list complete-plan">
+        <li class="complete-plan__item">
+          <h3 class="complete-plan__item-title">Франция, Италия</h3>
+          <p class="complete-plan__item-people">3 попутчика</p>
+          <p class="complete-plan__item-date">26 мар — 29 мар</p>
+          <!-- Ссылка на страницу каталога, или якорная ведет дальше на этой же странице. Не кнопка.  -->
+          <a class="complete-plan__item-button" href="#">Изменить</a>
+        </li>
+        <li class="complete-plan__item">
+          <h3 class="complete-plan__item-title">Таиланд, Индонезия</h3>
+          <p class="complete-plan__item-people">1 попутчик</p>
+          <p class="complete-plan__item-date">1 июл — 15 июл</p>
+          <a class="complete-plan__item-button" href="#">Изменить</a>
+        </li>
+      </ol>
+    </section>
+
+
+    <section class="constructor-plan">
+      <h2 class="constructor-plan__title">Добавить план:</h2>
+      <div class="constructor-plan__pagination">
+        <!-- заголовок временный. Всё это может быть слайдером! -->
+        <h3 class="constructor-plan__pagination-title">Шаги</h3>
+      </div>
+
+      <ol class="constructor-plan__step step">
+        <li class="step__item">
+          <h3 class="step__item-title">Шаг 1.</h3>
+          <h3 class="step__item-name">Даты пребывания</h3>
+          <p class="step__item-description">
+            Укажите предпочтительное количество попутчиков, которых
+            вы&#160;хотели&#160;бы позвать в&#160;поездку, и&#160;ее&#160;предполагаемую длительность.
+          </p>
+          <fieldset class="step__item-form">
+            <legend class="vissually-hidden">Форма шага 1</legend>
+            <label>Ищу попутчиков: <span>чел.</span></label>
+            <input type="number" step="1" placeholder="2">
+
+            <label>Длительность: <span>дн.</span></label>
+            <input type="number" step="1" placeholder="3">
+            <input type="date">
+
+            <input type="checkbox" name="children" checked>
+            <label>Можно с детьми</label>
+          </fieldset>
+          <button class="step__item-pagination">Следующий шаг</button>
+          <button class="step__item-pagination step__item-pagination--back">На шаг назад</button>
+          <button class="step__item-pagination step__item-pagination--submit">Отправить</button>
+        </li>
+
+        <li class="step__item">
+          <h3 class="step__item-title">Шаг 2.</h3>
+          <h3 class="step__item-name">Маршрут</h3>
+          <p class="step__item-description">
+            Укажите страны, которые вы&#160;хотели&#160;бы посетить. Это может быть одна или сразу несколько.
+          </p>
+
+          <fieldset class="step__item-form">
+            <legend class="vissually-hidden">Форма шага 2</legend>
+            <label class="vissually-hidden">Страна</label>
+            <select name="country-1">
+              <option value="">Выберите страну</option>
+              <option value="Australia">Австралия</option>
+              <option value="Austria">Австрия</option>
+              <option value="Azerbaijan">Азербайджан</option>
+              <option value="Albania">Албания</option>
+              <option value="Algeria">Алжир</option>
+              <option value="Angola">Ангола</option>
+              <option value="Andorra">Андорра</option>
+              <option value="Antigua and Barbuda">Антигуа и Барбуда</option>
+              <option value="Argentina">Аргентина</option>
+              <option value="Armenia">Армения</option>
+              <option value="Afghanistan">Афганистан</option>
+            </select>
+            <select name="country-2">
+              <option value="">Выберите страну</option>
+              <option value="Australia">Австралия</option>
+              <option value="Austria">Австрия</option>
+              <option value="Azerbaijan">Азербайджан</option>
+              <option value="Albania">Албания</option>
+              <option value="Algeria">Алжир</option>
+              <option value="Angola">Ангола</option>
+              <option value="Andorra">Андорра</option>
+              <option value="Antigua and Barbuda">Антигуа и Барбуда</option>
+              <option value="Argentina">Аргентина</option>
+              <option value="Armenia">Армения</option>
+              <option value="Afghanistan">Афганистан</option>
+            </select>
+            <!-- Флаги привяжу ::after -->
+            <textarea name="comment"></textarea>
+            <h4>Чехия</h4>
+            <img class="flag-country" src="image/czech.jpg" alt="Чехия.">
+            <textarea name="comment">Пить пиво и&#160;лазить
+              по&#160;старым замкам, наслаждаться архитектурой и&#160;вот это все.</textarea>
+          </fieldset>
+          <button class="step__item-pagination">Следующий шаг</button>
+          <button class="step__item-pagination step__item-pagination--back">На шаг назад</button>
+          <button class="step__item-pagination step__item-pagination--submit">Отправить</button>
+        </li>
+        <li class="step__item">
+          <h3 class="step__item-title">Шаг 3.</h3>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="form-footer">
+    <div class="form-footer__wrapper">
+      <a class="form-footer__logo">
+        <img class="form-footer__logo-image" src="image/logo-black.svg" width="96" height="15" alt="Логотип Погнали." />
+      </a>
+      <ul class="form-footer__list social">
+        <li class="social__item">
+          <a class="social-link social-link--tm" href=""><span class="visually-hidden">Telegram</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social-link social-link--vk" href=""><span class="visually-hidden">Vk</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social-link social-link--youtube" href=""><span class="visually-hidden">Youtube</span></a>
+        </li>
+      </ul>
+      <div class="form-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
+            Academy</span>
+          <img class="copyright__logo" src="image/html.svg" alt="Логотип HTML Academy" />
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
