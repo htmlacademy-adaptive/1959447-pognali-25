@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head class="page">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог</title>
 </head>
+
 <body class="page__body">
   <header class="inner-header">
-    <a class="inner-header__logo">
+    <a class="inner-header__logo" href="index.html">
       <img class="inner-header__logo-image" src="image/logo_mobile.svg" width="96" height="15" alt="Логотип Погнали." />
     </a>
     <h1 class="inner-title">Попутчики</h1>
@@ -15,30 +17,30 @@
       <button class="inner-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <!-- Действительно ли совпадает навигация на главной странице и в каталоге в мобильной версии. -->
       <div class="inner-nav__wrapper">
         <ul class="inner-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list-link" href="#">О сервисе</a>
+            <a class="site-list-link" href="index.html">О сервисе</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list-link" href="#">Направления</a>
+            <a class="site-list-link" href="form.html">Направления</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list-link" href="#">Попутчики</a>
+            <a class="site-list-link">Попутчики</a>
           </li>
         </ul>
-        <div class="inner-nav__list user-list">
-          <p class="user-list__login login">
-            <a class="login__link" href="#">Авторизация</a>
-          </p>
-          <p class="user-list__tel contacts-phone">
+
+        <a class="inner-nav__list login" href="#">Авторизация</a>
+
+        <ul class="inner-nav__list user-list">
+          <li class="user-list__tel contacts-phone">
             <a class="contacts-phone__link" href="tel:+78005558628">8 800 555-86-28</a>
-          </p>
-          <p class="user-list__mail mail">
+          </li>
+          <li class="user-list__mail mail">
             <a class="mail__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
-        </div>
+          </li>
+        </ul>
+
         <ul class="inner-nav__list social">
           <li class="social__item">
             <a class="social-link social-link--fb" href=""><span class="visually-hidden">Fb</span></a>
@@ -52,31 +54,97 @@
         </ul>
       </div>
     </nav>
-
   </header>
 
   <main class="inner-container">
     <section class="catalog-traveler">
-      <!-- Исхожу из логики что выбор Фильтрация по странам - дополнительный, основной выбор - Попутчики
-    Действия пользователя: выбор попутчиков - вижу список 50 человек, дополняю поиском по странам. Опционально.
-  Вариант который исключила: Шаг 1 - выбираю континент-страну и
-  только потом Шаг2 попутчики.
-  Исключила тк не может быть выпадающее меню приоритетным - правило которое сама придумала -->
-
       <div class="catalog-traveler__filter">
-        <div class="catalog-traveler__filter-country">
-          <!-- Фильтрация по странам как в форме будет ТУТ -->
+
+        <!-- Фильтр 1 - выбор по странам -->
+        <h2 class="catalog-traveler__title">Фильтрация по странам</h2>
+        <button class="catalog-traveler__button button">Открыть</button>
+
+        <div class="catalog-traveler__filter-location location">
+          <div class="location__form-continent continent">
+            <label class="continent__title vissually-hidden">Выбор континента</label>
+            <button class="continent__button continent__button--current">Европа</button>
+            <button class="continent__button">Азия</button>
+            <button class="continent__button">Америка</button>
+            <button class="continent__button">Острова</button>
+          </div>
+
+          <div class="location__form-country select-country">
+            <div class="select-country__alphabet">
+              <button class="select-country__alphabet-letter select-country__alphabet-letter--current">А</button>
+              <button class="select-country__alphabet-letter">Б</button>
+              <button class="select-country__alphabet-letter">В</button>
+              <button class="select-country__alphabet-letter">Г</button>
+              <button class="select-country__alphabet-letter">Е</button>
+              <button class="select-country__alphabet-letter">З</button>
+              <button class="select-country__alphabet-letter">И</button>
+              <button class="select-country__alphabet-letter">К</button>
+              <button class="select-country__alphabet-letter">Л</button>
+              <button class="select-country__alphabet-letter">М</button>
+              <button class="select-country__alphabet-letter">Н</button>
+              <button class="select-country__alphabet-letter">О</button>
+              <button class="select-country__alphabet-letter">П</button>
+              <button class="select-country__alphabet-letter">Р</button>
+              <button class="select-country__alphabet-letter">С</button>
+              <button class="select-country__alphabet-letter">Т</button>
+              <button class="select-country__alphabet-letter">У</button>
+              <button class="select-country__alphabet-letter">Ф</button>
+              <button class="select-country__alphabet-letter">Х</button>
+              <button class="select-country__alphabet-letter">Ч</button>
+              <button class="select-country__alphabet-letter">Ш</button>
+              <button class="select-country__alphabet-letter">Э</button>
+              <button class="select-country__alphabet-letter">Ю</button>
+              <button class="select-country__alphabet-letter">Я</button>
+            </div>
+            <div class="select-country-name country-all">
+              <ul class="country-all__list">
+                <li class="country-all__list-item">Австралия</li>
+                <li class="country-all__list-item">Австрия</li>
+                <li class="country-all__list-item">Азербайджан</li>
+                <li class="country-all__list-item">Албания</li>
+                <li class="country-all__list-item">Алжир</li>
+                <li class="country-all__list-item">Ангола</li>
+                <li class="country-all__list-item">Андорра</li>
+                <li class="country-all__list-item">Антигуа и Барбуда</li>
+                <li class="country-all__list-item">Аргентина</li>
+                <li class="country-all__list-item">Армения</li>
+                <li class="country-all__list-item">Афганистан</li>
+              </ul>
+            </div>
+          </div>
+          <button class="location__button">Свернуть</button>
         </div>
 
         <div class="catalog-traveler__filter-person companion-selection">
           <h2 class="companion-selection__title">Подберите идеального попутчика</h2>
-          <form class="companion-selection__form form-filter" action="https://echo.htmlacademy.ru/" method="get"></form>
+          <form class="companion-selection__form form-filter" action="https://echo.htmlacademy.ru/" method="get">
+
             <fieldset class="form-filter__item feature">
               <legend class="feature__title">Хобби</legend>
-              <select class="feature__select"></select>
+              <button class="feature__button">Свернуть/развернуть</button>
+              <ul class="feature__list hobby">
+                <li class="hobby__item">
+                  <label class="hobby__item-title">Спортзал</label>
+                  <input class="hobby__item-mark" type="checkbox" value="Спортзал" checked>
+                </li>
+                <li class="hobby__item">
+                  <label class="hobby__item-title">Кальян</label>
+                  <input class="hobby__item-mark" type="checkbox" value="Кальян">
+                </li>
+                <li class="hobby__item">
+                  <label class="hobby__item-title">Диван</label>
+                  <input class="hobby__item-mark" type="checkbox" value="Диван">
+                </li>
+              </ul>
             </fieldset>
+
             <fieldset class="form-filter__item feature">
               <legend class="feature__title">Музыка</legend>
+              <button class="feature__button">Свернуть/развернуть</button>
               <ul class="feature__list musik">
                 <li class="musik__item">
                   <label class="musik__item-title">Тяжелый рок</label>
@@ -92,33 +160,52 @@
                 </li>
               </ul>
             </fieldset>
+
             <fieldset class="form-filter__item feature">
               <legend class="feature__title">Еда</legend>
-              <select class="feature__select"></select>
-            </fieldset>
-            <fieldset class="form-filter__item feature">
-              <legend class="feature__title">Транспорт</legend>
-              <ul class="feature__list transport">
-                <li class="transport__item">
-                  <label class="transport__item-title"><span class="vissually-hidden">Самолет</span></label>
-                  <input class="transport__item-mark" type="checkbox" value="Самолет" checked>
+              <button class="feature__button">Свернуть/развернуть</button>
+              <ul class="feature__list food">
+                <li class="food__item">
+                  <label class="food__item-title">Мясоед</label>
+                  <input class="food__item-mark" type="checkbox" value="Мясоед" checked>
                 </li>
-                <li class="transport__item">
-                  <label class="transport__item-title"><span class="vissually-hidden">Машина</span></label>
-                  <input class="transport__item-mark" type="checkbox" value="Машина" checked>
+                <li class="food__item">
+                  <label class="food__item-title">Сидит на ПП</label>
+                  <input class="food__item-mark" type="checkbox" value="Сидит на ПП">
                 </li>
-                <li class="transport__item">
-                  <label class="transport__item-title"><span class="vissually-hidden">Велосипед</span></label>
-                  <input class="transport__item-mark" type="checkbox" value="Велосипед">
-                </li>
-                <li class="transport__item">
-                  <label class="transport__item-title"><span class="vissually-hidden">Пешком</span></label>
-                  <input class="transport__item-mark" type="checkbox" value="Пешком" checked>
+                <li class="food__item">
+                  <label class="food__item-title">Веган-сыроед</label>
+                  <input class="food__item-mark" type="checkbox" value="Веган-сыроед">
                 </li>
               </ul>
             </fieldset>
+
+            <fieldset class="form-filter__item feature">
+              <legend class="feature__title">Транспорт</legend>
+              <button class="feature__button">Свернуть/развернуть</button>
+              <ul class="feature__list moving">
+                <li class="moving__item">
+                  <label class="moving__item-title"><span class="vissually-hidden">Самолет</span></label>
+                  <input class="moving__item-mark" type="checkbox" value="Самолет" checked>
+                </li>
+                <li class="moving__item">
+                  <label class="moving__item-title"><span class="vissually-hidden">Машина</span></label>
+                  <input class="moving__item-mark" type="checkbox" value="Машина" checked>
+                </li>
+                <li class="moving__item">
+                  <label class="moving__item-title"><span class="vissually-hidden">Велосипед</span></label>
+                  <input class="moving__item-mark" type="checkbox" value="Велосипед">
+                </li>
+                <li class="moving__item">
+                  <label class="moving__item-title"><span class="vissually-hidden">Пешком</span></label>
+                  <input class="moving__item-mark" type="checkbox" value="Пешком" checked>
+                </li>
+              </ul>
+            </fieldset>
+
             <fieldset class="form-filter__item feature">
               <legend class="feature__title">Левел</legend>
+              <button class="feature__button">Свернуть/развернуть</button>
               <div class="feature__range range">
                 <div class="range__scale"> </div>
                 <div class="range__bar"> </div>
@@ -132,8 +219,6 @@
       </div>
 
       <div class="catalog-traveler__offers">
-        <!-- повтор h1, с одной стороны не хотелось оставлять большой раздел без заголовка, с другой h2 и мельчить дальше h3 h4 вроде некрасиво. -->
-        <h1 class="catalog-traveler__offers-title vissually-hidden">Попутчики</h1>
 
         <ul class="catalog-traveler__offers-list person-list">
 
@@ -457,4 +542,5 @@
     </div>
   </footer>
 </body>
+
 </html>

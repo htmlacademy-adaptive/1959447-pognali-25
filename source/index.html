@@ -27,17 +27,18 @@
             <a class="site-list-link" href="#">Попутчики</a>
           </li>
         </ul>
-        <div class="main-nav__list user-list">
-          <p class="user-list__login login">
-            <a class="login__link" href="#">Авторизация</a>
-          </p>
-          <p class="user-list__tel contacts-phone">
+
+        <a class="main-nav__list login" href="#">Авторизация</a>
+
+        <ul class="main-nav__list user-list">
+          <li class="user-list__tel contacts-phone">
             <a class="contacts-phone__link" href="tel:+78005558628">8 800 555-86-28</a>
-          </p>
-          <p class="user-list__mail mail">
+          </li>
+          <li class="user-list__mail mail">
             <a class="mail__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
-        </div>
+          </li>
+        </ul>
+
         <ul class="main-nav__list social">
           <li class="social__item">
             <a class="social-link social-link--fb" href=""><span class="visually-hidden">Fb</span></a>
@@ -64,18 +65,15 @@
           В&nbsp;путешествие с&nbsp;крутыми попутчиками!
         </h2>
 
-        <!-- Полное дублирование блока user-list -->
-        <div class="promo__list user-list">
-          <p class="user-list__tel contacts-phone">
+        <ul class="promo__contacts user-list">
+          <li class="user-list__tel contacts-phone">
             <a class="contacts-phone__link" href="tel:+78005558628">8 800 555-86-28</a>
-          </p>
-          <p class="user-list__mail mail">
+          </li>
+          <li class="user-list__mail mail">
             <a class="mail__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
-          <p class="user-list__login login">
-            <a class="login__link" href="#">Авторизация</a>
-          </p>
-        </div>
+          </li>
+        </ul>
+        <a class="promo__login login" href="#">Авторизация</a>
 
         <blockquote class="promo__review review">
           <p class="review__text">
@@ -87,19 +85,11 @@
           </cite>
         </blockquote>
 
-        <ol class="promo__offers offers-list">
-          <li class="offers-list__position direction">
-            <a class="direction__link" href="#">Выберите направление</a>
-          </li>
-          <li class="offers-list__position direction">
-            <a class="direction__link" href="#">Изучите идеи путешественников</a>
-          </li>
-          <li class="offers-list__position direction">
-            <a class="direction__link" href="#">Находите тех, кто похож на&nbsp;вас</a>
-          </li>
-          <li class="offers-list__position direction">
-            <a class="direction__link" href="#">Путешествуйте вместе!</a>
-          </li>
+        <ol class="promo__offers">
+          <li class="promo__offers-text">Выберите направление</li>
+          <li class="promo__offers-text">Изучите идеи путешественников</li>
+          <li class="promo__offers-text">Находите тех, кто похож на&nbsp;вас</li>
+          <li class="promo__offers-text">Путешествуйте вместе!</li>
         </ol>
       </div>
     </section>
@@ -135,24 +125,26 @@
           <img class="cards__img-flag flag-country" src="image/thailand.jpg" alt="Флаг Таиланда." />
           <img class="cards__img" src="image/thailand-mobile.jpg" alt="Таиланд." />
           <p class="cards__slogan">Джунгли зовут!</p>
-          <p class="cards__amount"><span class="vissually-hidden">Количество путешественников</span>18321</p>
+          <p class="cards__amount"><span class="vissually-hidden">Количество путешественников: </span>
+            18321</p>
         </li>
         <li class="cards__item">
           <h3 class="cards__name">Франция</h3>
           <img class="cards__img-flag flag-country" src="image/france.jpg" alt="Франция." />
           <img class="cards__img" src="image/france-mobile.jpg" alt="Франция." />
           <p class="cards__slogan">Трэ бьен, манифик!</p>
-          <p class="cards__amount"><span class="vissually-hidden">Количество путешественников</span>12518</p>
+          <p class="cards__amount"><span class="vissually-hidden">Количество путешественников: </span>
+            12518</p>
         </li>
         <li class="cards__item">
           <h3 class="cards__name">Чехия</h3>
           <img class="cards__img-flag flag-country" src="image/czech.jpg" alt="Чехия." />
           <img class="cards__img" src="image/czech-mobile.jpg" alt="Чехия." />
           <p class="cards__slogan">Закоулки старой Европы</p>
-          <p class="cards__amount"><span class="vissually-hidden">Количество путешественников</span>5326</p>
+          <p class="cards__amount"><span class="vissually-hidden">Количество путешественников: </span>
+            5326</p>
         </li>
       </ul>
-
       <a class="destination__button button button--icon" href="#">Показать всё</a>
     </section>
 
@@ -170,8 +162,10 @@
           <a class="cards-person__link">
             <h3 class="cards-person__name">Таня Фирсова</h3>
           </a>
+          <p class="cards-person__indicator"><span>Доступен</span></p>
           <p class="cards-person__level">99 <span>level</span></p>
           <img class="cards-person__img" src="image/tanya.jpg" alt="Таня Фирсова." />
+
 
           <ul class="cards-person__flag flag-country">
             <li class="flag-country__item">
@@ -232,6 +226,7 @@
           <a class="cards-person__link">
             <h3 class="cards-person__name">Петя Демин</h3>
           </a>
+          <p class="cards-person__indicator"><span>Доступен</span></p>
           <p class="cards-person__level">80 <span>level</span></p>
           <img class="cards-person__img" src="image/petya.jpg" alt="Петя Демин." />
 
@@ -315,7 +310,8 @@
 
     <section class="registration">
       <form>
-        <h2 class="registration__title">Заинтересовались?</h2>
+        <h2 class="registration__title vissually-hidden">Авторизация и контакты</h2>
+        <h3 class="registration__name">Заинтересовались?</h3>
         <p class="registration__description">
           Зарегистрируйтесь, это быстро и&nbsp;бесплатно! Уже
           зарегистрированы? Тогда скорее <a href="#">авторизуйтесь.</a>
