@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Погнали - форма</title>
 </head>
+
 <body class="page__body">
   <header class="form-header">
     <a class="form-header__logo" href="index.html">
@@ -12,11 +14,11 @@
     </a>
     <h1 class="form-header__title">Направления</h1>
 
-    <nav class="form-nav">
+    <div class="form-nav">
       <button class="form-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="form-nav__wrapper">
+      <nav class="form-nav__wrapper">
         <ul class="form-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list-link" href="index.html">О сервисе</a>
@@ -48,8 +50,8 @@
             <a class="social-link social-link--inst" href=""><span class="visually-hidden">Instagram</span></a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
   </header>
   <main class="form-container">
@@ -143,8 +145,9 @@
           <a class="pagination__item-link" href="#step3"><span class="vissually-hidden">Шаг 3</span></a>
         </li>
       </ol>
-      <ol class="constructor__plan">
-        <li class="constructor__plan-item step">
+      <form class="constructor__plan" action="https://echo.htmlacademy.ru/" method="get">
+
+        <div class="constructor__plan-item step" id="step1">
           <h3 class="step__title">Шаг 1. <span class="step__title-name">Даты пребывания</span></h3>
           <p class="step__description">
             Укажите предпочтительное количество попутчиков, которых
@@ -154,15 +157,15 @@
             <legend class="step__form-title vissually-hidden">Форма шага 1</legend>
             <div class="step__form-сompanion сompanion">
               <label class="сompanion__title">Ищу попутчиков: <span>чел.</span></label>
-              <button class="сompanion__button">Минус</button>
+              <button class="сompanion__button" type="button">Минус</button>
               <input class="сompanion__form" type="number" step="1" placeholder="2">
-              <button class="сompanion__button сompanion__button--plus">Плюс</button>
+              <button class="сompanion__button сompanion__button--plus" type="button">Плюс</button>
             </div>
             <div class="step__form-continued continued">
               <label class="continued__title">Длительность: <span>дн.</span></label>
-              <button class="continued__button">Минус</button>
+              <button class="continued__button" type="button">Минус</button>
               <input class="continued__form" type="number" step="1" placeholder="2">
-              <button class="continued__button continued__button--plus">Плюс</button>
+              <button class="continued__button continued__button--plus" type="button">Плюс</button>
             </div>
 
             <input class="step__form-child" type="checkbox" value="child" checked>
@@ -170,9 +173,9 @@
 
             <div class=" step__form-calendar calendar">
               <div class="calendar__monht">
-                <button class="calendar__monht-button">Предыдущий</button>
+                <button class="calendar__monht-button" type="button">Предыдущий</button>
                 <p class="calendar__name">Март</p>
-                <button class="calendar__monht-button calendar__monht-button--next">Следующий</button>
+                <button class="calendar__monht-button calendar__monht-button--next" type="button">Следующий</button>
               </div>
               <table class="calendar__day">
                 <thead class="calendar__day-week week">
@@ -327,11 +330,11 @@
               </table>
             </div>
           </fieldset>
-          <!-- Кнопка которая отправляет данные этой формы - это кнопка след шаг. Она не в составе формы. Как идет сбор по трем шагам информации от пользователя? -->
-          <button class="step__pagination">Следующий шаг</button>
-        </li>
+          <a class="step__pagination" href="#step2">Следующий шаг</a>
+        </div>
 
-        <li class="constructor__plan-item step" id="step2">
+
+        <div class="constructor__plan-item step" id="step2">
           <h3 class="step__title">Шаг 2.<span class="step__title-name">Маршрут</span></h3>
           <p class="step__description"> Укажите страны, которые вы&#160;хотели&#160;бы посетить. Это может быть одна или
             сразу несколько.</p>
@@ -340,73 +343,96 @@
             <div class="step__form-country country">
               <label class="country__title vissually-hidden">Выбор страны</label>
               <input class="country__form" type="text" placeholder="Босния и Герцеговина">
-              <button class="country__button">Удалить значение</button>
+              <button class="country__button" type="button">Удалить значение</button>
             </div>
             <div class="step__form-country country">
               <label class="country__title vissually-hidden">Выбор страны</label>
               <input class="country__form" type="text" placeholder="Чехия">
-              <button class="country__button">Удалить значение</button>
+              <button class="country__button" type="button">Удалить значение</button>
             </div>
             <div class="step__form-country country">
               <label class="country__title vissually-hidden">Выбор страны</label>
               <input class="country__form" type="text" placeholder="Выберите страну">
-              <button class="country__button">Удалить значение</button>
+              <button class="country__button" type="button">Удалить значение</button>
             </div>
             <div class="step__form-country country">
               <label class="country__title vissually-hidden">Выбор страны</label>
               <input class="country__form" type="text" placeholder="Добавить страну">
-              <button class="country__button">Удалить значение</button>
+              <button class="country__button" type="button">Удалить значение</button>
             </div>
-            <button class="step__form-select">Выберите страну</button>
+            <button class="step__form-select" type="button">Выберите страну</button>
             <div class="step__form-modal select-country">
               <div class="select-country__alphabet">
-                <button class="select-country__alphabet-letter select-country__alphabet-letter--current">А</button>
-                <button class="select-country__alphabet-letter">Б</button>
-                <button class="select-country__alphabet-letter">В</button>
-                <button class="select-country__alphabet-letter">Г</button>
-                <button class="select-country__alphabet-letter">Е</button>
-                <button class="select-country__alphabet-letter">З</button>
-                <button class="select-country__alphabet-letter">И</button>
-                <button class="select-country__alphabet-letter">К</button>
-                <button class="select-country__alphabet-letter">Л</button>
-                <button class="select-country__alphabet-letter">М</button>
-                <button class="select-country__alphabet-letter">Н</button>
-                <button class="select-country__alphabet-letter">О</button>
-                <button class="select-country__alphabet-letter">П</button>
-                <button class="select-country__alphabet-letter">Р</button>
-                <button class="select-country__alphabet-letter">С</button>
-                <button class="select-country__alphabet-letter">Т</button>
-                <button class="select-country__alphabet-letter">У</button>
-                <button class="select-country__alphabet-letter">Ф</button>
-                <button class="select-country__alphabet-letter">Х</button>
-                <button class="select-country__alphabet-letter">Ч</button>
-                <button class="select-country__alphabet-letter">Ш</button>
-                <button class="select-country__alphabet-letter">Э</button>
-                <button class="select-country__alphabet-letter">Ю</button>
-                <button class="select-country__alphabet-letter">Я</button>
+                <button class="select-country__alphabet-letter select-country__alphabet-letter--current"
+                  type="button">А</button>
+                <button class="select-country__alphabet-letter" type="button">Б</button>
+                <button class="select-country__alphabet-letter" type="button">В</button>
+                <button class="select-country__alphabet-letter" type="button">Г</button>
+                <button class="select-country__alphabet-letter" type="button">Е</button>
+                <button class="select-country__alphabet-letter" type="button">З</button>
+                <button class="select-country__alphabet-letter" type="button">И</button>
+                <button class="select-country__alphabet-letter" type="button">К</button>
+                <button class="select-country__alphabet-letter" type="button">Л</button>
+                <button class="select-country__alphabet-letter" type="button">М</button>
+                <button class="select-country__alphabet-letter" type="button">Н</button>
+                <button class="select-country__alphabet-letter" type="button">О</button>
+                <button class="select-country__alphabet-letter" type="button">П</button>
+                <button class="select-country__alphabet-letter" type="button">Р</button>
+                <button class="select-country__alphabet-letter" type="button">С</button>
+                <button class="select-country__alphabet-letter" type="button">Т</button>
+                <button class="select-country__alphabet-letter" type="button">У</button>
+                <button class="select-country__alphabet-letter" type="button">Ф</button>
+                <button class="select-country__alphabet-letter" type="button">Х</button>
+                <button class="select-country__alphabet-letter" type="button">Ч</button>
+                <button class="select-country__alphabet-letter" type="button">Ш</button>
+                <button class="select-country__alphabet-letter" type="button">Э</button>
+                <button class="select-country__alphabet-letter" type="button">Ю</button>
+                <button class="select-country__alphabet-letter" type="button">Я</button>
               </div>
               <div class="select-country-name country-all">
                 <ul class="country-all__list">
-                  <li class="country-all__list-item">Австралия</li>
-                  <li class="country-all__list-item">Австрия</li>
-                  <li class="country-all__list-item">Азербайджан</li>
-                  <li class="country-all__list-item">Албания</li>
-                  <li class="country-all__list-item">Алжир</li>
-                  <li class="country-all__list-item">Ангола</li>
-                  <li class="country-all__list-item">Андорра</li>
-                  <li class="country-all__list-item">Антигуа и Барбуда</li>
-                  <li class="country-all__list-item">Аргентина</li>
-                  <li class="country-all__list-item">Армения</li>
-                  <li class="country-all__list-item">Афганистан</li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Австралия</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Австрия</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Азербайджан</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Албания</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Алжир</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Ангола</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Андорра</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Антигуа и Барбуда</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Аргентина</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Армения</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Афганистан</a>
+                  </li>
                 </ul>
               </div>
             </div>
           </fieldset>
-          <button class="step__pagination">Следующий шаг</button>
-          <button class="step__pagination step__pagination--back">На шаг назад</button>
-        </li>
+          <a class="step__pagination" href="#step3">Следующий шаг</a>
+          <a class="step__pagination" href="#step1">На шаг назад</a>
+        </div>
 
-        <li class="constructor__plan-item step" id="step3">
+        <div class="constructor__plan-item step" id="step3">
           <h3 class="step__title">Шаг 3.<span class="step__title-name">Развлечения</span></h3>
           <p class="step__description">Наконец, расскажите о&#160;своих планах времяпровождения. Можно писать
             в&#160;свободной форме и&#160;ставить тэги.</p>
@@ -422,11 +448,10 @@
                 placeholder="План действий">Пить пиво и&#160;лазить по&#160;старым замкам, наслаждаться архитектурой и&#160;вот это все.</textarea>
             </div>
           </fieldset>
-          <!-- Данные не отправляются. Не сделано! -->
-          <button class="step__pagination step__pagination--submit" type="submit">Отправить</button>
-          <button class="step__pagination step__pagination--back">На шаг назад</button>
-        </li>
-      </ol>
+          <a class="step__pagination step__pagination--back" href="#step2">На шаг назад</a>
+        </div>
+        <button class="constructor__plan-form" type="submit">Отправить</button>
+      </form>
     </section>
   </main>
 
