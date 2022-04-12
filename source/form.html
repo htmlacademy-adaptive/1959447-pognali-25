@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Погнали - форма</title>
 </head>
-
 <body class="page__body">
   <header class="form-header">
     <a class="form-header__logo" href="index.html">
@@ -52,22 +50,16 @@
         </ul>
       </nav>
     </div>
-
   </header>
   <main class="form-container">
-
     <form class="form-container__wrapper" action="https://echo.htmlacademy.ru/" method="get">
-
       <section class="person">
-        <h2 class="person__title visually-hidden">Личная страница пользователя</h2>
-        <div class="person__info person-space">
-          <h3 class="person-space__name visually-hidden">Заполнение личной информации</h3>
-          <p class="person-space__level">80 <span>level</span></p>
-          <div class="person-space__img person-space__img--button">
-            <img class="person-space__img-avatar" src="image/petya.jpg" alt="Петя Демин." />
-            <label class="person-space__img-title" for="img">Сменить фото</label>
-            <input class="person-space__img-change" type="file" id="img">
-          </div>
+        <h2 class="person__title visually-hidden">Заполнение личной информации</h2>
+        <p class="person__level">80 <span>level</span></p>
+        <div class="person__img person__img--button">
+          <img class="person__img-avatar" src="image/petya.jpg" alt="Петя Демин." />
+          <label class="person__img-title" for="img">Сменить фото</label>
+          <input class="person__img-change" type="file" id="img">
         </div>
 
         <div class="person__tag hashtag-form">
@@ -98,17 +90,17 @@
 
 
       <section class="plan">
-        <h3 class="plan__title">Мои планы</h3>
+        <h2 class="plan__title">Мои планы</h2>
         <ol class="plan__list complete-plan">
           <li class="complete-plan__item">
-            <h4 class="complete-plan__item-title">Франция, Италия</h4>
+            <h3 class="complete-plan__item-title">Франция, Италия</h3>
             <p class="complete-plan__item-people">3 попутчика</p>
             <p class="complete-plan__item-date">26 мар — 29 мар</p>
             <!-- Ссылка на страницу каталога, или якорная ведет дальше на этой же странице. Не кнопка.  -->
             <a class="complete-plan__item-button" href="#">Изменить</a>
           </li>
           <li class="complete-plan__item">
-            <h4 class="complete-plan__item-title">Таиланд, Индонезия</h4>
+            <h3 class="complete-plan__item-title">Таиланд, Индонезия</h3>
             <p class="complete-plan__item-people">1 попутчик</p>
             <p class="complete-plan__item-date">1 июл — 15 июл</p>
             <a class="complete-plan__item-button" href="#">Изменить</a>
@@ -118,7 +110,7 @@
 
 
       <section class="constructor">
-        <h3 class="constructor__title">Добавить план:</h3>
+        <h2 class="constructor__title">Добавить план:</h2>
         <ol class="constructor__pagination pagination">
           <li class="pagination__item">
             <a class="pagination__item-link pagination__item-link--current"><span class="visually-hidden">Шаг
@@ -133,7 +125,7 @@
         </ol>
 
         <section class="constructor__plan-item step" id="step1">
-          <h4 class="step__title">Шаг 1. <span class="step__title-name">Даты пребывания</span></h4>
+          <h3 class="step__title">Шаг 1. <span class="step__title-name">Даты пребывания</span></h3>
           <p class="step__description">
             Укажите предпочтительное количество попутчиков, которых
             вы&#160;хотели&#160;бы позвать в&#160;поездку, и&#160;ее&#160;предполагаемую длительность.
@@ -363,32 +355,40 @@
 
 
         <section class="constructor__plan-item step" id="step2">
-          <h4 class="step__title">Шаг 2.<span class="step__title-name">Маршрут</span></h4>
+          <h3 class="step__title">Шаг 2.<span class="step__title-name">Маршрут</span></h3>
           <p class="step__description"> Укажите страны, которые вы&#160;хотели&#160;бы посетить. Это может быть одна
             или
             сразу несколько.</p>
           <div class="step__form">
             <div class="step__form-country country">
-              <h5 class="country__title visually-hidden">Выбор страны</h5>
-              <button class="country__form" type="button">Босния и Герцеговина</button>
-              <button class="country__button" type="button">Удалить значение</button>
+              <ul class="country__list">
+                <li class="country__list-item">
+                  <button class="country__list-button country__list-button--select" type="button"
+                    aria-label="Выбрать страну. Выбрана - Босния и Герцеговина.">Босния и Герцеговина</button>
+                  <button class="country__list-button country__list-button--del" type="button"><span
+                      class="visually-hidden">Удалить значение</span></button>
+                </li>
+                <li class="country__list-item">
+                  <button class="country__list-button country__list-button--select" type="button"
+                    aria-label="Выбрать страну. Выбрана - Чехия.">Чехия</button>
+                  <button class="country__list-button country__list-button--del" type="button"><span
+                      class="visually-hidden">Удалить значение</span></button>
+                </li>
+                <li class="country__list-item">
+                  <button class="country__list-button country__list-button--select" type="button"
+                    aria-label="Выберите страну.">Выберите страну</button>
+                  <button class="country__list-button country__list-button--del" type="button"><span
+                      class="visually-hidden">Удалить значение</span></button>
+                </li>
+                <li class="country__list-item">
+                  <button class="country__list-button country__list-button--select" type="button"
+                    aria-label="Добавить странy.">Добавить странy</button>
+                  <button class="country__list-button country__list-button--del" type="button"><span
+                      class="visually-hidden">Удалить значение</span></button>
+                </li>
+              </ul>
             </div>
-            <div class="step__form-country country">
-              <h5 class="country__title visually-hidden">Выбор страны</h5>
-              <button class="country__form" type="button">Чехия</button>
-              <button class="country__button" type="button">Удалить значение</button>
-            </div>
-            <div class="step__form-country country">
-              <h5 class="country__title visually-hidden">Выбор страны</h5>
-              <button class="country__form" type="button">Выберите страну</button>
-              <button class="country__button" type="button">Удалить значение</button>
-            </div>
-            <div class="step__form-country country">
-              <h5 class="country__title visually-hidden">Выбор страны</h5>
-              <button class="country__form" type="button">Добавить странy</button>
-              <button class="country__button" type="button">Удалить значение</button>
-            </div>
-            <button class="step__form-select" type="button">Выберите страну</button>
+
             <div class="step__form-modal select-country">
               <div class="select-country__alphabet">
                 <button class="select-country__alphabet-letter select-country__alphabet-letter--current"
@@ -462,7 +462,7 @@
 
 
         <section class="constructor__plan-item step" id="step3">
-          <h4 class="step__title">Шаг 3.<span class="step__title-name">Развлечения</span></h4>
+          <h3 class="step__title">Шаг 3.<span class="step__title-name">Развлечения</span></h3>
           <p class="step__description">Наконец, расскажите о&#160;своих планах времяпровождения. Можно писать
             в&#160;свободной форме и&#160;ставить тэги.</p>
           <div class="step__form ">
