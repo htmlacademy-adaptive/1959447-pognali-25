@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Погнали - форма</title>
 </head>
+
 <body class="page__body">
   <header class="form-header">
     <a class="form-header__logo" href="index.html">
@@ -12,12 +15,12 @@
     </a>
     <h1 class="form-header__title">Направления</h1>
 
-    <div class="form-nav">
-      <button class="form-nav__toggle" type="button">
+    <div class="form-nav modale-nav">
+      <button class="modale-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="form-nav__wrapper">
-        <ul class="form-nav__list site-list">
+      <nav class="modale-nav__wrapper">
+        <ul class="modale-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list-link" href="index.html">О сервисе</a>
           </li>
@@ -28,8 +31,8 @@
             <a class="site-list-link" href="catalog.html">Попутчики</a>
           </li>
         </ul>
-        <a class="form-nav__list login" href="#">Авторизация</a>
-        <ul class="form-nav__list user-list">
+        <a class="modale-nav__list login" href="#">Авторизация</a>
+        <ul class="modale-nav__list user-list">
           <li class="user-list__tel contacts-phone">
             <a class="contacts-phone__link" href="tel:+78005558628">8 800 555-86-28</a>
           </li>
@@ -37,7 +40,7 @@
             <a class="mail__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
-        <ul class="form-nav__list social">
+        <ul class="modale-nav__list social">
           <li class="social__item">
             <a class="social-link social-link--fb" href=""><span class="visually-hidden">Fb</span></a>
           </li>
@@ -67,7 +70,7 @@
           <textarea class="hashtag-form__content" id="hashtag">#бургер #бар #футбол #концерт #крафт
           </textarea>
         </div>
-
+        <!-- добавить заголовок Транспорт -->
         <ul class="person__move moving">
           <li class="moving__item">
             <label class="moving__item-title" for="plane"><span class="visually-hidden">Самолет</span></label>
