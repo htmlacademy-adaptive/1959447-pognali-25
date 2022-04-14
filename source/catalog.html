@@ -3,6 +3,7 @@
 <head class="page">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Каталог</title>
 </head>
 <body class="page__body">
@@ -11,12 +12,12 @@
       <img class="inner-header__logo-image" src="image/logo_mobile.svg" width="96" height="15" alt="Логотип Погнали." />
     </a>
     <h1 class="inner-title">Попутчики</h1>
-    <div class="inner-nav">
-      <button class="inner-nav__toggle" type="button">
+    <div class="inner-nav modale-nav">
+      <button class="modale-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="inner-nav__wrapper">
-        <ul class="inner-nav__list site-list">
+      <nav class="modale-nav__wrapper">
+        <ul class="modale-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list-link" href="index.html">О сервисе</a>
           </li>
@@ -28,9 +29,9 @@
           </li>
         </ul>
 
-        <a class="inner-nav__list login" href="#">Авторизация</a>
+        <a class="modale-nav__list login" href="#">Авторизация</a>
 
-        <ul class="inner-nav__list user-list">
+        <ul class="modale-nav__list user-list">
           <li class="user-list__tel contacts-phone">
             <a class="contacts-phone__link" href="tel:+78005558628">8 800 555-86-28</a>
           </li>
@@ -39,7 +40,7 @@
           </li>
         </ul>
 
-        <ul class="inner-nav__list social">
+        <ul class="modale-nav__list social">
           <li class="social__item">
             <a class="social-link social-link--fb" href=""><span class="visually-hidden">Fb</span></a>
           </li>
@@ -248,7 +249,7 @@
               <h3 class="cards-person__name">Таня Фирсова</h3>
             </a>
             <img class="cards-person__img" src="image/tanya.jpg" alt="Таня Фирсова." />
-            <p class="cards-person__indicator"><span>Доступен</span></p>
+            <p class="cards-person__indicator cards-person__indicator--off"><span>Не доступен</span></p>
             <div class="cards-person__like">
               <button class="cards-person__like-button button-love" type="button" name="like">
                 <span class="visually-hidden">Добавить в избранное</span>
@@ -325,7 +326,7 @@
               <h3 class="cards-person__name">Петя Демин</h3>
             </a>
             <img class="cards-person__img" src="image/petya.jpg" alt="Петя Демин." />
-            <p class="cards-person__indicator"><span>Доступен</span></p>
+            <p class="cards-person__indicator cards-person__indicator--off"><span>Не доступен</span></p>
             <div class="cards-person__like">
               <button class="cards-person__like-button button-love" type="button" name="like">
                 <span class="visually-hidden">Добавить в избранное</span>
@@ -395,7 +396,7 @@
             </a>
             <!-- Картинку заменить на большой размер не круглую -->
             <img class="cards-person__img" src="image/mark.jpg" alt="Марк Смолов." />
-            <p class="cards-person__indicator"><span>Доступен</span></p>
+            <p class="cards-person__indicator cards-person__indicator--off"><span>Не доступен</span></p>
             <div class="cards-person__like">
               <button class="cards-person__like-button button-love" type="button" name="like">
                 <span class="visually-hidden">Добавить в избранное</span>

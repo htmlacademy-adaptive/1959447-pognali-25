@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css">
   <title>Погнали</title>
 </head>
 <body class="page__body">
@@ -11,12 +12,14 @@
       <img class="main-header__logo-image" src="image/logo_mobile.svg" width="96" height="15" alt="Логотип Погнали." />
     </a>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+    <nav class="main-nav modale-nav">
+      <button class="modale-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+
+      <!-- Меню навигации -->
+      <div class="modale-nav__wrapper">
+        <ul class="modale-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list-link">О сервисе</a>
           </li>
@@ -28,9 +31,9 @@
           </li>
         </ul>
 
-        <a class="main-nav__list login" href="#">Авторизация</a>
+        <a class="modale-nav__list login" href="#">Авторизация</a>
 
-        <ul class="main-nav__list user-list">
+        <ul class="modale-nav__list user-list">
           <li class="user-list__tel contacts-phone">
             <a class="contacts-phone__link" href="tel:+78005558628">8 800 555-86-28</a>
           </li>
@@ -39,7 +42,7 @@
           </li>
         </ul>
 
-        <ul class="main-nav__list social">
+        <ul class="modale-nav__list social">
           <li class="social__item">
             <a class="social-link social-link--fb" href=""><span class="visually-hidden">Fb</span></a>
           </li>
@@ -67,10 +70,10 @@
 
         <ul class="promo__contacts user-list">
           <li class="user-list__tel contacts-phone">
-            <a class="contacts-phone__link" href="tel:+78005558628">8 800 555-86-28</a>
+            <a class="contacts-phone__link" href="tel:+78005558628"> <span class="visually-hidden">8 800 555-86-28</span></a>
           </li>
           <li class="user-list__mail mail">
-            <a class="mail__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="mail__link" href="mailto:mail@htmlacademy.ru"> <span class="visually-hidden">mail@htmlacademy.ru</span></a>
           </li>
         </ul>
         <a class="promo__login login" href="#">Авторизация</a>
@@ -277,7 +280,7 @@
           </ul>
         </li>
       </ul>
-      <button class="person__button button-all" type="button" name="Show all">Показать еще</button>
+      <button class="person__button button-all" type="button" name="Show all">Показать всех</button>
     </section>
 
 
