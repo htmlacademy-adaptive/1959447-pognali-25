@@ -1,0 +1,67 @@
+.concept__description-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: @special_orange;
+}
+
+@media (min-width: @tablet-width) {
+  .concept__description-title {
+    font-size: 45px;
+    margin-left: 40px;
+  }
+}
+
+.concept__description-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.38;
+  margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    margin-left: 40px;
+    margin-right: 380px;
+    margin-bottom: 52px;
+  }
+}
+
+.concept__description-text span {
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 1.19;
+  }
+}
+
+.concept {
+  background-image: url("../image/about-mobile.png");
+  background-repeat: no-repeat;
+  background-color: @basic_blue;
+  background-position: bottom;
+  margin: 0 auto;
+  padding: 33px 60px 82px 49px;
+  border-radius: 0 0 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../image/img_tablet.png");
+    background-position: right;
+    background-size: auto 100%;
+  }
+}
+
+.concept__button {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-left: 40px;
+    max-width: 276px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+  }
+}

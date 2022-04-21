@@ -1,9 +1,15 @@
-.modale-nav__list {
-  list-style: none;
-}
-
 .modale-nav {
   background-color: #ffffff;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+
+  .social {
+    margin-top: 30px;
+  }
+
+  margin-left: -25px;
+  margin-right: -25px;
 }
 
 .modale-nav__toggle {
@@ -11,12 +17,42 @@
   height: 19px;
 }
 
-.user-list {
-  a {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: #192144;
-  }
+.modale-nav__login {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.modale-nav__mail {
+  margin-top: 27px;
+}
+
+.modale-nav__tel,
+.modale-nav__mail {
+  position: relative;
+  text-align: left;
+  margin-left: 60px;
+}
+
+.modale-nav__tel::before,
+.modale-nav__mail::before {
+  content: "";
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #121936;
+  position: absolute;
+  border-radius: 50%;
+  top: -13px;
+  left: -60px;
+}
+
+.modale-nav__mail::before {
+  background-image: url("..//image/mail_yellow.svg");
+}
+
+.modale-nav__tel::before {
+  background-image: url("..//image/icon_telephone.svg");
 }

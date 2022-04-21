@@ -1,0 +1,29 @@
+.main-header {
+  padding-top: 19px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #182044;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    padding: 40px;
+    background-image: url("..//image/logo_back.svg");
+    background-repeat: no-repeat;
+    background-position: 40px 45px;
+    position: relative;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-phone,
+  .mail {
+    display: none;
+  }
+
+  .user-list__login-button {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+}

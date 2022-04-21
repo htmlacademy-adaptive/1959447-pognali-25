@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Погнали - форма</title>
 </head>
@@ -16,39 +16,39 @@
     <h1 class="form-header__title">Направления</h1>
 
     <div class="form-nav modale-nav">
-      <button class="modale-nav__toggle" type="button">
+      <button class="modale-nav__toggle button button--toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <nav class="modale-nav__wrapper">
         <ul class="modale-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list-link" href="index.html">О сервисе</a>
+            <a class="site-list-link link" href="index.html">О сервисе</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list-link">Направления</a>
+            <a class="site-list-link link">Направления</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list-link" href="catalog.html">Попутчики</a>
+            <a class="site-list-link link" href="catalog.html">Попутчики</a>
           </li>
         </ul>
         <a class="modale-nav__list login" href="#">Авторизация</a>
         <ul class="modale-nav__list user-list">
           <li class="user-list__tel contacts-phone">
-            <a class="contacts-phone__link" href="tel:+78005558628">8 800 555-86-28</a>
+            <a class="contacts-phone__link link" href="tel:+78005558628">8 800 555-86-28</a>
           </li>
           <li class="user-list__mail mail">
-            <a class="mail__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="mail__link link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
         <ul class="modale-nav__list social">
           <li class="social__item">
-            <a class="social-link social-link--fb" href=""><span class="visually-hidden">Fb</span></a>
+            <a class="social-link link social-link--fb" href=""><span class="visually-hidden">Fb</span></a>
           </li>
           <li class="social__item">
-            <a class="social-link social-link--vk" href=""><span class="visually-hidden">Vk</span></a>
+            <a class="social-link link social-link--vk" href=""><span class="visually-hidden">Vk</span></a>
           </li>
           <li class="social__item">
-            <a class="social-link social-link--inst" href=""><span class="visually-hidden">Instagram</span></a>
+            <a class="social-link link social-link--inst" href=""><span class="visually-hidden">Instagram</span></a>
           </li>
         </ul>
       </nav>
@@ -100,13 +100,13 @@
             <p class="complete-plan__item-people">3 попутчика</p>
             <p class="complete-plan__item-date">26 мар — 29 мар</p>
             <!-- Ссылка на страницу каталога, или якорная ведет дальше на этой же странице. Не кнопка.  -->
-            <a class="complete-plan__item-button" href="#">Изменить</a>
+            <a class="complete-plan__item-button button button--no" href="#">Изменить</a>
           </li>
           <li class="complete-plan__item">
             <h3 class="complete-plan__item-title">Таиланд, Индонезия</h3>
             <p class="complete-plan__item-people">1 попутчик</p>
             <p class="complete-plan__item-date">1 июл — 15 июл</p>
-            <a class="complete-plan__item-button" href="#">Изменить</a>
+            <a class="complete-plan__item-button button button--no" href="#">Изменить</a>
           </li>
         </ol>
       </section>
@@ -353,7 +353,7 @@
               </table>
             </div>
           </div>
-          <a class="step__pagination" href="#step2">Следующий шаг</a>
+          <a class="step__pagination button" href="#step2">Следующий шаг</a>
         </section>
 
 
@@ -459,8 +459,8 @@
               </div>
             </div>
           </div>
-          <a class="step__pagination" href="#step3">Следующий шаг</a>
-          <a class="step__pagination" href="#step1">На шаг назад</a>
+          <a class="step__pagination button" href="#step3">Следующий шаг</a>
+          <a class="step__pagination button button--no" href="#step1">На шаг назад</a>
         </section>
 
 
@@ -479,9 +479,9 @@
                 placeholder="План действий">Пить пиво и&#160;лазить по&#160;старым замкам, наслаждаться архитектурой и&#160;вот это все.</textarea>
             </div>
           </div>
-          <a class="step__pagination step__pagination--back" href="#step2">На шаг назад</a>
+          <a class="step__pagination step__pagination--back button button--no" href="#step2">На шаг назад</a>
         </section>
-        <button class="constructor__plan-form" type="submit">Отправить</button>
+        <button class="constructor__plan-form button" type="submit">Отправить</button>
 
       </section>
     </form>
@@ -494,18 +494,19 @@
       </a>
       <ul class="form-footer__list social">
         <li class="social__item">
-          <a class="social-link social-link--tm" href=""><span class="visually-hidden">Telegram</span></a>
+          <a class="social-link link social-link--tm" href=""><span class="visually-hidden">Telegram</span></a>
         </li>
         <li class="social__item">
-          <a class="social-link social-link--vk" href=""><span class="visually-hidden">Vk</span></a>
+          <a class="social-link link social-link--vk" href=""><span class="visually-hidden">Vk</span></a>
         </li>
         <li class="social__item">
-          <a class="social-link social-link--youtube" href=""><span class="visually-hidden">Youtube</span></a>
+          <a class="social-link link social-link--youtube" href=""><span class="visually-hidden">Youtube</span></a>
         </li>
       </ul>
       <div class="form-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
+        <a class="copyright__link link " href="https://htmlacademy.ru/intensive/adaptive"><span
+            class="visually-hidden">HTML
             Academy</span>
           <img class="copyright__logo" src="image/html.svg" alt="Логотип HTML Academy" />
         </a>

@@ -1,0 +1,136 @@
+.tariff {
+  background-color: #e6e8f1;
+  margin: 0;
+  padding-left: 49px;
+  padding-right: 25px;
+  padding-top: 84px;
+  padding-bottom: 40px;
+  background-image: url("../image/rates.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 15%;
+  border-radius: 0 0 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    background-position: 90% 95%;
+  }
+}
+
+.tariff__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: @special_orange;
+  margin-right: 140px;
+  margin-top: 0;
+  margin-bottom: 56px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 45px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.tariff__name,
+.tariff__price {
+  font-weight: 300;
+  line-height: 16px;
+  color: #444444;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 1;
+  }
+}
+
+.tariff__plan {
+  margin: 0;
+  padding: 0;
+  counter-reset: orderedlist;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: space-between;
+  }
+}
+
+.tariff__button {
+  color: #132576;
+  font-weight: 700;
+  background-color: transparent;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    text-transform: none;
+    text-align: left;
+    margin-left: 100px;
+    position: relative;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .tariff__button::before {
+    content: "";
+    width: 68px;
+    height: 68px;
+    background-image: url("..//image/icon_businessman.svg");
+    background-repeat: no-repeat;
+    background-color: #e2e5f2;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    left: -15%;
+    top: -100%;
+  }
+}
+
+
+.tariff__name {
+  margin-bottom: 6px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 100px;
+    margin-left: 30px;
+    border-bottom: 1px solid #e1e3e9;
+  }
+}
+
+.tariff__price {
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #e1e3e9;
+}
+
+.tariff__plan dt::before {
+  counter-increment: orderedlist;
+  content: counter(orderedlist);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  position: absolute;
+  right: 10%;
+  padding: 10px 15px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: @special_yellow_dark;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 28px;
+    padding: 21px 24px;
+    right: auto;
+    left: 4%;
+  }
+}
+
+.tariff__plan dt:nth-child(1)::before {
+  background-color: @special_orange;
+}
+
+// dt:last-child::before {
+//   background-color: red;
+// }
