@@ -4,17 +4,38 @@
   padding-right: 25px;
   padding-bottom: 30px;
 
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+    padding: 0;
+  }
+
   .social {
     margin-top: 30px;
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
   }
 
   margin-left: -25px;
   margin-right: -25px;
 }
 
+.modale-nav__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+
 .modale-nav__toggle {
   width: 18px;
   height: 19px;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .modale-nav__login {
@@ -22,6 +43,13 @@
   padding-bottom: 12px;
   display: block;
   margin-bottom: 50px;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    order: 6;
+  }
 }
 
 .modale-nav__mail {
@@ -33,6 +61,10 @@
   position: relative;
   text-align: left;
   margin-left: 60px;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .modale-nav__tel::before,
@@ -55,4 +87,13 @@
 
 .modale-nav__tel::before {
   background-image: url("..//image/icon_telephone.svg");
+}
+
+.modale-nav__list {
+  list-style: none;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    display: flex;
+  }
 }

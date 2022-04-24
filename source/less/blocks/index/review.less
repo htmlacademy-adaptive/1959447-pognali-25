@@ -1,25 +1,34 @@
 .review {
   margin: 28px 70px 28px 25px;
-}
 
-@media (min-width: @tablet-width) {
-  .review {
+  @media (min-width: @tablet-width) {
     padding: 0;
     margin: 0 440px 211px 30px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .review {
-    margin: 0 23px 0 1033px;
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10%;
+    left: 80%;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .review__text {
+
+.review__text {
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
     font-weight: 300;
     font-size: 28px;
     line-height: 1.18;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 45px;
   }
 }
 
@@ -27,10 +36,8 @@
   font-weight: 700;
   height: 1.38;
   font-style: normal;
-}
 
-@media (min-width: @tablet-width) {
-  .review__author {
+  @media (min-width: @desktop-width) {
     font-size: 21px;
     line-height: 1.19;
   }

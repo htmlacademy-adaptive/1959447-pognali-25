@@ -1,3 +1,23 @@
+.concept {
+  background-image: url("../image/about-mobile.png");
+  background-repeat: no-repeat;
+  background-color: @basic_blue;
+  background-position: bottom;
+  margin: 0 auto;
+  padding: 33px 60px 82px 49px;
+  border-radius: 0 0 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../image/img_tablet.png");
+    background-position: right;
+    background-size: auto 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 60px;
+  }
+}
+
 .concept__description-title {
   font-weight: 700;
   font-size: 24px;
@@ -24,6 +44,11 @@
     margin-right: 380px;
     margin-bottom: 52px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 680px;
+    margin-bottom: 85px;
+  }
 }
 
 .concept__description-text span {
@@ -35,23 +60,12 @@
     font-size: 21px;
     line-height: 1.19;
   }
-}
 
-.concept {
-  background-image: url("../image/about-mobile.png");
-  background-repeat: no-repeat;
-  background-color: @basic_blue;
-  background-position: bottom;
-  margin: 0 auto;
-  padding: 33px 60px 82px 49px;
-  border-radius: 0 0 20px 20px;
-
-  @media (min-width: @tablet-width) {
-    background-image: url("../image/img_tablet.png");
-    background-position: right;
-    background-size: auto 100%;
+  @media (min-width: @desktop-width) {
+    margin-top: 38px;
   }
 }
+
 
 .concept__button {
   display: none;
@@ -63,5 +77,9 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 100px;
   }
 }

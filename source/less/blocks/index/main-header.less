@@ -3,27 +3,46 @@
   padding-left: 25px;
   padding-right: 25px;
   background-color: #182044;
-}
 
-@media (min-width: @tablet-width) {
-  .main-header {
+  @media (min-width: @tablet-width) {
     padding: 40px;
-    background-image: url("..//image/logo_back.svg");
-    background-repeat: no-repeat;
-    background-position: 40px 45px;
-    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .contacts-phone,
-  .mail {
+
+.contacts-phone__link,
+.mail__link {
+  @media (min-width: @desktop-width) {
     display: none;
   }
+}
 
-  .user-list__login-button {
-    position: absolute;
-    top: 40px;
-    right: 40px;
+.user-list__login-button {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.main-header__logo {
+  @media (min-width: @tablet-width) {
+    background-image: url("..//image/logo_back.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("..//image/logo_back.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.main-header__logo-image {
+  @media (min-width: @desktop-width) {
+    width: 200px;
   }
 }

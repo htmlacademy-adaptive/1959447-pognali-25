@@ -5,7 +5,27 @@
   margin-bottom: 51px;
   margin-top: 76px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    margin-top: 95px;
+    margin-bottom: 160px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    margin-top: 0;
+    margin-right: 250px;
+    margin-bottom: 0;
+  }
 }
+
+.site-list__item {
+  @media (min-width: @desktop-width) {
+    margin-left: 34px;
+  }
+}
+
 
 .site-list-link {
   color: #192144;
@@ -13,4 +33,15 @@
   font-size: 30px;
   line-height: 1.17;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 1.18;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1;
+  }
 }
