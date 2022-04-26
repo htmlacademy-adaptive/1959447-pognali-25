@@ -1,12 +1,11 @@
-.contacts-phone {
-  text-align: center;
-}
-
-.contacts-phone__link,
-.mail__link {
+.contacts-phone__link {
   font-size: 16px;
   line-height: 1.12;
-  text-transform: uppercase;
   color: #192144;
   font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 1;
+  }
 }

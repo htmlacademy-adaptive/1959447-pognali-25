@@ -3,6 +3,14 @@
   margin: 0;
   background-color: #192144;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 133px 75px 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 208px 133px 103px;
+  }
 }
 
 .registration::after {
@@ -26,8 +34,11 @@
 
   @media (min-width: @tablet-width) {
     font-size: 45px;
+    padding: 0;
+    margin: 0 auto;
   }
 }
+
 
 .registration__description {
   text-align: center;
@@ -46,6 +57,11 @@
     margin-right: 50px;
     margin-left: 50px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-top: 57px;
+  }
 }
 
 .registration__contacts {
@@ -60,24 +76,41 @@
   }
 }
 
+.registration__form {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    justify-content: center;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+}
+
+
 .registration__email {
   border-radius: 5px;
   padding-top: 22px;
   padding-bottom: 22px;
   padding-left: 25px;
-  width: 100%;
   font-weight: 700;
   font-size: 18px;
   line-height: 1;
   color: @special_grey;
-  position: relative;
   border: none;
 
+
   @media (min-width: @tablet-width) {
-    margin-left: 50px;
-    margin-right: 50px;
-    width: auto;
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
+
+  // @media (min-width: @desktop-width) {}
 }
 
 input[type="email"]::-webkit-input-placeholder {
@@ -93,14 +126,17 @@ input[type="email"]::-moz-placeholder {
   height: 66px;
   background-color: @basic_yellow;
   border-radius: 10px;
-  position: absolute;
-  right: 5%;
   border: none;
+  margin-left: -10px;
 
   @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
   }
+
+  // @media (min-width: @desktop-width) {
+
+  // }
 }
 
 .registration__contacts-text {
@@ -109,6 +145,10 @@ input[type="email"]::-moz-placeholder {
 
   @media (min-width: @tablet-width) {
     font-size: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
@@ -137,5 +177,15 @@ input[type="email"]::-moz-placeholder {
     font-size: 28px;
     text-align: left;
     margin-left: 100px;
+  }
+}
+
+
+.registration__contacts-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 78px;
   }
 }
