@@ -1,16 +1,20 @@
 .address {
   background-color: #ffd74b;
-  padding: 50px 25px 0;
   position: relative;
   z-index: 3;
   margin-top: -30px;
   border-radius: 0 0 30px 30px;
-
-  @media (min-width: @tablet-width) {
-    padding: 124px 75px 84px;
-  }
+  padding-top: 100px;
+  padding-bottom: 80px;
 }
 
+.address-container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 .address__text {
   font-weight: 700;
@@ -26,6 +30,10 @@
     font-size: 28px;
     line-height: 1;
     margin-bottom: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
@@ -60,6 +68,8 @@
   @media (min-width: @tablet-width) {
     font-size: 24px;
     padding: 29px;
+    margin-left: 35px;
+    margin-right: 35px;
   }
 }
 
