@@ -6,14 +6,22 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 34px;
+    margin-bottom: 84px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 1/-1;
     padding: 0;
-    justify-content: space-around;
+    margin-bottom: 0;
+  }
+}
+
+.person-list__item {
+  margin-bottom: 9px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
   }
 }
