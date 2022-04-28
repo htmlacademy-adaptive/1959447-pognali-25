@@ -1,40 +1,72 @@
 .tariff {
   background-color: #e6e8f1;
   margin: 0;
-  padding-left: 49px;
-  padding-right: 25px;
-  padding-top: 84px;
-  padding-bottom: 40px;
-  background-image: url("../image/rates.svg");
-  background-repeat: no-repeat;
-  background-position: 90% 15%;
   border-radius: 0 0 30px 30px;
   position: relative;
   z-index: 5;
   margin-top: -30px;
+}
+
+
+.tariff-container {
+  padding-top: 67px;
+  padding-bottom: 37px;
+  text-align: left;
+  background-image: url("../image/rates.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 15%;
 
   @media (min-width: @tablet-width) {
-    background-position: 90% 95%;
+    padding-top: 104px;
+    padding-bottom: 74px;
+    background-position: bottom 15% right 10%;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 130px;
+    padding-bottom: 100px;
   }
 }
+
 
 .tariff__title {
   font-weight: 700;
   font-size: 24px;
   line-height: 1;
   color: @special_orange;
-  margin-right: 140px;
-  margin-top: 0;
+  margin: 0;
+  margin-left: 24px;
   margin-bottom: 56px;
+  width: 40%;
 
   @media (min-width: @tablet-width) {
     font-size: 45px;
     margin: 0 auto;
     text-align: center;
+    width: 100%;
+    margin-bottom: 73px;
+  }
+}
+
+.tariff__plan {
+  margin: 0;
+  margin-left: 24px;
+  padding: 0;
+  counter-reset: orderedlist;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 35px;
+    padding-left: 90px;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 70%;
+    padding: 0;
+    margin: 0 auto;
   }
 }
 
@@ -52,45 +84,31 @@
   }
 }
 
-.tariff__plan {
-  margin: 0;
-  padding: 0;
-  counter-reset: orderedlist;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 50px;
-    justify-content: space-between;
-  }
-
-  @media (min-width: @desktop-width) {
-    max-width: 820px;
-    margin: 0 auto;
-  }
-}
 
 .tariff__button {
   color: #132576;
   font-weight: 700;
   background-color: transparent;
   display: block;
+  text-transform: none;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     text-transform: none;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 89px;
     position: relative;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 70px;
+    margin-left: 160px;
+    margin-top: 70px;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .tariff__button::before {
+
+.tariff__button::before {
+  @media (min-width: @tablet-width) {
     content: "";
     width: 68px;
     height: 68px;
@@ -100,22 +118,22 @@
     background-position: center;
     border-radius: 50%;
     position: absolute;
-    left: -15%;
+    left: -12%;
     top: -100%;
   }
 
   @media (min-width: @desktop-width) {
-    left: -100px;
+    left: -9%;
   }
 }
 
 
 .tariff__name {
   margin-bottom: 6px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    margin-right: 100px;
-    margin-left: 30px;
+    width: 50%;
     border-bottom: 1px solid #e1e3e9;
   }
 }
@@ -141,13 +159,14 @@
 
   @media (min-width: @tablet-width) {
     font-size: 28px;
-    padding: 21px 24px;
+    padding: 18px 25px;
     right: auto;
-    left: 4%;
+    top: -25%;
+    left: -25%;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 23px 27px;
+    padding: 19px 27px;
   }
 }
 
