@@ -10,64 +10,21 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="container">
-      <div class="main-header__mobil">
-        <a class="main-header__logo">
-          <span class="visually-hidden">Логотип Погнали</span>
-        </a>
-        <nav class="main-header__nav navigation navigation--decktop">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link link" href="#">О сервисе</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link link" href="form.html">Направления</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link link" href="catalog.html">Попутчики</a>
-            </li>
-          </ul>
-        </nav>
+    <div class="container main-header__wrapper">
+      <a class="main-header__logo">
+        <span class="visually-hidden">Логотип Погнали</span>
+      </a>
 
-        <button class="main-header__toggle button button--toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
 
-        <ul class="main-header__user">
-          <li class="main-header__user-tel">
-            <a class="main-header__user-link link" href="tel:+78005558628">
-              <span class="visually-hidden">8 800 555-86-28</span>
-            </a>
-          </li>
-          <li class="main-header__user-mail">
-            <a class="main-header__user-link link" href="mailto:mail@htmlacademy.ru">
-              <span class="visually-hidden">8 800 555-86-28</span>
-            </a>
-          </li>
-          <li class="main-header__user-log">
-            <a class="main-header__user-button login button" href="#">Авторизация</a>
-          </li>
-        </ul>
-
-        <a class="main-header__login login button main-header__login--mobile" href="#">Авторизация</a>
-      </div>
-
-      <div class="main-header__modale">
-
-        <div class="main-header__mobil main-header__mobil--modale">
-          <a class="main-header__logo main-header__logo--black">
-            <span class="visually-hidden">Логотип</span>
-          </a>
-
-          <button class="main-header__toggle main-header__toggle--modale button button--toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </div>
+      <div class="main-header__dropdown">
 
         <nav class="main-header__nav navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link link" href="#">О сервисе</a>
+              <a class="navigation__link link" href="#">О&nbsp;сервисе</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link link" href="form.html">Направления</a>
@@ -78,14 +35,14 @@
           </ul>
         </nav>
 
-        <a class="main-header__login login button main-header__login--modale" href="#">Авторизация</a>
+        <a class="main-header__login login button" href="#">Авторизация</a>
 
         <ul class="main-header__contacts">
           <li class="main-header__tel contacts-phone">
-            <a class="contacts-phone__link link" href="tel:+78005558628">8 800 555-86-28</a>
+            <a class="contacts-phone__link link" href="tel:+78005558628"> <span class="link__text-hidden">8 800 555-86-28</span></a>
           </li>
           <li class="main-header__mail mail">
-            <a class="mail__link link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="mail__link link" href="mailto:mail@htmlacademy.ru"><span class="link__text-hidden">mail@htmlacademy.ru</span></a>
           </li>
         </ul>
 
@@ -110,57 +67,57 @@
     </h1>
 
     <section class="promo">
-      <div class="container">
-        <div class="promo__wrapper">
-          <h2 class="promo__title">
-            В&nbsp;путешествие с&nbsp;крутыми попутчиками!
-          </h2>
+      <div class="container promo__wrapper">
 
-          <div class="promo__tablet">
-            <div class="promo__background">
-              <!-- <img class="promo__img" width="192"  src="..//image/traveller-illustration-mobile.png" alt="Путешественник"> -->
-            </div>
+        <h2 class="promo__title">
+          В&nbsp;путешествие с&nbsp;крутыми попутчиками!
+        </h2>
 
-            <ul class="promo__contacts user-list">
-              <li class="user-list__tel contacts-phone">
-                <a class="contacts-phone__link link" href="tel:+78005558628">
-                  <span class="visually-hidden">8 800 555-86-28</span>
-                </a>
-              </li>
-              <li class="user-list__mail mail">
-                <a class="mail__link link" href="mailto:mail@htmlacademy.ru">
-                </a>
-              </li>
-              <li class="user-list__login">
-                <a class="user-list__login-button login button" href="#">Авторизация</a>
-              </li>
-            </ul>
-
-            <blockquote class="promo__review review">
-              <p class="review__text">
-                &laquo;Лучшее&nbsp;приложение, что&nbsp;я&nbsp;видел&nbsp;в&nbsp;жизни!&raquo;
-              </p>
-              <cite class="review__author">
-                Мурат&nbsp;Эльтазин главный&nbsp;редактор&nbsp;газеты &laquo;гаджетлайф&raquo;
-              </cite>
-            </blockquote>
+        <div class="promo__tablet">
+          <div class="promo__background">
+            <!-- <img class="promo__img" width="192"  src="..//image/traveller-illustration-mobile.png" alt="Путешественник"> -->
           </div>
 
-          <ol class="promo__offers">
-            <li class="promo__offers-text">
-              <p> Выберите направление</p>
+          <ul class="promo__contacts user-list">
+            <li class="user-list__tel contacts-phone">
+              <a class="contacts-phone__link link" href="tel:+78005558628">
+                <span class="visually-hidden">8 800 555-86-28</span>
+              </a>
             </li>
-            <li class="promo__offers-text">
-              <p>Изучите идеи путешественников</p>
+            <li class="user-list__mail mail">
+              <a class="mail__link link" href="mailto:mail@htmlacademy.ru">
+              </a>
             </li>
-            <li class="promo__offers-text">
-              <p>Находите тех, кто похож на&nbsp;вас</p>
+            <li class="user-list__login">
+              <a class="user-list__login-button login button" href="#">Авторизация</a>
             </li>
-            <li class="promo__offers-text">
-              <p>Путешествуйте вместе!</p>
-            </li>
-          </ol>
+          </ul>
+
+          <blockquote class="promo__review review">
+            <p class="review__text">
+              &laquo;Лучшее&nbsp;приложение, что&nbsp;я&nbsp;видел&nbsp;в&nbsp;жизни!&raquo;
+            </p>
+            <cite class="review__author">
+              Мурат&nbsp;Эльтазин главный&nbsp;редактор&nbsp;газеты &laquo;гаджетлайф&raquo;
+            </cite>
+          </blockquote>
         </div>
+
+        <ol class="promo__offers">
+          <li class="promo__offers-text">
+            <p> Выберите направление</p>
+          </li>
+          <li class="promo__offers-text">
+            <p>Изучите идеи путешественников</p>
+          </li>
+          <li class="promo__offers-text">
+            <p>Находите тех, кто похож на&nbsp;вас</p>
+          </li>
+          <li class="promo__offers-text">
+            <p>Путешествуйте вместе!</p>
+          </li>
+        </ol>
+
       </div>
     </section>
 
@@ -223,7 +180,7 @@
             </div>
           </li>
         </ul>
-        <a class="destination__button button button--all button--icon" href="#">Показать всё</a>
+        <a class="destination__button button button--all button--icon" href="#">Показать всe</a>
       </div>
     </section>
 
@@ -452,8 +409,8 @@
           <h2 class="registration__title visually-hidden">Авторизация и контакты</h2>
           <h3 class="registration__name">Заинтересовались?</h3>
           <p class="registration__description">
-            Зарегистрируйтесь, это быстро и&nbsp;бесплатно! Уже&nbsp;зарегистрированы? Тогда скорее <a class="registration__login"
-              href="#">авторизуйтесь.</a>
+            Зарегистрируйтесь, это быстро и&nbsp;бесплатно! Уже&nbsp;зарегистрированы? Тогда скорее <a
+              class="registration__login" href="#">авторизуйтесь.</a>
           </p>
           <div class="registration__form">
             <input class="registration__email" type="email" placeholder="E-mail" />

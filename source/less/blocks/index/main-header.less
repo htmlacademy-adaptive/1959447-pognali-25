@@ -1,51 +1,38 @@
 .main-header {
   background-color: #182044;
-  padding-top: 19px;
-  padding-bottom: 19px;
 }
 
-.main-header__mobil {
+.main-header__wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
 
-  @media (min-width: @desktop-width) {
-    justify-content: flex-start;
+  @media (min-width: @tablet-width) {
+    position: relative;
   }
 }
 
-.main-header__modale {
+
+.main-header__dropdown {
   background-color: #ffffff;
-  padding: 25px;
-  margin-top: 30px;
+  width: 100vw;
+  padding-left: 25px;
+  padding-right: 25px;
   margin-left: -25px;
   margin-right: -25px;
 
   @media (min-width: @tablet-width) {
-    padding: 40px;
+    position: relative;
     margin-left: -40px;
     margin-right: -40px;
-    position: relative;
   }
 
   @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.main-header__mobil--modale {
-  margin-bottom: 70px;
-
-  @media (min-width: @tablet-width) {
-    width: 50%;
-    margin-bottom: 100px;
-  }
-}
-
-.modale-nav__wrapper {
-  @media (min-width: @desktop-width) {
+    background-color: inherit;
+    width: auto;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -54,11 +41,14 @@
   background-repeat: no-repeat;
   width: 96px;
   height: 15px;
+  align-self: center;
 
   @media (min-width: @tablet-width) {
     background-image: url("..//image/logo_full.svg");
     width: 166px;
     height: 42px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: @desktop-width) {
@@ -79,6 +69,51 @@
   }
 }
 
+.main-header__toggle {
+  width: 74px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: -25px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-header__login {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) and (max-width: @vMaxTablet) {
+    position: absolute;
+    bottom: 100%;
+    right: 40px;
+    margin: 0;
+    margin-bottom: 30px;
+    max-width: 200px;
+    padding: 16px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    order: 2;
+    align-self: center;
+    margin: 0;
+    padding: 16px 30px;
+  }
+}
+
+
 .main-header__nav {
   margin-bottom: 50px;
 
@@ -96,18 +131,33 @@
   margin: 0;
   margin-left: 50px;
   margin-bottom: 41px;
+  text-align: left;
 
   @media (min-width: @tablet-width) {
     margin-left: 100px;
     margin-bottom: 130px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    display: flex;
+    padding: 0;
+    margin-left: 250px;
+  }
 }
 
+
 .main-header__tel,
-.main-header__link,
 .main-header__mail {
-  text-align: left;
+  @media (min-width: @desktop-width) {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
+
 
 .main-header__tel {
   margin-bottom: 27px;
@@ -115,65 +165,34 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 38px;
   }
-}
-
-
-.main-header__toggle {
-  width: 25px;
-  height: 11px;
 
   @media (min-width: @desktop-width) {
-    display: none;
+    background-color: @special_yellow_dark;
+    margin: 0;
+    background-image: url("../image/icon_call.svg");
   }
 }
 
-.main-header__login {
-  padding-top: 12px;
-  padding-bottom: 12px;
-
-  @media (min-width: @tablet-width) {
-    padding: 16px 28px;
-    font-size: 20px;
-  }
-}
-
-.main-header__login--mobile {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-  }
-
+.main-header__mail {
   @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.main-header__login--modale {
-  display: block;
-  margin-bottom: 50px;
-
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    margin-bottom: 0;
-    font-weight: 400;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
+    background-color: @special_orange;
+    background-image: url("../image/icon_mail.svg");
   }
 }
 
 .main-header__social {
   padding: 0;
   margin: 0 auto;
+  margin-bottom: 50px;
 
   @media (min-width: @tablet-width) {
     margin-left: 100px;
     justify-content: left;
     margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
@@ -209,4 +228,10 @@
   padding: 15px 30px;
   font-size: 20px;
   box-sizing: border-box;
+}
+
+.link__text-hidden {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }

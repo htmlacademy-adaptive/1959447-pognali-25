@@ -1,6 +1,249 @@
+.form-header {
+  background-color: #182044;
+  padding-bottom: 19px;
+  position: relative;
+  z-index: 2;
+  border-radius: 0 0 30px 30px;
+}
+
+.form-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+}
+
+
 .form-header__title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   color: #ffffff;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    margin-top: 130px;
+  }
+}
+
+
+.form-header__dropdown {
+  display: none;
+  background-color: #ffffff;
+  width: 100vw;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: -25px;
+  margin-right: -25px;
+
+  @media (min-width: @tablet-width) {
+
+    position: relative;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: inherit;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.form-header__logo {
+  background-image: url("..//image/logo_mobile.svg");
+  background-repeat: no-repeat;
+  width: 96px;
+  height: 15px;
+  align-self: center;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("..//image/logo_full.svg");
+    width: 166px;
+    height: 42px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 200px;
+    height: 50px;
+  }
+}
+
+
+.form-header__toggle {
+  display: block;
+  width: 74px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: -25px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.form-header__login {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) and (max-width: @vMaxTablet) {
+    position: absolute;
+    bottom: 100%;
+    right: 40px;
+    margin: 0;
+    margin-bottom: 30px;
+    max-width: 200px;
+    padding: 16px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    order: 2;
+    align-self: center;
+    margin: 0;
+    padding: 16px 30px;
+  }
+}
+
+
+.form-header__nav {
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 150px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.form-header__contacts {
+  list-style: none;
+  margin: 0;
+  margin-left: 50px;
+  margin-bottom: 41px;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 100px;
+    margin-bottom: 130px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    display: flex;
+    padding: 0;
+    margin-left: 250px;
+  }
+}
+
+
+.form-header__tel,
+.form-header__mail {
+  @media (min-width: @desktop-width) {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
+.form-header__tel {
+  margin-bottom: 27px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @special_yellow_dark;
+    margin: 0;
+    background-image: url("../image/icon_call.svg");
+  }
+}
+
+.form-header__mail {
+  @media (min-width: @desktop-width) {
+    background-color: @special_orange;
+    background-image: url("../image/icon_mail.svg");
+  }
+}
+
+.form-header__social {
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 100px;
+    justify-content: left;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.form-header__user {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-left: auto;
+    align-items: center;
+  }
+}
+
+.main-header__user-tel,
+.main-header__user-mail {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.main-header__user-tel {
+  background-color: @special_orange;
+}
+
+.main-header__user-mail {
+  background-color: @special_yellow_dark;
+}
+
+.main-header__user-button {
+  padding: 15px 30px;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.link__text-hidden {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
