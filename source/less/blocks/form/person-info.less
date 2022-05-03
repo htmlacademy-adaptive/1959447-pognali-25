@@ -1,10 +1,8 @@
 .person-info {
   position: relative;
-  z-index: 1;
-  background-color: #edeff6;
-  margin-top: -30px;
   padding-top: 30px;
   padding-bottom: 64px;
+  z-index: 2;
 
   @media (min-width: @desktop-width) {
     padding-top: 0;
@@ -28,6 +26,7 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: 50% auto auto;
     padding-top: 0;
+    margin-top: -190px;
   }
 }
 
@@ -50,6 +49,10 @@
     grid-column: 2/3;
     grid-row: 1/2;
     margin: 0;
+
+    @media (min-width: @desktop-width) {
+      color: #ffffff;
+    }
   }
 }
 
@@ -57,6 +60,10 @@
   font-weight: 400;
   font-size: 18px;
   color: @special_grey;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .person-info__img-avatar {
@@ -111,6 +118,10 @@
   background-color: #dfe3f0;
   border-radius: 20px;
   display: block;
+
+  @media (min-width: @desktop-width) {
+    border-radius: 0 0 20px 20px;
+  }
 }
 
 .person-info__img-title-none {
