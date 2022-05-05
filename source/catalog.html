@@ -1,148 +1,235 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head class="page">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Каталог</title>
 </head>
+
 <body class="page__body">
   <header class="inner-header">
-    <a class="inner-header__logo" href="index.html">
-      <img class="inner-header__logo-image" src="image/logo_mobile.svg" width="96" height="15" alt="Логотип Погнали." />
-    </a>
-    <h1 class="inner-title">Попутчики</h1>
-    <div class="inner-nav modale-nav">
-      <button class="modale-nav__toggle button button--toggle" type="button">
+    <div class="container inner-header__wrapper">
+      <a class="inner-header__logo" href="index.html">
+        <span class="visually-hidden">Логотип Погнали</span>
+      </a>
+
+      <button class="inner-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="modale-nav__wrapper">
-        <ul class="modale-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list-link link" href="index.html">О сервисе</a>
+
+      <a class="inner-header__login-tablet login button" href="#">Авторизация</a>
+
+      <h1 class="inner-header__title">Попутчики</h1>
+
+      <a class="inner-header__link link" href="index.html">На главную</a>
+
+      <div class="inner-header__dropdown">
+
+        <nav class="inner-header__nav navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link link" href="index.html">О&nbsp;сервисе</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="form.html">Направления</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="#">Попутчики</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="inner-header__login login button" href="#">Авторизация</a>
+        <ul class="inner-header__contacts">
+          <li class="inner-header__tel contacts-phone">
+            <a class="contacts-phone__link link" href="tel:+78005558628"> <span class="link__text-hidden">8 800
+                555-86-28</span></a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list-link link" href="form.html">Направления</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list-link link">Попутчики</a>
+          <li class="inner-header__mail mail">
+            <a class="mail__link link" href="mailto:mail@htmlacademy.ru"><span
+                class="link__text-hidden">mail@htmlacademy.ru</span></a>
           </li>
         </ul>
 
-        <a class="modale-nav__list login" href="#">Авторизация</a>
-
-        <ul class="modale-nav__list user-list">
-          <li class="user-list__tel contacts-phone">
-            <a class="contacts-phone__link link" href="tel:+78005558628">8 800 555-86-28</a>
+        <ul class="inner-header__social social">
+          <li class="social__item social__item--tm">
+            <a class="social-link link social-link--tm" href=""><span class="visually-hidden">Telegram</span></a>
           </li>
-          <li class="user-list__mail mail">
-            <a class="mail__link link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
-
-        <ul class="modale-nav__list social">
-          <li class="social__item">
-            <a class="social-link link social-link--fb" href=""><span class="visually-hidden">Fb</span></a>
-          </li>
-          <li class="social__item">
+          <li class="social__item social__item--vk">
             <a class="social-link link social-link--vk" href=""><span class="visually-hidden">Vk</span></a>
           </li>
-          <li class="social__item">
-            <a class="social-link link social-link--inst" href=""><span class="visually-hidden">Instagram</span></a>
+          <li class="social__item social__item--you">
+            <a class="social-link link social-link--youtube" href=""><span class="visually-hidden">Youtube</span></a>
           </li>
         </ul>
-      </nav>
+
+      </div>
     </div>
   </header>
 
-  <main class="inner-container">
+  <main class="inner-container container">
     <div class="catalog-traveler">
       <section class="catalog-traveler__filter">
+        <div class="catalog-traveler__wrapper">
 
-        <!-- Фильтр 1 - выбор по странам -->
-        <h2 class="catalog-traveler__title">Фильтрация по странам</h2>
-        <button class="catalog-traveler__button button" type="button">Показать все</button>
+          <!-- Фильтр 1 - выбор по странам -->
+          <h2 class="catalog-traveler__title">Фильтрация по странам</h2>
+          <button class="catalog-traveler__button button" type="button"><span
+              class="catalog-traveler__button-text">Показать все</span></button>
 
-        <div class="catalog-traveler__filter-location location">
-          <div class="location__form-continent continent">
-            <a class="continent__link link continent__link--current" href="#Europe">Европа</a>
-            <a class="continent__link link" href="#">Азия</a>
-            <a class="continent__link link" href="#">Америка</a>
-            <a class="continent__link link" href="#">Острова</a>
-          </div>
-
-          <div class="location__form-country select-country">
-            <div class="select-country__alphabet" id="Europe">
-              <button class="select-country__alphabet-letter select-country__alphabet-letter--current"
-                type="button">А</button>
-              <button class="select-country__alphabet-letter" type="button">Б</button>
-              <button class="select-country__alphabet-letter" type="button">В</button>
-              <button class="select-country__alphabet-letter" type="button">Г</button>
-              <button class="select-country__alphabet-letter" type="button">Е</button>
-              <button class="select-country__alphabet-letter" type="button">З</button>
-              <button class="select-country__alphabet-letter" type="button">И</button>
-              <button class="select-country__alphabet-letter" type="button">К</button>
-              <button class="select-country__alphabet-letter" type="button">Л</button>
-              <button class="select-country__alphabet-letter" type="button">М</button>
-              <button class="select-country__alphabet-letter" type="button">Н</button>
-              <button class="select-country__alphabet-letter" type="button">О</button>
-              <button class="select-country__alphabet-letter" type="button">П</button>
-              <button class="select-country__alphabet-letter" type="button">Р</button>
-              <button class="select-country__alphabet-letter" type="button">С</button>
-              <button class="select-country__alphabet-letter" type="button">Т</button>
-              <button class="select-country__alphabet-letter" type="button">У</button>
-              <button class="select-country__alphabet-letter" type="button">Ф</button>
-              <button class="select-country__alphabet-letter" type="button">Х</button>
-              <button class="select-country__alphabet-letter" type="button">Ч</button>
-              <button class="select-country__alphabet-letter" type="button">Ш</button>
-              <button class="select-country__alphabet-letter" type="button">Э</button>
-              <button class="select-country__alphabet-letter" type="button">Ю</button>
-              <button class="select-country__alphabet-letter" type="button">Я</button>
+          <div class="catalog-traveler__filter-location location">
+            <div class="location__form-continent continent">
+              <a class="continent__link link continent__link--current" href="#Europe">Европа</a>
+              <a class="continent__link link" href="#">Азия</a>
+              <a class="continent__link link" href="#">Америка</a>
+              <a class="continent__link link" href="#">Острова</a>
             </div>
-            <div class="select-country-name country-all">
-              <ul class="country-all__list">
-                <li class="country-all__list-item">
-                  <a class="country-all__list-link" href="#">Австралия</a>
+
+            <div class="location__form-country select-country">
+              <ul class="select-country__alphabet alphabet">
+                <div class="alphabet__wrapper">
+                  <li class="alphabet__letter">
+                    <button class="alphabet__letter-link alphabet__letter-link--current" type="button">А</button>
+                  </li>
+                  <li class="alphabet__country  alphabet__country--current">
+                    <a class="alphabet__country-link" href="#">Австралия</a>
+                    <a class="alphabet__country-link" href="#">Австрия</a>
+                    <a class="alphabet__country-link" href="#">Азербайджан</a>
+                    <a class="alphabet__country-link" href="#">Албания</a>
+                  </li>
+                </div>
+                <div class="alphabet__wrapper">
+                  <li class="alphabet__letter">
+                    <button class="alphabet__letter-link" type="button">Б</button>
+                  </li>
+                  <li class="alphabet__country">
+                    <a class="alphabet__country-link" href="#">Багамские Острова</a>
+                    <a class="alphabet__country-link" href="#">Бангладеш</a>
+                    <a class="alphabet__country-link" href="#">Барбадос</a>
+                    <a class="alphabet__country-link" href="#">Бахрейн</a>
+                  </li>
+                </div>
+                <div class="alphabet__wrapper">
+                  <li class="alphabet__letter">
+                    <button class="alphabet__letter-link" type="button">В</button>
+                  </li>
+                  <li class="alphabet__country">
+                    <a class="alphabet__country-link" href="#">Ванауту</a>
+                    <a class="alphabet__country-link" href="#">Великобритания</a>
+                    <a class="alphabet__country-link" href="#">Венгрия</a>
+                    <a class="alphabet__country-link" href="#">Венесуэла</a>
+                  </li>
+                </div>
+
+                <div class="alphabet__wrapper">
+                  <li class="alphabet__letter">
+                    <button class="alphabet__letter-link" type="button">Г</button>
+                  </li>
+
+                </div>
+
+
+
+
+                <li class="alphabet__letter">
+                  <button class="alphabet__letter-link" type="button">Д</button>
                 </li>
-                <li class="country-all__list-item">
-                  <a class="country-all__list-link" href="#">Австрия</a>
+                <li class="alphabet__letter">
+                  <button class="alphabet__letter-link" type="button">Е</button>
                 </li>
-                <li class="country-all__list-item">
-                  <a class="country-all__list-link" href="#">Азербайджан</a>
+                <li class="alphabet__letter">
+                  <button class="alphabet__letter-link" type="button">З</button>
                 </li>
-                <li class="country-all__list-item">
-                  <a class="country-all__list-link" href="#">Албания</a>
-                </li>
-                <li class="country-all__list-item">
-                  <a class="country-all__list-link" href="#">Алжир</a>
-                </li>
-                <li class="country-all__list-item">
-                  <a class="country-all__list-link" href="#">Ангола</a>
-                </li>
-                <li class="country-all__list-item">
-                  <a class="country-all__list-link" href="#">Андорра</a>
-                </li>
-                <li class="country-all__list-item">
-                  <a class="country-all__list-link" href="#">Антигуа и Барбуда</a>
-                </li>
-                <li class="country-all__list-item">
-                  <a class="country-all__list-link" href="#">Аргентина</a>
-                </li>
-                <li class="country-all__list-item">
-                  <a class="country-all__list-link" href="#">Армения</a>
-                </li>
-                <li class="country-all__list-item">
-                  <a class="country-all__list-link" href="#">Афганистан</a>
+                <li class="alphabet__letter">
+                  <button class="alphabet__letter-link" type="button">И</button>
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-        <button class="catalog-traveler__button button" type="button">Свернуть</button>
-      </section>
 
+
+
+
+
+            <!-- <div class="location__form-country select-country">
+              <div class="select-country__alphabet" id="Europe">
+                <button class="select-country__alphabet-letter select-country__alphabet-letter--current"
+                  type="button">А</button>
+                <button class="select-country__alphabet-letter" type="button">Б</button>
+                <button class="select-country__alphabet-letter" type="button">В</button>
+                <button class="select-country__alphabet-letter" type="button">Г</button>
+                <button class="select-country__alphabet-letter" type="button">Е</button>
+                <button class="select-country__alphabet-letter" type="button">З</button>
+                <button class="select-country__alphabet-letter" type="button">И</button>
+                <button class="select-country__alphabet-letter" type="button">К</button>
+                <button class="select-country__alphabet-letter" type="button">Л</button>
+                <button class="select-country__alphabet-letter" type="button">М</button>
+                <button class="select-country__alphabet-letter" type="button">Н</button>
+                <button class="select-country__alphabet-letter" type="button">О</button>
+                <button class="select-country__alphabet-letter" type="button">П</button>
+                <button class="select-country__alphabet-letter" type="button">Р</button>
+                <button class="select-country__alphabet-letter" type="button">С</button>
+                <button class="select-country__alphabet-letter" type="button">Т</button>
+                <button class="select-country__alphabet-letter" type="button">У</button>
+                <button class="select-country__alphabet-letter" type="button">Ф</button>
+                <button class="select-country__alphabet-letter" type="button">Х</button>
+                <button class="select-country__alphabet-letter" type="button">Ч</button>
+                <button class="select-country__alphabet-letter" type="button">Ш</button>
+                <button class="select-country__alphabet-letter" type="button">Э</button>
+                <button class="select-country__alphabet-letter" type="button">Ю</button>
+                <button class="select-country__alphabet-letter" type="button">Я</button>
+              </div>
+              <div class="select-country-name country-all">
+                <ul class="country-all__list">
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Австралия</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Австрия</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Азербайджан</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Албания</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Алжир</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Ангола</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Андорра</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Антигуа и Барбуда</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Аргентина</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Армения</a>
+                  </li>
+                  <li class="country-all__list-item">
+                    <a class="country-all__list-link" href="#">Афганистан</a>
+                  </li>
+                </ul>
+              </div> -->
+            <button class="select-country__button-filter button" type="button">Свернуть</button>
+          </div>
+
+        </div>
+
+    </div>
+    </section>
+
+
+    <div class="catalog-traveler__wrapper">
 
       <section class="catalog-traveler__filter-person companion-selection">
+
         <h2 class="companion-selection__title">Подберите идеального попутчика</h2>
         <form class="companion-selection__form form-filter" action="https://echo.htmlacademy.ru/" method="get">
 
@@ -238,20 +325,26 @@
           </fieldset>
           <button class="form-filter__button button" type="submit" name="show">Показать</button>
         </form>
+
       </section>
 
 
       <section class="catalog-traveler__offers">
+
         <h2 class="catalog-traveler__offers-title visually-hidden">Каталог попутчиков</h2>
-        <ul class="catalog-traveler__offers-list person-list">
-          <li class="person-list__item cards-person">
-            <a class="cards-person__link link">
-              <h3 class="cards-person__name">Таня Фирсова</h3>
+        <ul class="catalog-traveler__offers-list person-catalog">
+
+          <li class="person-catalog__item cards-person">
+
+            <img class="person-catalog__img" src="image/tanya.jpg" alt="Таня Фирсова." />
+
+            <a class="person-catalog__link link">
+              <h3 class="person-catalog__name">Таня Фирсова</h3>
             </a>
-            <img class="cards-person__img" src="image/tanya.jpg" alt="Таня Фирсова." />
-            <p class="cards-person__indicator cards-person__indicator--off"><span>Не доступен</span></p>
-            <div class="cards-person__like">
-              <button class="cards-person__like-button button-love" type="button" name="like">
+
+            <p class="person-catalog__indicator person-catalog__indicator--off"><span>Не доступен</span></p>
+            <div class="person-catalog__like">
+              <button class="person-catalog__like-button button-love" type="button" name="like">
                 <span class="visually-hidden">Добавить в избранное</span>
                 <svg class="button-love__icon button-love__icon--like" width="13" height="11" viewBox="0 0 13 11"
                   xmlns="http://www.w3.org/2000/svg">
@@ -259,10 +352,10 @@
                     d="M3.255.474c1.693 0 3.064 1.348 3.064 3.01 0-1.662 1.371-3.01 3.064-3.01s3.064 1.348 3.064 3.01c0 2.505-2.477 3.389-5.828 7.377a.394.394 0 0 1-.6 0C2.669 6.873.19 5.989.19 3.484c0-1.662 1.372-3.01 3.064-3.01Z" />
                 </svg>
               </button>
-              <p class="cards-person__like-count">1,5 М</p>
+              <p class="person-catalog__like-count">1,5 М</p>
             </div>
 
-            <ul class="cards-person__tag hashtag">
+            <ul class="person-catalog__tag hashtag">
               <li class="hashtag__item">
                 <a class="hashtag__link link" href="#">#ЗОЖ</a>
               </li>
@@ -283,8 +376,8 @@
               </li>
             </ul>
 
-            <h4 class="cards-person__subtitle">хочет посетить:</h4>
-            <ul class="cards-person__flag flag-country">
+            <h4 class="person-catalog__subtitle">хочет посетить:</h4>
+            <ul class="person-catalog__flag flag-country">
               <li class="flag-country__item">
                 <a class="flag-country__link link" href="#"> <span>Шри-Ланка</span>
                   <!-- <img class="flag-country__img" src="image/sri-lanka.jpg" alt="Шри-Ланка."> -->
@@ -302,8 +395,8 @@
               </li>
             </ul>
 
-            <h4 class="cards-person__subtitle">транспорт:</h4>
-            <ul class="cards-person__move moving">
+            <h4 class="person-catalog__subtitle person-catalog__subtitle--hidden">транспорт:</h4>
+            <ul class="person-catalog__move moving">
               <li class="moving__item">
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Самолет</span></a>
               </li>
@@ -317,18 +410,21 @@
                 <a class="moving__link"><span class="visually-hidden">Пешком</span></a>
               </li>
             </ul>
-            <p class="cards-person__level">99 <span>level</span></p>
-            <a class="cards-person__invite" href="#">Позвать!</a>
+            <p class="person-catalog__level">99 <span>level</span></p>
+            <a class="person-catalog__invite" href="#">Позвать!</a>
           </li>
 
-          <li class="person-list__item cards-person">
-            <a class="cards-person__link link">
-              <h3 class="cards-person__name">Петя Демин</h3>
+          <li class="person-catalog__item cards-person">
+
+            <img class="person-catalog__img" src="image/petya.jpg" alt="Петя Демин." />
+
+            <a class="person-catalog__link link">
+              <h3 class="person-catalog__name">Петя Демин</h3>
             </a>
-            <img class="cards-person__img" src="image/petya.jpg" alt="Петя Демин." />
-            <p class="cards-person__indicator cards-person__indicator--off"><span>Не доступен</span></p>
-            <div class="cards-person__like">
-              <button class="cards-person__like-button button-love" type="button" name="like">
+            <img class="person-catalog__img" src="image/petya.jpg" alt="Петя Демин." />
+            <p class="person-catalog__indicator person-catalog__indicator--off"><span>Не доступен</span></p>
+            <div class="person-catalog__like">
+              <button class="person-catalog__like-button button-love" type="button" name="like">
                 <span class="visually-hidden">Добавить в избранное</span>
                 <svg class="button-love__icon " width="13" height="11" viewBox="0 0 13 11"
                   xmlns="http://www.w3.org/2000/svg">
@@ -336,10 +432,10 @@
                     d="M3.255.474c1.693 0 3.064 1.348 3.064 3.01 0-1.662 1.371-3.01 3.064-3.01s3.064 1.348 3.064 3.01c0 2.505-2.477 3.389-5.828 7.377a.394.394 0 0 1-.6 0C2.669 6.873.19 5.989.19 3.484c0-1.662 1.372-3.01 3.064-3.01Z" />
                 </svg>
               </button>
-              <p class="cards-person__like-count">1500</p>
+              <p class="person-catalog__like-count">1500</p>
             </div>
 
-            <ul class="cards-person__tag hashtag">
+            <ul class="person-catalog__tag hashtag">
               <li class="hashtag__item">
                 <a class="hashtag__link link" href="#">#бургер</a>
               </li>
@@ -357,8 +453,8 @@
               </li>
             </ul>
 
-            <h4 class="cards-person__subtitle">хочет посетить:</h4>
-            <ul class="cards-person__flag flag-country">
+            <h4 class="person-catalog__subtitle">хочет посетить:</h4>
+            <ul class="person-catalog__flag flag-country">
               <li class="flag-country__item">
                 <a class="flag-country__link link" href="#"><span>Бельгия</span>
                   <!-- <img class="flag-country__img" src="image/belgium.jpg" alt="Бельгия."> -->
@@ -371,8 +467,8 @@
               </li>
             </ul>
 
-            <h4 class="cards-person__subtitle">транспорт:</h4>
-            <ul class="cards-person__move moving">
+            <h4 class="person-catalog__subtitle">транспорт:</h4>
+            <ul class="person-catalog__move moving">
               <li class="moving__item">
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Самолет</span></a>
               </li>
@@ -386,19 +482,22 @@
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Пешком</span></a>
               </li>
             </ul>
-            <p class="cards-person__level">80 <span>level</span></p>
-            <a class="cards-person__invite" href="#">Позвать!</a>
+            <p class="person-catalog__level">80 <span>level</span></p>
+            <a class="person-catalog__invite" href="#">Позвать!</a>
           </li>
 
-          <li class="person-list__item cards-person">
-            <a class="cards-person__link link">
-              <h3 class="cards-person__name">Марк Смолов</h3>
+          <li class="person-catalog__item cards-person">
+
+            <img class="person-catalog__img" src="image/mark.jpg" alt="Марк Смолов." />
+
+            <a class="person-catalog__link link">
+              <h3 class="person-catalog__name">Марк Смолов</h3>
             </a>
-            <!-- Картинку заменить на большой размер не круглую -->
-            <img class="cards-person__img" src="image/mark.jpg" alt="Марк Смолов." />
-            <p class="cards-person__indicator cards-person__indicator--off"><span>Не доступен</span></p>
-            <div class="cards-person__like">
-              <button class="cards-person__like-button button-love" type="button" name="like">
+
+            <img class="person-catalog__img" src="image/mark.jpg" alt="Марк Смолов." />
+            <p class="person-catalog__indicator person-catalog__indicator--off"><span>Не доступен</span></p>
+            <div class="person-catalog__like">
+              <button class="person-catalog__like-button button-love" type="button" name="like">
                 <span class="visually-hidden">Добавить в избранное</span>
                 <svg class="button-love__icon" width="13" height="11" viewBox="0 0 13 11"
                   xmlns="http://www.w3.org/2000/svg">
@@ -409,7 +508,7 @@
               <p class="cards-person__like-count">170</p>
             </div>
 
-            <ul class="cards-person__tag hashtag">
+            <ul class="person-catalog__tag hashtag">
               <li class="hashtag__item">
                 <a class="hashtag__link link" href="#">#рэп</a>
               </li>
@@ -427,27 +526,24 @@
               </li>
             </ul>
 
-            <h4 class="cards-person__subtitle">хочет посетить:</h4>
-            <ul class="cards-person__flag flag-country">
+            <h4 class="person-catalog__subtitle">хочет посетить:</h4>
+            <ul class="person-catalog__flag flag-country">
               <li class="flag-country__item">
                 <a class="flag-country__link link" href="#"> <span>США</span>
-                  <!-- <img class="flag-country__img" src="image/usa.svg" alt="США."> -->
                 </a>
               </li>
               <li class="flag-country__item">
                 <a class="flag-country__link link" href="#"> <span>Австралия</span>
-                  <!-- <img class="flag-country__img" src="image/australia.svg" alt="Австралия."> -->
                 </a>
               </li>
               <li class="flag-country__item">
                 <a class="flag-country__link link" href="#"> <span>Доминика</span>
-                  <!-- <img class="flag-country__img" src="image/dominica.svg" alt="Доминика."> -->
                 </a>
               </li>
             </ul>
 
-            <h4 class="cards-person__subtitle">транспорт:</h4>
-            <ul class="cards-person__move moving">
+            <h4 class="person-catalog__subtitle">транспорт:</h4>
+            <ul class="person-catalog__move moving">
               <li class="moving__item">
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Самолет</span></a>
               </li>
@@ -461,19 +557,21 @@
                 <a class="moving__link"><span class="visually-hidden">Пешком</span></a>
               </li>
             </ul>
-            <p class="cards-person__level">25 <span>level</span></p>
-            <a class="cards-person__invite" href="#">Позвать!</a>
+            <p class="person-catalog__level">25 <span>level</span></p>
+            <a class="person-catalog__invite" href="#">Позвать!</a>
           </li>
 
-          <li class="person-list__item cards-person">
-            <a class="cards-person__link link">
-              <h3 class="cards-person__name">Лариса Роговая</h3>
+          <li class="person-catalog__item cards-person">
+
+            <img class="person-catalog__img" src="image/larisa.jpg" alt="Лариса Роговая." />
+
+            <a class="person-catalog__link link">
+              <h3 class="person-catalog__name">Лариса Роговая</h3>
             </a>
-            <!-- Картинку заменить на большой размер не круглую -->
-            <img class="cards-person__img" src="image/larisa.jpg" alt="Лариса Роговая." />
-            <p class="cards-person__indicator"><span>Доступен</span></p>
-            <div class="cards-person__like">
-              <button class="cards-person__like-button button-love" type="button" name="like">
+
+            <p class="person-catalog__indicator"><span>Доступен</span></p>
+            <div class="person-catalog__like">
+              <button class="person-catalog__like-button button-love" type="button" name="like">
                 <span class="visually-hidden">Добавить в избранное</span>
                 <svg class="button-love__icon" width="13" height="11" viewBox="0 0 13 11"
                   xmlns="http://www.w3.org/2000/svg">
@@ -481,10 +579,10 @@
                     d="M3.255.474c1.693 0 3.064 1.348 3.064 3.01 0-1.662 1.371-3.01 3.064-3.01s3.064 1.348 3.064 3.01c0 2.505-2.477 3.389-5.828 7.377a.394.394 0 0 1-.6 0C2.669 6.873.19 5.989.19 3.484c0-1.662 1.372-3.01 3.064-3.01Z" />
                 </svg>
               </button>
-              <p class="cards-person__like-count">23</p>
+              <p class="person-catalog__like-count">23</p>
             </div>
 
-            <ul class="cards-person__tag hashtag">
+            <ul class="person-catalog__tag hashtag">
               <li class="hashtag__item">
                 <a class="hashtag__link link" href="#">#образование</a>
               </li>
@@ -499,22 +597,20 @@
               </li>
             </ul>
 
-            <h4 class="cards-person__subtitle">хочет посетить:</h4>
-            <ul class="cards-person__flag flag-country">
+            <h4 class="person-catalog__subtitle">хочет посетить:</h4>
+            <ul class="person-catalog__flag flag-country">
               <li class="flag-country__item">
                 <a class="flag-country__link link" href="#"> <span>Великобритания</span>
-                  <!-- <img class="flag-country__img" src="image/uk.svg" alt="Великобритания."> -->
                 </a>
               </li>
               <li class="flag-country__item">
                 <a class="flag-country__link link" href="#"> <span>Германия</span>
-                  <!-- <img class="flag-country__img" src="image/germany.svg" alt="Германия."> -->
                 </a>
               </li>
             </ul>
 
-            <h4 class="cards-person__subtitle">транспорт:</h4>
-            <ul class="cards-person__move moving">
+            <h4 class="person-catalog__subtitle">транспорт:</h4>
+            <ul class="person-catalog__move moving">
               <li class="moving__item">
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Самолет</span></a>
               </li>
@@ -528,21 +624,37 @@
                 <a class="moving__link"><span class="visually-hidden">Пешком</span></a>
               </li>
             </ul>
-            <p class="cards-person__level"> 50 <span>level</span></p>
-            <a class="cards-person__invite" href="#">Позвать!</a>
+            <p class="person-catalog__level"> 50 <span>level</span></p>
+            <a class="person-catalog__invite" href="#">Позвать!</a>
           </li>
         </ul>
-        <button class="catalog-traveler__offers-button button-all" type="button" name="Show more">Показать еще</button>
-        <a class="catalog-traveler__offers-pagination  catalog-traveler__offers-pagination--prev"
-          href="#">Предыдущая</a>
-        <a class="catalog-traveler__offers-pagination  catalog-traveler__offers-pagination--next" href="#">Следующая</a>
+        <button class="catalog-traveler__offers-button button-all" type="button" name="Show more">Показать
+          еще</button>
+
+        <div class="catalog-traveler__offers-pagination">
+          <div class="catalog-traveler__offers-pagination-number">
+            <a class="catalog-traveler__offers-pagination-number-item" href="#">1</a>
+            <a class="catalog-traveler__offers-pagination-number-item" href="#">2</a>
+            <a class="catalog-traveler__offers-pagination-number-item" href="#">3</a>
+            <a class="catalog-traveler__offers-pagination-number-item" href="#">4</a>
+          </div>
+
+          <a class="catalog-traveler__offers-pagination-item  catalog-traveler__offers-pagination-item--prev"
+            href="#">Предыдущая</a>
+          <a class="catalog-traveler__offers-pagination-item  catalog-traveler__offers-pagination-item--next"
+            href="#">Следующая</a>
+        </div>
+
+
       </section>
+
+    </div>
 
     </div>
   </main>
 
   <footer class="inner-footer">
-    <div class="inner-footer__wrapper">
+    <div class="container inner-footer__wrapper">
       <a class="inner-footer__logo">
         <img class="inner-footer__logo-image" src="image/logo-black.svg" width="96" height="15"
           alt="Логотип Погнали." />
@@ -560,7 +672,8 @@
       </ul>
       <div class="inner-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__link link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
+        <a class="copyright__link link" href="https://htmlacademy.ru/intensive/adaptive"><span
+            class="visually-hidden">HTML
             Academy</span>
           <img class="copyright__logo" src="image/html.svg" alt="Логотип HTML Academy" />
         </a>
