@@ -1,0 +1,199 @@
+.registration {
+  margin: 0;
+  background-color: #192144;
+  position: relative;
+  z-index: 4;
+  margin-top: -30px;
+  border-radius: 0 0 30px 30px;
+  padding-bottom: 30px;
+  padding-top: 102px;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 130px;
+  }
+}
+
+
+.registration__name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: @special_orange;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 45px;
+    padding: 0;
+    margin-bottom: 60px;
+  }
+}
+
+
+.registration__description {
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+  line-height: 1.38;
+  width: 70%;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 1.14;
+    margin-bottom: 65px;
+  }
+}
+
+.registration__login {
+  color: #ffd74b;
+}
+
+
+.registration__contacts {
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 70px;
+  }
+}
+
+.registration__form {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 20%;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: auto 30%;
+    margin: 0;
+  }
+}
+
+
+.registration__email {
+  border-radius: 5px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 25px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  color: @special_grey;
+  border: none;
+
+
+  @media (min-width: @tablet-width) {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  // @media (min-width: @desktop-width) {}
+}
+
+input[type="email"]::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+input[type="email"]::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.registration__email-button {
+  width: 66px;
+  height: 66px;
+  background-color: @basic_yellow;
+  border-radius: 10px;
+  border: none;
+  margin-left: -10px;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    padding-left: 36px;
+  }
+}
+
+.registration__contacts-text {
+  margin-left: 40px;
+  margin-right: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.registration__contacts-mail svg {
+  fill: @basic_yellow;
+}
+
+.registration__contacts-icon {
+  margin-right: 16px;
+  width: 45px;
+  height: 45px;
+  background-color: #121936;
+  border-radius: 50%;
+  padding: 10px;
+
+  @media (min-width: @tablet-width) {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.registration__contacts-item {
+  margin: 0;
+
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    text-align: left;
+    margin-left: 100px;
+  }
+}
+
+
+.registration__contacts-wrapper {
+  text-align: left;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 78px;
+  }
+}
+
+.registration__contacts-tel,
+.registration__contacts-mail {
+  font-weight: 700;
+  line-height: 1.38;
+  color: #ffd74b;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.registration__email-text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: left;
+  }
+}

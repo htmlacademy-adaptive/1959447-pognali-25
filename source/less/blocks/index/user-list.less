@@ -1,0 +1,32 @@
+.user-list__tel,
+.user-list__mail {
+  background-color: @special_orange;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-position: center;
+}
+
+.user-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.user-list__login-button {
+  padding: 12px 40px;
+  font-size: 17px;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}

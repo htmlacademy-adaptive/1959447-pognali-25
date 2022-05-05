@@ -1,0 +1,78 @@
+.address {
+  background-color: #ffd74b;
+  position: relative;
+  z-index: 3;
+  margin-top: -30px;
+  border-radius: 0 0 30px 30px;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.address-container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.address__text {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1d2e5b;
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.address__text::before {
+  content: "";
+  background-image: url("../image/map_mark.svg");
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: -40%;
+
+  @media (min-width: @tablet-width) {
+    width: 68px;
+    height: 68px;
+    left: -15%;
+  }
+}
+
+
+.address__link {
+  border: 3px solid #192144;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  padding: 22px;
+  display: block;
+  text-decoration: none;
+  color: #1d2e5b;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    padding: 29px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+}
+
+.address__map {
+  width: 100%;
+}

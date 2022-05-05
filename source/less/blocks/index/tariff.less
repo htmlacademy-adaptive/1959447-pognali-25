@@ -1,0 +1,175 @@
+.tariff {
+  background-color: #e6e8f1;
+  margin: 0;
+  border-radius: 0 0 30px 30px;
+  position: relative;
+  z-index: 5;
+  margin-top: -30px;
+}
+
+
+.tariff-container {
+  padding-top: 67px;
+  padding-bottom: 37px;
+  text-align: left;
+  background-image: url("../image/rates.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 15%;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 104px;
+    padding-bottom: 74px;
+    background-position: bottom 15% right 10%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 100px;
+  }
+}
+
+
+.tariff__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: @special_orange;
+  margin: 0;
+  margin-left: 24px;
+  margin-bottom: 56px;
+  width: 40%;
+
+  @media (min-width: @tablet-width) {
+    font-size: 45px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 73px;
+  }
+}
+
+.tariff__plan {
+  margin: 0;
+  margin-left: 24px;
+  padding: 0;
+  counter-reset: orderedlist;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 35px;
+    padding-left: 90px;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 70%;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+.tariff__name,
+.tariff__price {
+  font-weight: 300;
+  line-height: 16px;
+  color: #444444;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 1;
+  }
+}
+
+
+.tariff__button {
+  color: #132576;
+  font-weight: 700;
+  background-color: transparent;
+  display: block;
+  text-transform: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    text-transform: none;
+    text-align: left;
+    margin-left: 89px;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 160px;
+    margin-top: 70px;
+  }
+}
+
+
+.tariff__button::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    width: 68px;
+    height: 68px;
+    background-image: url("..//image/icon_businessman.svg");
+    background-repeat: no-repeat;
+    background-color: #e2e5f2;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    left: -12%;
+    top: -100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -9%;
+  }
+}
+
+
+.tariff__name {
+  margin-bottom: 6px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    border-bottom: 1px solid #e1e3e9;
+  }
+}
+
+.tariff__price {
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #e1e3e9;
+}
+
+.tariff__plan dt::before {
+  counter-increment: orderedlist;
+  content: counter(orderedlist);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  position: absolute;
+  right: 10%;
+  padding: 10px 15px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: @special_yellow_dark;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    padding: 18px 25px;
+    right: auto;
+    top: -25%;
+    left: -25%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 19px 27px;
+  }
+}
+
+.tariff__plan dt:nth-child(1)::before {
+  background-color: @special_orange;
+}

@@ -1,0 +1,151 @@
+.step {
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #1d2e5b;
+  padding: 25px;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    padding: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 100px;
+  }
+}
+
+.step__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    margin-bottom: 33px;
+  }
+}
+
+.step__title-name {
+  margin: 0;
+}
+
+.step__description {
+  width: 90%;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 1.2;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+
+.step__pagination {
+  border-radius: 20px;
+  line-height: 1.38;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    width: 50%;
+  }
+}
+
+.step__form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/-1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.step__form-сompanion {
+  margin-bottom: 20px;
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
+  }
+}
+
+.step__form-child {
+  @media (min-width: @desktop-width) {
+    width: 50%;
+  }
+}
+
+.step__form-continued {
+  margin-bottom: 20px;
+}
+
+
+.step__form-calendar {
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.step__pagination-list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/-1;
+  }
+}
+
+
+.step__form-country {
+  @media (min-width: @tablet-width) {
+    grid-column: 1/-1;
+    width: 100%;
+  }
+}
+
+.button--back {
+  margin-left: auto;
+  text-transform: none;
+}
+
+.step__navigation {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    grid-row: 1/3;
+  }
+}
+
+.step__navigation-link {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.step__navigation-link--current {
+  opacity: 1;
+}
+
+.step__navigation-item {
+  margin-bottom: 27px;
+}
