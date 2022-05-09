@@ -13,6 +13,13 @@
   }
 }
 
+.navigation__list::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: #ffffff;
+}
 
 .navigation--decktop {
   display: none;
@@ -30,7 +37,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 34px;
+    margin-right: 34px;
   }
 }
 

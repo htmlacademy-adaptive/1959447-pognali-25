@@ -1,12 +1,14 @@
 .promo {
-  background-image: url("../image/globe-back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  padding-top: 20px;
+  background-color: #161c36;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 30px;
+  }
+
 
   @media (min-width: @desktop-width) {
     background-image: none;
-    background-color: rgb(24, 32, 68);
   }
 }
 
@@ -14,11 +16,7 @@
   padding-bottom: 39px;
 
   @media (min-width: @desktop-width) {
-    // background-image: url("..//image/traveller-illustration-desktop 1.png");
-    // background-size: contain;
-    // background-repeat: no-repeat;
-    background-color: rgb(24, 32, 68);
-    // background-position: bottom right 400px;
+    background-color: #161c36;
     padding-bottom: 150px;
     display: flex;
     flex-direction: column;
@@ -35,7 +33,7 @@
 .promo__contacts {
   padding: 0;
   margin: 0 auto;
-  margin-top: -20px;
+  margin-top: -30px;
 }
 
 .promo__title {
@@ -45,11 +43,12 @@
   margin: 0;
   margin-bottom: 10px;
 
+
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 1.17;
     margin: 0 auto;
-    width: 50%;
+    width: 60%;
     margin-bottom: 32px;
   }
 
@@ -63,7 +62,7 @@
 .promo__review {
   margin: 0;
   margin-top: 28px;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   margin-left: 25px;
 
   @media (min-width: @tablet-width) {
@@ -82,15 +81,25 @@
   }
 }
 
-.promo__background {
-  background-image: url("..//image/traveller-illustration-mobile.png");
-  width: 192px;
-  height: 255px;
+.promo__illustration {
+  background-image: url("..//image/globe-back-mobile1.png");
   background-repeat: no-repeat;
-  margin: 0 auto;
+  background-size: cover;
+  width: calc(100% + 50px);
+  margin-left: -25px;
+  margin-right: -25px;
+}
+
+
+.promo__background {
+  height: 265px;
+  background: url("..//image/traveller-illustration-mobile.png") bottom right 75px no-repeat;
+
 
   @media (min-width: @tablet-width) {
-    background-image: url("..//image/traveller-illustration-tablet.png");
+    background: url("..//image/traveller-illustration-tablet.png");
+    margin-left: auto;
+    margin-right: 100px;
     width: 372px;
     height: 451px;
     order: 2;
@@ -132,7 +141,7 @@
 
 .promo__offers-text {
   padding-top: 22px;
-  padding-bottom: 24px;
+  padding-bottom: 30px;
   padding-left: 24px;
   border-radius: 10px 10px 0 0;
 
@@ -216,6 +225,7 @@
   background-color: @basic_yellow;
   margin-top: -8px;
   border-radius: 10px;
+  padding-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     margin-left: -8px;

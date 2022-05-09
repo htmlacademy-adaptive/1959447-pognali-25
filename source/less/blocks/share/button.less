@@ -12,7 +12,6 @@
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
-    font-size: 24px;
     line-height: 1;
   }
 }
@@ -28,8 +27,21 @@
   line-height: 100%;
   color: @basic_blue_light;
   text-transform: none;
+  text-align: left;
+  padding-left: 23px;
 }
 
+.button--all::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 16px solid #1d2e5b;
+  border-bottom: 8px solid transparent;
+  position: absolute;
+  right: 50px;
+  margin-top: 2px;
+}
 
 .button--back {
   background-color: transparent;
