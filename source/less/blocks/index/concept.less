@@ -6,6 +6,11 @@
   z-index: 8;
   padding-top: 30px;
   padding-bottom: 82px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 85px;
+    padding-bottom: 90px;
+  }
 }
 
 .concept-container {
@@ -34,6 +39,7 @@
 
   @media (min-width: @tablet-width) {
     width: 50%;
+    padding-left: 32px;
   }
 }
 
@@ -60,6 +66,8 @@
 
   @media (min-width: @tablet-width) {
     font-size: 28px;
+    line-height: 1.18;
+    margin-top: 40px;
   }
 }
 
@@ -71,6 +79,7 @@
   @media (min-width: @tablet-width) {
     font-size: 21px;
     line-height: 1.19;
+    margin-top: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -86,10 +95,10 @@
     display: block;
     margin-left: 40px;
     max-width: 276px;
-    font-weight: 700;
     font-size: 24px;
     line-height: 1;
     margin-top: 56px;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {

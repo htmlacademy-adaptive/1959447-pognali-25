@@ -8,11 +8,14 @@
   padding-bottom: 40px;
   padding-top: 100px;
 
+  @media (min-width: @tablet-width) {
+    padding-bottom: 80px;
+  }
+
   @media (min-width: @desktop-width) {
     padding-bottom: 130px;
   }
 }
-
 
 .registration__name {
   font-weight: 700;
@@ -43,6 +46,7 @@
     font-size: 28px;
     line-height: 1.14;
     margin-bottom: 65px;
+    width: 100%;
   }
 }
 
@@ -56,6 +60,10 @@
   padding-top: 12px;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 33px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-top: 70px;
@@ -119,6 +127,7 @@ input[type="email"]::-moz-placeholder {
   @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
@@ -128,13 +137,25 @@ input[type="email"]::-moz-placeholder {
   }
 }
 
+.registration__email-button::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 16px solid #1d2e5b;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    top: 40%;
+  }
+}
+
 .registration__contacts-text {
   @media (min-width: @tablet-width) {
     font-size: 28px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
+    line-height: 1.07;
+    margin: 0 auto;
+    margin-top: 28px;
   }
 }
 
@@ -169,6 +190,10 @@ input[type="email"]::-moz-placeholder {
 
 .registration__contacts-item--tel {
   margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .registration__contacts-item--tel::before,
@@ -183,6 +208,12 @@ input[type="email"]::-moz-placeholder {
   background-position: center;
   left: -60px;
   top: -10px;
+
+  @media (min-width: @tablet-width) {
+    width: 68px;
+    height: 68px;
+    left: -20%;
+  }
 }
 
 .registration__contacts-item--tel::before {
@@ -197,6 +228,11 @@ input[type="email"]::-moz-placeholder {
   text-align: left;
   padding-left: 40px;
   padding-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 60px;
+    padding-left: 0;
+  }
 
   @media (min-width: @desktop-width) {
     display: flex;

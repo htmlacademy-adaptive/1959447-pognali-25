@@ -6,6 +6,11 @@
   border-radius: 0 0 30px 30px;
   padding-top: 61px;
   padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 95px;
+    padding-bottom: 80px;
+  }
 }
 
 .address-container {
@@ -30,7 +35,10 @@
   @media (min-width: @tablet-width) {
     font-size: 28px;
     line-height: 1;
+    margin: 0 auto;
     margin-bottom: 62px;
+    width: auto;
+    text-align: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -40,20 +48,25 @@
 
 .address__text::before {
   content: "";
-  background-image: url("../image/map_mark.svg");
-  background-repeat: no-repeat;
   width: 45px;
   height: 45px;
+  background-color: #161c35;
+  padding: 12px;
+  background-image: url("../image/map_mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
   position: absolute;
   left: -30%;
 
   @media (min-width: @tablet-width) {
     width: 68px;
     height: 68px;
-    left: -15%;
+    padding: 18px;
+    left: 5%;
+    top: -25%;
   }
 }
-
 
 .address__link {
   border: 3px solid #192144;

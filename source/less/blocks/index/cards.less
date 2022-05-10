@@ -22,7 +22,8 @@
     margin: 0;
     border-radius: 10px 0 0 10px;
     display: block;
-    padding: 30px 20px;
+    padding: 25px 30px;
+    padding-bottom: 27px;
     text-align: left;
   }
 }
@@ -55,6 +56,17 @@
   position: absolute;
   top: -35px;
   border-radius: 5px;
+
+  @media (min-width: @tablet-width) {
+    width: 70px;
+    height: 47px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: auto;
+    right: -20%;
+  }
+
+
 }
 
 .cards__item:nth-child(1) .cards__name::before {
@@ -99,7 +111,10 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    margin-top: 17px;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 20px;
+    line-height: 1;
   }
 }
 
@@ -111,6 +126,15 @@
   position: absolute;
   top: 5px;
   left: -15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 24px;
+    top: auto;
+    left: -10%;
+  }
 }
 
 .cards__img {
@@ -120,6 +144,6 @@
   @media (min-width: @tablet-width) {
     order: 2;
     border-radius: 0 10px 10px 0;
-    width: 50%;
+    width: 30%;
   }
 }

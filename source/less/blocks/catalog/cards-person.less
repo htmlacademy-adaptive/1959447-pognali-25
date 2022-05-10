@@ -7,12 +7,11 @@
   position: relative;
   align-items: center;
   padding-bottom: 10px;
-}
 
-@media (min-width: @tablet-width) {
-  .cards-person {
+  @media (min-width: @tablet-width) {
     width: 100%;
     margin: 0;
+    padding-bottom: 25px;
   }
 }
 
@@ -24,9 +23,15 @@
   margin-top: 7px;
   margin-bottom: 12px;
   width: 70%;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 12px;
+    margin-bottom: 22px;
+    width: 100%;
+  }
 }
 
-// Картинка и рейтинг отдельно
+
 .cards-person__pic {
   order: -1;
   width: 100%;
@@ -100,10 +105,15 @@
 .cards-person__name {
   font-weight: 700;
   font-size: 21px;
-  line-height: 21px;
+  line-height: 1;
   text-align: center;
   color: @basic_blue_light;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 0.92;
+  }
 }
 
 .cards-person__tag {
@@ -114,29 +124,19 @@
   max-width: 70%;
   padding: 0;
   margin-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    width: 90%;
+    margin-bottom: 25px;
+  }
 }
 
 .cards-person__move {
-  color: #1d2e5b;
-  list-style: none;
   display: flex;
   padding: 0;
-
-  li {
-    padding: 7px;
-  }
 }
 
 // Вложенные селекторы убрать!!
-
-.moving__link {
-  fill: @basic_blue_light;
-  opacity: 0.15;
-
-  &--current {
-    opacity: 1;
-  }
-}
 
 .cards-person__flag {
   display: flex;
@@ -144,4 +144,8 @@
   margin: 0;
   margin-top: -10px;
   order: -1;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -15px;
+  }
 }
