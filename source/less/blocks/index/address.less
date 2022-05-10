@@ -4,8 +4,8 @@
   z-index: 3;
   margin-top: -30px;
   border-radius: 0 0 30px 30px;
-  padding-top: 100px;
-  padding-bottom: 80px;
+  padding-top: 61px;
+  padding-bottom: 35px;
 }
 
 .address-container {
@@ -20,11 +20,12 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #1d2e5b;
-  margin-left: 90px;
-  margin-right: 90px;
+  width: 60%;
+  margin-left: 61px;
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   position: relative;
+  text-align: left;
 
   @media (min-width: @tablet-width) {
     font-size: 28px;
@@ -44,7 +45,7 @@
   width: 45px;
   height: 45px;
   position: absolute;
-  left: -40%;
+  left: -30%;
 
   @media (min-width: @tablet-width) {
     width: 68px;
@@ -60,10 +61,12 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 1;
-  padding: 22px;
+  padding: 21px;
   display: block;
   text-decoration: none;
   color: #1d2e5b;
+  position: relative;
+  text-align: left;
 
   @media (min-width: @tablet-width) {
     font-size: 24px;
@@ -75,4 +78,16 @@
 
 .address__map {
   width: 100%;
+}
+
+.address__link::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 16px solid #1d2e5b;
+  border-bottom: 8px solid transparent;
+  position: absolute;
+  right: 15px;
+  margin-top: 2px;
 }

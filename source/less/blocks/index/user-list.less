@@ -1,10 +1,21 @@
 .user-list__tel,
 .user-list__mail {
-  background-color: @special_orange;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-position: center;
+  background-repeat: no-repeat;
+}
+
+.user-list__mail {
+  background-color: #ffbd30;
+  background-image: url("../image/icon_mail.svg");
+}
+
+
+.user-list__tel {
+  background-color: @special_orange;
+  background-image: url("../image/icon_call.svg");
 }
 
 .user-list {
