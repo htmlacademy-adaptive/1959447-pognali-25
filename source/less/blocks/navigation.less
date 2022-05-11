@@ -13,13 +13,6 @@
   }
 }
 
-.navigation__list::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 2px;
-  background-color: #ffffff;
-}
 
 .navigation--decktop {
   display: none;
@@ -53,6 +46,14 @@
   line-height: 1.17;
   color: #192144;
   text-transform: uppercase;
+
+  &:hover {
+    color: @basic_yellow;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 60px;

@@ -1,21 +1,22 @@
 .person {
-  position: relative;
-  z-index: 6;
-  margin-top: -30px;
-  border-radius: 0 0 30px 30px;
-  background-color: #192144;
-  padding-top: 59px;
-  padding-bottom: 30px;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 100px;
-    padding-bottom: 80px;
-  }
+  background-color: #e6e8f1;
 }
 
-.person-container {
+.person__box {
+  border-radius: 0 0 30px 30px;
+  background-color: #192144;
+}
+
+.person__container {
+  padding-top: 65px;
+  padding-bottom: 31px;
   background-image: url("..//image/back-person.png");
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
 
   @media (min-width: @desktop-width) {
     display: grid;
@@ -33,7 +34,6 @@
   line-height: 1;
   color: @special_orange;
   margin: 0;
-  margin-top: 33px;
   margin-left: 23px;
   text-align: left;
 
@@ -48,14 +48,17 @@
   color: #ffffff;
   font-weight: 300;
   line-height: 1.38;
-  margin: 22px 30px 54px 22px;
+  padding-top: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
   text-align: left;
 
 
   @media (min-width: @tablet-width) {
     font-size: 28px;
     line-height: 1.18;
-    margin: 60px 0 65px 30px;
+    margin: 55px 0 10px 10px;
     width: 70%;
   }
 
@@ -73,14 +76,13 @@
     font-size: 21px;
     line-height: 1.14;
     margin-top: 40px;
-    width: 60%;
   }
 }
 
 .person__button {
   font-family: "Blogger Sans", sans-serif;
   border: none;
-  position: relative;
+  margin-top: 20px;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
