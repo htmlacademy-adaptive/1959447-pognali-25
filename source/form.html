@@ -8,14 +8,14 @@
   <title>Погнали - форма</title>
 </head>
 
-<body class="page__body">
+<body class="page__body form">
   <header class="header">
     <div class="header__wrapper container">
       <a class="header__logo" href="index.html">
         <span class="visually-hidden">Логотип Погнали</span>
       </a>
 
-      <button class="header__toggle" type="button">
+      <button class="header__toggle header__toggle--closed" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
@@ -68,8 +68,13 @@
   <main class="form-container">
     <form class="form-container__wrapper" action="https://echo.htmlacademy.ru/" method="get">
 
-      <div class="title">
-        <h1 class="title__text">Направления</h1>
+      <div class="title title--form">
+        <div class="title__wrap">
+          <div class="title__box container">
+            <h1 class="title__text">Направления</h1>
+            <a class="title__link link" href="index.html">На главную</a>
+          </div>
+        </div>
       </div>
 
       <section class="person-info">
@@ -84,12 +89,12 @@
           </div>
 
           <div class="person-info__tag hashtag-form">
-            <label class="hashtag-form__title" for="hashtag">Тэги</label>
+            <label class="hashtag-form__title label-title" for="hashtag">Тэги</label>
             <textarea class="hashtag-form__content" id="hashtag">#бургер #бар #футбол #концерт #крафт
           </textarea>
           </div>
           <div class="person-info__move-wrapper">
-            <p class="person-info__move-name">Транспорт</p>
+            <p class="person-info__move-name label-title">Транспорт</p>
             <ul class="person-info__move moving">
               <li class="moving__item">
                 <label class="moving__item-title" for="plane"><span class="visually-hidden">Самолет</span></label>
@@ -136,7 +141,7 @@
 
 
       <section class="constructor">
-        <div class="container">
+        <div class="constructor__box container">
           <div class="constructor__wrapper">
             <h2 class="constructor__title">Добавить план:</h2>
             <ol class="constructor__pagination pagination">
@@ -154,7 +159,7 @@
           </div>
 
           <section class="constructor__plan-item step" id="step1">
-            <h3 class="step__title">Шаг 1. <span class="step__title-name">Даты пребывания</span>
+            <h3 class="step__title">Шаг&#160;1. <span class="step__title-name">Даты&#160;пребывания</span>
             </h3>
             <p class="step__description">
               Укажите предпочтительное количество попутчиков, которых
@@ -399,7 +404,7 @@
 
 
           <section class="constructor__plan-item step" id="step2">
-            <h3 class="step__title">Шаг 2.<span class="step__title-name">Маршрут</span>
+            <h3 class="step__title">Шаг&#160;2.<span class="step__title-name">Маршрут</span>
             </h3>
             <p class="step__description"> Укажите страны, которые вы&#160;хотели&#160;бы посетить. Это может быть одна
               или
@@ -522,7 +527,7 @@
 
 
           <section class="constructor__plan-item step" id="step3">
-            <h3 class="step__title">Шаг 3.<span class="step__title-name">Развлечения</span></h3>
+            <h3 class="step__title">Шаг&#160;3.<span class="step__title-name"> Развлечения</span></h3>
             <p class="step__description">Наконец, расскажите о&#160;своих планах времяпровождения. Можно писать
               в&#160;свободной форме и&#160;ставить тэги.</p>
 
@@ -539,11 +544,11 @@
             </ul>
 
             <div class="step__form ">
-              <div class="step__form-fun fun">
+              <div class="step__form-fun fun fun--bosnia">
                 <label class="fun__title">Босния и Герцеговина</label>
                 <textarea class="fun__comment" placeholder="План действий"></textarea>
               </div>
-              <div class="step__form-fun fun">
+              <div class="step__form-fun fun fun--сzech">
                 <label class="fun__title">Чехия</label>
                 <textarea class="fun__comment" rows=5
                   placeholder="План действий">Пить пиво и&#160;лазить по&#160;старым замкам, наслаждаться архитектурой и&#160;вот это все.</textarea>
@@ -561,23 +566,25 @@
     </form>
   </main>
 
-  <footer class="form-footer">
-    <div class="container form-footer__wrapper">
-      <a class="form-footer__logo">
-        <img class="form-footer__logo-image" src="image/logo-black.svg" width="96" height="15" alt="Логотип Погнали." />
+  <footer class="footer">
+    <div class="container footer-container">
+      <a class="footer__logo" href="index.html">
+        <span class="visually-hidden">Логотип Погнали</span>
       </a>
-      <ul class="form-footer__list social">
-        <li class="social__item">
-          <a class="social-link link social-link--tm" href=""><span class="visually-hidden">Telegram</span></a>
+
+      <ul class="footer__list social">
+        <li class="social__item social__item--tm">
+          <a class="social-link link" href=""><span class="visually-hidden">Telegram</span></a>
         </li>
-        <li class="social__item">
-          <a class="social-link link social-link--vk" href=""><span class="visually-hidden">Vk</span></a>
+        <li class="social__item social__item--vk">
+          <a class="social-link link" href=""><span class="visually-hidden">Vk</span></a>
         </li>
-        <li class="social__item">
-          <a class="social-link link social-link--youtube" href=""><span class="visually-hidden">Youtube</span></a>
+        <li class="social__item social__item--you">
+          <a class="social-link link" href=""><span class="visually-hidden">Youtube</span></a>
         </li>
       </ul>
-      <div class="form-footer__copyright copyright">
+
+      <div class="footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link link " href="https://htmlacademy.ru/intensive/adaptive"><span
             class="visually-hidden">HTML

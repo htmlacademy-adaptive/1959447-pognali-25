@@ -1,8 +1,6 @@
 .person-info {
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 64px;
-  z-index: 2;
+
 
   @media (min-width: @desktop-width) {
     padding-top: 0;
@@ -133,6 +131,8 @@
 .person-info__tag {
   width: 100%;
   margin-top: 33px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
     grid-column: 1/-1;
@@ -166,3 +166,36 @@
   padding: 0;
   justify-content: center;
 }
+
+// .person-info__move {
+//   .moving__item {
+//     margin-right: 10px;
+//     width: 32px;
+//     height: 32px;
+//     background-color: #edeff6;
+//     border-radius: 50%;
+//     background-size: center;
+//     background-repeat: no-repeat;
+//     background-position: center center;
+
+//     @media (min-width: @tablet-width) {
+//       background-color: transparent;
+//     }
+//   }
+
+//   .moving__item--plane {
+//     background-image: url("..//image/plane.svg");
+//   }
+
+//   .moving__item--auto {
+//     background-image: url("..//image/auto.svg");
+//   }
+
+//   .moving__item--bike {
+//     background-image: url("..//image/bicycle.svg");
+//   }
+
+//   .moving__item--walk {
+//     background-image: url("..//image/run.svg");
+//   }
+// }

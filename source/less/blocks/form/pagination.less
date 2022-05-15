@@ -1,3 +1,36 @@
+.pagination {
+  list-style: none;
+}
+
 .pagination__item {
   margin-left: 15px;
+}
+
+.pagination__item-link {
+  width: 5px;
+  height: 5px;
+  background-color: #1d2e5b;
+  border-radius: 50%;
+  opacity: 0.3;
+  margin-right: 6px;
+  border: 2px solid rgba(252, 252, 252, 0.1);
+  display: block;
+  box-sizing: border-box;
+  padding: 3px;
+
+  &:hover {
+    outline: 2px solid #1d2e5b;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.pagination__item-link--current {
+  opacity: 1;
+
+  &:hover {
+    outline: 2px solid #1d2e5b;
+  }
 }

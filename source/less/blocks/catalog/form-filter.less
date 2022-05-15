@@ -1,3 +1,12 @@
+.form-filter__item:last-of-type {
+  border-bottom: none;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid #f3c72b;
+  }
+}
+
+
 .form-filter__button {
   width: 100%;
   padding-top: 14px;
@@ -10,5 +19,18 @@
     font-size: 20px;
     padding-top: 18px;
     padding-bottom: 18px;
+    margin-top: 36px;
+  }
+}
+
+.form-filter__item {
+  border: none;
+  padding: 0;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f3c72b;
+
+  @media (min-width: @tablet-width) {
+    border: none;
   }
 }

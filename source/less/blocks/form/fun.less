@@ -1,0 +1,76 @@
+.fun {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 44px;
+  }
+}
+
+.fun__comment {
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+  color: @special_grey;
+  overflow: hidden;
+  resize: none;
+  margin-top: 18px;
+  width: 100%;
+
+  &:hover {
+    border: 1px solid #959bb2;
+  }
+
+  &:active {
+    border: 1px solid #161c35;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 1.15;
+    padding: 18px;
+    margin-top: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 25px;
+  }
+}
+
+.fun__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: @basic_blue_light;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 700;
+    font-size: 30px;
+  }
+}
+
+
+.fun__title::after {
+  content: "";
+  width: 35px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+
+.fun--сzech .fun__title::after {
+  background-image: url("..//image/czech.jpg");
+}
+
+.fun--bosnia .fun__title::after {
+  background-image: url("..//image/bosnia.jpg");
+}

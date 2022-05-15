@@ -3,10 +3,11 @@
 }
 
 .catalog-traveler__wrapper {
+  margin: 0;
+  border-radius: 0 0 30px 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 0;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     align-items: baseline;
@@ -15,6 +16,38 @@
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
+    flex-wrap: nowrap;
+  }
+}
+
+
+.catalog-traveler__filter {
+  padding-top: 19px;
+  padding-bottom: 15px;
+  background-color: #e2e5f2;
+  margin-bottom: 21px;
+  border-radius: 0 0 30px 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 43px;
+  }
+}
+
+.catalog-traveler__location {
+  display: none;
+  padding-top: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    margin-right: auto;
   }
 }
 
@@ -25,44 +58,42 @@
   text-transform: uppercase;
   color: #192144;
   margin: 0;
+  display: flex;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
 
   @media (min-width: @desktop-width) {
-    display: block;
+    display: flex;
     font-size: 20px;
-    margin-right: auto;
+    line-height: 1;
   }
 }
 
+.catalog-traveler__title::before {
+  content: "";
+  width: 16px;
+  height: 10px;
+  background-image: url("..//image/icon_filter.svg");
+  margin-right: 10px;
 
-.catalog-traveler__filter {
-  margin-top: -13px;
-  padding-top: 33px;
-  padding-bottom: 15px;
-  background-color: #e2e5f2;
-  margin-bottom: 21px;
-  border-radius: 0 0 20px 20px;
-}
-
-.catalog-traveler__location {
-  // display: none;
-  padding-top: 20px;
-  width: 100%;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    padding: 0;
+  @media (min-width: @desktop-width) {
+    width: 23px;
+    height: 15px;
+    margin-right: 22px;
   }
 }
+
 
 // Версия на планшете скрываем по разделам
 
 .location__form-country {
   @media (min-width: @tablet-width) {
     // display: none;
+    padding-top: 25px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: @desktop-width) {
@@ -70,9 +101,8 @@
   }
 }
 
-
 .catalog-traveler__button {
-  background: #d6daed;
+  background-color: transparent;
   width: 20px;
   height: 20px;
   margin-left: auto;
@@ -83,8 +113,11 @@
     background-color: inherit;
     font-size: 20px;
     position: absolute;
-    top: 20px;
+    top: 50%;
+    bottom: 0;
+    transform: translateY(-50%);
     right: 5%;
+    display: flex;
   }
 
   @media (min-width: @desktop-width) {
@@ -92,11 +125,33 @@
   }
 }
 
+.catalog-traveler__button--closed {
+  background-image: url("..//image/more.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-size: auto;
+    background-position: right;
+    display: none;
+  }
+}
+
+.catalog-traveler__button--open {
+  background-image: url("..//image/icon_close.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
 .catalog-traveler__button-text {
   display: none;
 
   @media (min-width: @tablet-width) {
     display: block;
+    margin-right: 50px;
   }
 }
 
@@ -109,53 +164,89 @@
   border: none;
   width: 100%;
   margin-bottom: 20px;
+  color: @basic_blue_light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 1;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
+
+.catalog-traveler__offers-button::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url("..//image/icon_plus_more.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 15px;
+
+  @media (min-width: @tablet-width) {
+    width: 26px;
+    height: 26px;
+    margin-right: 27px;
+  }
+}
+
 
 .catalog-traveler__offers-pagination {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 72px;
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
     background-color: #ffffff;
     padding: 25px;
+    padding-top: 42px;
+    padding-bottom: 40px;
     border-radius: 20px;
+    margin-bottom: 87px;
   }
 }
 
 .catalog-traveler__offers-pagination-item {
   background-color: #ffffff;
-  padding: 17px 63px;
+  padding: 25px 63px;
   text-decoration: none;
   display: block;
   width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    width: auto;
+    width: 5%;
   }
 }
 
-
 .catalog-traveler__offers-pagination-item--prev {
+  background-image: url("..//image/page_arrows.svg");
+  border-right: 1px solid #edeff6;
   border-radius: 20px 0 0 20px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    border-radius: 0;
+    border: none;
     margin-left: auto;
+    margin-right: 10px;
   }
 }
 
+
 .catalog-traveler__offers-pagination-item--next {
   border-radius: 0 20px 20px 0;
+  background-image: url("..//image/page_arrows_next.svg");
+
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -168,18 +259,27 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    margin-left: 10px;
   }
 }
 
+
+.catalog-traveler__offers-pagination-number-item--current {
+  @media (min-width: @tablet-width) {
+    background-color: @basic_yellow;
+    border-radius: 50%;
+  }
+}
 
 .catalog-traveler__person {
   width: 100%;
 
   @media (min-width: @desktop-width) {
-    width: 30%;
+    width: 285px;
     order: 2;
-    padding: 46px;
-    margin-left: 80px;
+    padding-top: 41px;
+    padding-left: 47px;
+    margin-left: 85px;
     align-self: flex-start;
   }
 }
@@ -194,7 +294,7 @@
   padding-top: 28px;
 
   @media (min-width: @desktop-width) {
-    width: 60%;
+    width: 100%;
     padding-top: 0;
   }
 }
@@ -205,5 +305,19 @@
   font-size: 20px;
   line-height: 20px;
   color: @basic_blue_light;
-  padding: 17px 20px;
+  padding: 15px 20px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    background-color: @basic_yellow;
+    border-radius: 50%;
+    opacity: 1;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 12px 17px;
+  }
 }

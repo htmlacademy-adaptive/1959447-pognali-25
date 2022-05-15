@@ -1,5 +1,6 @@
 .complete-plan {
   list-style: none;
+  counter-reset: orderedlist;
 }
 
 
@@ -45,6 +46,15 @@
     padding: 0;
     border-bottom: none;
   }
+}
+
+.complete-plan__item-title::before {
+  counter-increment: orderedlist;
+  content: counter(orderedlist) ".";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  margin-right: 5px;
 }
 
 .complete-plan__item-people {

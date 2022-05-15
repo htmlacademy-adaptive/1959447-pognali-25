@@ -8,20 +8,18 @@
   <title>Каталог</title>
 </head>
 
-<body class="page__body">
+<body class="page__body catalog">
   <header class="header">
     <div class="header__wrapper container">
-      <a class="header__logo" href="index.html">
+      <a class="header__logo header__logo--closed" href="index.html">
         <span class="visually-hidden">Логотип Погнали</span>
       </a>
 
-      <button class="header__toggle" type="button">
+      <button class="header__toggle header__toggle--closed" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
       <a class="header__login-tablet login button" href="#">Авторизация</a>
-
-      <a class="header__link link" href="index.html">На главную</a>
 
       <div class="header__dropdown">
 
@@ -70,15 +68,26 @@
   <main class="inner-container catalog-traveler">
 
     <div class="title">
-      <h1 class="title__text">Попутчики</h1>
+      <div class="title__wrap">
+        <div class="title__box container">
+
+          <h1 class="title__text">Попутчики</h1>
+
+          <a class="title__link link" href="index.html">На главную</a>
+        </div>
+      </div>
     </div>
 
+
     <section class="catalog-traveler__filter">
+
       <div class="catalog-traveler__wrapper container">
 
+        <!-- <div class="catalog-traveler__box "> -->
+
         <!-- Фильтр 1 - выбор по странам -->
-        <h2 class="catalog-traveler__title">Фильтрация по странам</h2>
-        <button class="catalog-traveler__button button" type="button"><span
+        <h2 class="catalog-traveler__title">Фильтрация по странам:</h2>
+        <button class="catalog-traveler__button button catalog-traveler__button--closed" type="button"><span
             class="catalog-traveler__button-text">Показать все</span></button>
 
         <div class="catalog-traveler__location location">
@@ -819,8 +828,8 @@
 
             <button class="select-country__button-filter button" type="button">Свернуть</button>
           </div>
-
         </div>
+        <!-- </div> -->
 
       </div>
     </section>
@@ -834,93 +843,129 @@
         <form class="companion-selection__form form-filter" action="https://echo.htmlacademy.ru/" method="get">
 
           <fieldset class="form-filter__item feature">
-            <legend class="feature__title">Хобби</legend>
-            <button class="feature__button" type="button">Свернуть/развернуть</button>
+            <legend class="feature__wrap">
+              <span class="feature__title">Хобби</span>
+              <button class="feature__button feature__button--closed" type="button"><span
+                  class="visually-hidden">Свернуть/развернуть</span></button>
+            </legend>
+
             <ul class="feature__list hobby">
               <li class="hobby__item">
-                <label class="hobby__item-title" for="gym">Спортзал</label>
                 <input class="hobby__item-mark" type="checkbox" value="Спортзал" id="gym" checked>
+                <label class="hobby__item-title" for="gym">Спортзал</label>
               </li>
               <li class="hobby__item">
-                <label class="hobby__item-title" for="shisha">Кальян</label>
                 <input class="hobby__item-mark" type="checkbox" value="Кальян" id="shisha">
+                <label class="hobby__item-title" for="shisha">Кальян</label>
               </li>
               <li class="hobby__item">
-                <label class="hobby__item-title" for="couch">Диван</label>
                 <input class="hobby__item-mark" type="checkbox" value="Диван" id="couch">
+                <label class="hobby__item-title" for="couch">Диван</label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="form-filter__item feature">
-            <legend class="feature__title">Музыка</legend>
-            <button class="feature__button" type="button">Свернуть/развернуть</button>
-            <ul class="feature__list musik">
-              <li class="musik__item">
-                <label class="musik__item-title" for="rock">Тяжелый рок</label>
-                <input class="musik__item-mark" type="checkbox" value="Тяжелый рок" id="rock" checked>
+            <legend class="feature__wrap">
+              <span class="feature__title">Музыка</span>
+              <button class="feature__button feature__button--open" type="button"> <span
+                  class="visually-hidden">Свернуть/развернуть</span></button>
+            </legend>
+
+            <ul class="feature__list hobby">
+              <li class="hobby__item">
+                <input class="hobby__item-mark" type="checkbox" value="Тяжелый рок" id="rock" checked>
+                <label class="hobby__item-title" for="rock">Тяжелый рок</label>
               </li>
-              <li class="musik__item">
-                <label class="musik__item-title" for="rap">Русский рэп</label>
-                <input class="musik__item-mark" type="checkbox" value="Русский рэп" id="rap" checked>
+              <li class="hobby__item">
+                <input class="hobby__item-mark" type="checkbox" value="Русский рэп" id="rap" checked>
+                <label class="hobby__item-title" for="rap">Русский рэп</label>
               </li>
-              <li class="musik__item">
-                <label class="musik__item-title" for="dance">Евроденс</label>
-                <input class="musik__item-mark" type="checkbox" value="Евроденс" id="dance">
+              <li class="hobby__item">
+
+                <input class="hobby__item-mark" type="checkbox" value="Евроденс" id="dance">
+                <label class="hobby__item-title" for="dance">Евроденс</label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="form-filter__item feature">
-            <legend class="feature__title">Еда</legend>
-            <button class="feature__button" type="button">Свернуть/развернуть</button>
-            <ul class="feature__list food">
-              <li class="food__item">
-                <label class="food__item-title" for="meat">Мясоед</label>
-                <input class="food__item-mark" type="checkbox" value="Мясоед" id="meat" checked>
+            <legend class="feature__wrap">
+              <span class="feature__title">Еда</span>
+              <button class="feature__button feature__button--open" type="button"><span
+                  class="visually-hidden">Свернуть/развернуть</span></button>
+            </legend>
+
+            <ul class="feature__list hobby">
+              <li class="hobby__item">
+                <input class="hobby__item-mark" type="checkbox" value="Мясоед" id="meat" checked>
+                <label class="hobby__item-title" for="meat">Мясоед</label>
               </li>
-              <li class="food__item">
-                <label class="food__item-title" for="healthy">Сидит на ПП</label>
-                <input class="food__item-mark" type="checkbox" value="Сидит на ПП" id="healthy">
+              <li class="hobby__item">
+                <input class="hobby__item-mark" type="checkbox" value="Сидит на ПП" id="healthy">
+                <label class="hobby__item-title" for="healthy">Сидит на ПП</label>
               </li>
-              <li class="food__item">
-                <label class="food__item-title" for="vegan">Веган-сыроед</label>
-                <input class="food__item-mark" type="checkbox" value="Веган-сыроед" id="vegan">
+              <li class="hobby__item">
+                <input class="hobby__item-mark" type="checkbox" value="Веган-сыроед" id="vegan">
+                <label class="hobby__item-title" for="vegan">Веган-сыроед</label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="form-filter__item feature">
-            <legend class="feature__title">Транспорт</legend>
-            <button class="feature__button" type="button">Свернуть/развернуть</button>
+            <legend class="feature__wrap">
+              <span class="feature__title">Транспорт</span>
+              <button class="feature__button feature__button--open" type="button"><span
+                  class="visually-hidden">Свернуть/развернуть</span></button>
+            </legend>
+
             <ul class="feature__list moving">
-              <li class="moving__item">
-                <label class="moving__item-title" for="plane"><span class="visually-hidden">Самолет</span></label>
-                <input class="moving__item-mark" type="checkbox" value="Самолет" id="plane" checked>
+              <li class="moving__select">
+                <label class="moving__select-title moving__select-title--plane" for="plane"><span
+                    class="visually-hidden">Самолет</span></label>
+                <input class="moving__select-mark moving__select-mark--current" type="checkbox" value="Самолет"
+                  id="plane" checked>
               </li>
-              <li class="moving__item">
-                <label class="moving__item-title" for="car"><span class="visually-hidden">Машина</span></label>
-                <input class="moving__item-mark" type="checkbox" value="Машина" id="car" checked>
+              <li class="moving__select">
+                <label class="moving__select-title moving__select-title--auto" for="car"><span
+                    class="visually-hidden">Машина</span></label>
+                <input class="moving__select-mark moving__select-mark--current" type="checkbox" value="Машина" id="car"
+                  checked>
               </li>
-              <li class="moving__item">
-                <label class="moving__item-title" for="bike"><span class="visually-hidden">Велосипед</span></label>
-                <input class="moving__item-mark" type="checkbox" value="Велосипед" id="bike">
+              <li class="moving__select">
+                <label class="moving__select-title moving__select-title--bike moving__select-title--no" for="bike"><span
+                    class="visually-hidden">Велосипед</span></label>
+                <input class="moving__select-mark" type="checkbox" value="Велосипед" id="bike">
               </li>
-              <li class="moving__item">
-                <label class="moving__item-title" for="walk"><span class="visually-hidden">Пешком</span></label>
-                <input class="moving__item-mark" type="checkbox" value="Пешком" id="walk" checked>
+              <li class="moving__select">
+                <label class="moving__select-title moving__select-title--walk" for="walk"><span
+                    class="visually-hidden">Пешком</span></label>
+                <input class="moving__select-mark moving__select-mark--current" type="checkbox" value="Пешком" id="walk"
+                  checked>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="form-filter__item feature">
-            <legend class="feature__title">Левел</legend>
-            <button class="feature__button" type="button">Свернуть/развернуть</button>
+            <legend class="feature__wrap">
+              <span class="feature__title">Левел</span>
+              <button class="feature__button feature__button--open" type="button"><span
+                  class="visually-hidden">Свернуть/развернуть</span></button>
+            </legend>
+
             <div class="feature__range range">
-              <div class="range__scale"> </div>
-              <div class="range__bar"> </div>
-              <button class="range__toggle range__toggle--min" type="button"> </button>
-              <button class="range__toggle range__toggle--max" type="button"> </button>
+              <div class="range__wrap">
+                <input class="range__input range__input--min" type="number" min="1" max="100" value="30">
+                <input class="range__input range__input--max" type="number" min="1" max="100" value="100">
+              </div>
+
+              <div class="range__scale">
+                <div class="range__bar">
+                  <button class="range__toggle range__toggle--min" type="button"> </button>
+                  <button class="range__toggle range__toggle--max" type="button"> </button>
+                </div>
+              </div>
+
             </div>
           </fieldset>
           <button class="form-filter__button button" type="submit" name="show">Показать</button>
@@ -932,19 +977,20 @@
       <section class="catalog-traveler__offers">
 
         <h2 class="catalog-traveler__offers-title visually-hidden">Каталог попутчиков</h2>
-        <ul class="catalog-traveler__offers-list person-catalog">
+        <ul class="catalog-traveler__offers-list person-select">
 
-          <li class="person-catalog__item cards-person">
+          <li class="person-select__item">
 
-            <img class="person-catalog__img" src="image/tanya.jpg" alt="Таня Фирсова." />
+            <img class="person-select__img" src="image/tanya.jpg" alt="Таня Фирсова." />
 
-            <a class="person-catalog__link link">
-              <h3 class="person-catalog__name">Таня Фирсова</h3>
+            <a class="person-select__link link">
+              <h3 class="person-select__name">Таня Фирсова</h3>
             </a>
 
-            <p class="person-catalog__indicator person-catalog__indicator--off"><span>Не доступен</span></p>
-            <div class="person-catalog__like">
-              <button class="person-catalog__like-button button-love" type="button" name="like">
+            <p class="person-select__indicator person-select__indicator--off"><span class="visually-hidden">Не
+                доступен</span></p>
+            <div class="person-select__like">
+              <button class="person-select__like-button button-love button-love--like" type="button" name="like">
                 <span class="visually-hidden">Добавить в избранное</span>
                 <svg class="button-love__icon button-love__icon--like" width="13" height="11" viewBox="0 0 13 11"
                   xmlns="http://www.w3.org/2000/svg">
@@ -952,10 +998,10 @@
                     d="M3.255.474c1.693 0 3.064 1.348 3.064 3.01 0-1.662 1.371-3.01 3.064-3.01s3.064 1.348 3.064 3.01c0 2.505-2.477 3.389-5.828 7.377a.394.394 0 0 1-.6 0C2.669 6.873.19 5.989.19 3.484c0-1.662 1.372-3.01 3.064-3.01Z" />
                 </svg>
               </button>
-              <p class="person-catalog__like-count">1,5 М</p>
+              <p class="person-select__like-count">1,5 М</p>
             </div>
 
-            <ul class="person-catalog__tag hashtag">
+            <ul class="person-select__tag hashtag">
               <li class="hashtag__item">
                 <a class="hashtag__link link" href="#">#ЗОЖ</a>
               </li>
@@ -976,66 +1022,64 @@
               </li>
             </ul>
 
-            <h4 class="person-catalog__subtitle">хочет посетить:</h4>
-            <ul class="person-catalog__flag flag-country">
-              <li class="flag-country__item">
-                <a class="flag-country__link link" href="#"> <span>Шри-Ланка</span>
-                  <!-- <img class="flag-country__img" src="image/sri-lanka.jpg" alt="Шри-Ланка."> -->
-                </a>
+            <h4 class="person-select__subtitle person-select__subtitle--country">хочет&#160;посетить:</h4>
+            <ul class="person-select__flag flag-country">
+              <li class="flag-country__item flag-country__item--shrilanka">
+                <a class="flag-country__link link" href="#"> <span>Шри-Ланка</span></a>
               </li>
-              <li class="flag-country__item">
-                <a class="flag-country__link link" href="#"> <span>Таиланд</span>
-                  <!-- <img class="flag-country__img" src="image/thailand.jpg" alt="Таиланд."> -->
-                </a>
+              <li class="flag-country__item flag-country__item--thailand">
+                <a class="flag-country__link link" href="#"> <span>Таиланд</span></a>
               </li>
-              <li class="flag-country__item">
-                <a class="flag-country__link link" href="#"> <span>Сейшелы</span>
-                  <!-- <img class="flag-country__img" src="image/seychelles.jpg" alt="Республика Сейшельские острова."> -->
-                </a>
+              <li class="flag-country__item flag-country__item--seychelles">
+                <a class="flag-country__link link" href="#"> <span>Сейшелы</span></a>
               </li>
             </ul>
 
-            <h4 class="person-catalog__subtitle person-catalog__subtitle--hidden">транспорт:</h4>
-            <ul class="person-catalog__move moving">
-              <li class="moving__item">
-                <a class="moving__link moving__link--current"><span class="visually-hidden">Самолет</span></a>
+            <h4 class="person-select__subtitle person-select__subtitle--hidden person-select__subtitle--transport">
+              транспорт:</h4>
+            <ul class="person-select__move moving">
+              <li class="moving__item moving__item--plane">
+                <a class="moving__link moving__link--current moving__link--plane"><span
+                    class="visually-hidden">Самолет</span></a>
               </li>
-              <li class="moving__item">
-                <a class="moving__link"><span class="visually-hidden">Машина</span></a>
+              <li class="moving__item moving__item--auto">
+                <a class="moving__link "><span class="visually-hidden">Машина</span></a>
               </li>
-              <li class="moving__item">
+              <li class="moving__item moving__item--bike">
                 <a class="moving__link "><span class="visually-hidden">Велосипед</span></a>
               </li>
-              <li class="moving__item">
+              <li class="moving__item moving__item--walk">
                 <a class="moving__link"><span class="visually-hidden">Пешком</span></a>
               </li>
             </ul>
-            <p class="person-catalog__level">99 <span>level</span></p>
-            <a class="person-catalog__invite" href="#">Позвать!</a>
+            <h4 class="person-select__subtitle person-select__subtitle--level">левел:</h4>
+            <p class="person-select__level">99 <span>level</span></p>
+            <a class="person-select__invite button" href="#">Позвать!</a>
           </li>
 
-          <li class="person-catalog__item cards-person">
+          <li class="person-select__item">
 
-            <img class="person-catalog__img" src="image/petya.jpg" alt="Петя Демин." />
+            <img class="person-select__img" src="image/petya.jpg" alt="Петя Демин." />
 
-            <a class="person-catalog__link link">
-              <h3 class="person-catalog__name">Петя Демин</h3>
+            <a class="person-select__link link">
+              <h3 class="person-select__name">Петя Демин</h3>
             </a>
-            <img class="person-catalog__img" src="image/petya.jpg" alt="Петя Демин." />
-            <p class="person-catalog__indicator person-catalog__indicator--off"><span>Не доступен</span></p>
-            <div class="person-catalog__like">
-              <button class="person-catalog__like-button button-love" type="button" name="like">
+            <img class="person-select__img" src="image/petya.jpg" alt="Петя Демин." />
+            <p class="person-select__indicator person-select__indicator--off"><span class="visually-hidden">Не
+                доступен</span></p>
+            <div class="person-select__like">
+              <button class="person-select__like-button button-love" type="button" name="like">
                 <span class="visually-hidden">Добавить в избранное</span>
-                <svg class="button-love__icon " width="13" height="11" viewBox="0 0 13 11"
+                <svg class="button-love__icon" width="13" height="11" viewBox="0 0 13 11"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M3.255.474c1.693 0 3.064 1.348 3.064 3.01 0-1.662 1.371-3.01 3.064-3.01s3.064 1.348 3.064 3.01c0 2.505-2.477 3.389-5.828 7.377a.394.394 0 0 1-.6 0C2.669 6.873.19 5.989.19 3.484c0-1.662 1.372-3.01 3.064-3.01Z" />
                 </svg>
               </button>
-              <p class="person-catalog__like-count">1500</p>
+              <p class="person-select__like-count">1500</p>
             </div>
 
-            <ul class="person-catalog__tag hashtag">
+            <ul class="person-select__tag hashtag">
               <li class="hashtag__item">
                 <a class="hashtag__link link" href="#">#бургер</a>
               </li>
@@ -1053,51 +1097,51 @@
               </li>
             </ul>
 
-            <h4 class="person-catalog__subtitle">хочет посетить:</h4>
-            <ul class="person-catalog__flag flag-country">
-              <li class="flag-country__item">
+            <h4 class="person-select__subtitle person-select__subtitle--country">хочет&#160;посетить:</h4>
+            <ul class="person-select__flag flag-country">
+              <li class="flag-country__item flag-country__item--belgium">
                 <a class="flag-country__link link" href="#"><span>Бельгия</span>
-                  <!-- <img class="flag-country__img" src="image/belgium.jpg" alt="Бельгия."> -->
                 </a>
               </li>
-              <li class="flag-country__item">
+              <li class="flag-country__item flag-country__item--сzechia">
                 <a class="flag-country__link link" href="#"><span>Чехия</span>
-                  <!-- <img class="flag-country__img" src="image/czech.jpg" alt="Чехия."> -->
                 </a>
               </li>
             </ul>
 
-            <h4 class="person-catalog__subtitle">транспорт:</h4>
-            <ul class="person-catalog__move moving">
-              <li class="moving__item">
+            <h4 class="person-select__subtitle person-select__subtitle--transport">транспорт:</h4>
+            <ul class="person-select__move moving">
+              <li class="moving__item moving__item--plane">
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Самолет</span></a>
               </li>
-              <li class="moving__item">
+              <li class="moving__item moving__item--auto">
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Машина</span></a>
               </li>
-              <li class="moving__item">
+              <li class="moving__item moving__item--bike">
                 <a class="moving__link "><span class="visually-hidden">Велосипед</span></a>
               </li>
-              <li class="moving__item">
+              <li class="moving__item moving__item--walk">
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Пешком</span></a>
               </li>
             </ul>
-            <p class="person-catalog__level">80 <span>level</span></p>
-            <a class="person-catalog__invite" href="#">Позвать!</a>
+            <h4 class="person-select__subtitle person-select__subtitle--level">левел:</h4>
+            <p class="person-select__level">80 <span>level</span></p>
+            <a class="person-select__invite button" href="#">Позвать!</a>
           </li>
 
-          <li class="person-catalog__item cards-person">
+          <li class="person-select__item">
 
-            <img class="person-catalog__img" src="image/mark.jpg" alt="Марк Смолов." />
+            <img class="person-select__img" src="image/mark.jpg" alt="Марк Смолов." />
 
-            <a class="person-catalog__link link">
-              <h3 class="person-catalog__name">Марк Смолов</h3>
+            <a class="person-select__link link">
+              <h3 class="person-select__name">Марк Смолов</h3>
             </a>
 
-            <img class="person-catalog__img" src="image/mark.jpg" alt="Марк Смолов." />
-            <p class="person-catalog__indicator person-catalog__indicator--off"><span>Не доступен</span></p>
-            <div class="person-catalog__like">
-              <button class="person-catalog__like-button button-love" type="button" name="like">
+            <img class="person-select__img" src="image/mark.jpg" alt="Марк Смолов." />
+            <p class="person-select__indicator person-select__indicator--off"><span class="visually-hidden">Не
+                доступен</span></p>
+            <div class="person-select__like">
+              <button class="person-select__like-button button-love" type="button" name="like">
                 <span class="visually-hidden">Добавить в избранное</span>
                 <svg class="button-love__icon" width="13" height="11" viewBox="0 0 13 11"
                   xmlns="http://www.w3.org/2000/svg">
@@ -1105,10 +1149,10 @@
                     d="M3.255.474c1.693 0 3.064 1.348 3.064 3.01 0-1.662 1.371-3.01 3.064-3.01s3.064 1.348 3.064 3.01c0 2.505-2.477 3.389-5.828 7.377a.394.394 0 0 1-.6 0C2.669 6.873.19 5.989.19 3.484c0-1.662 1.372-3.01 3.064-3.01Z" />
                 </svg>
               </button>
-              <p class="cards-person__like-count">170</p>
+              <p class="person-select__like-count">170</p>
             </div>
 
-            <ul class="person-catalog__tag hashtag">
+            <ul class="person-select__tag hashtag">
               <li class="hashtag__item">
                 <a class="hashtag__link link" href="#">#рэп</a>
               </li>
@@ -1126,52 +1170,53 @@
               </li>
             </ul>
 
-            <h4 class="person-catalog__subtitle">хочет посетить:</h4>
-            <ul class="person-catalog__flag flag-country">
-              <li class="flag-country__item">
+            <h4 class="person-select__subtitle person-select__subtitle--country"> хочет&#160;посетить:</h4>
+            <ul class="person-select__flag flag-country">
+              <li class="flag-country__item flag-country__item--usa">
                 <a class="flag-country__link link" href="#"> <span>США</span>
                 </a>
               </li>
-              <li class="flag-country__item">
+              <li class="flag-country__item flag-country__item--australia">
                 <a class="flag-country__link link" href="#"> <span>Австралия</span>
                 </a>
               </li>
-              <li class="flag-country__item">
+              <li class="flag-country__item flag-country__item--domin">
                 <a class="flag-country__link link" href="#"> <span>Доминика</span>
                 </a>
               </li>
             </ul>
 
-            <h4 class="person-catalog__subtitle">транспорт:</h4>
-            <ul class="person-catalog__move moving">
-              <li class="moving__item">
+            <h4 class="person-select__subtitle person-select__subtitle--transport">транспорт:</h4>
+            <ul class="person-select__move moving">
+              <li class="moving__item moving__item--plane">
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Самолет</span></a>
               </li>
-              <li class="moving__item">
+              <li class="moving__item moving__item--auto">
                 <a class="moving__link"><span class="visually-hidden">Машина</span></a>
               </li>
-              <li class="moving__item">
+              <li class="moving__item moving__item--bike">
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Велосипед</span></a>
               </li>
-              <li class="moving__item">
+              <li class="moving__item moving__item--walk">
                 <a class="moving__link"><span class="visually-hidden">Пешком</span></a>
               </li>
             </ul>
-            <p class="person-catalog__level">25 <span>level</span></p>
-            <a class="person-catalog__invite" href="#">Позвать!</a>
+            <h4 class="person-select__subtitle person-select__subtitle--level">левел:</h4>
+            <p class="person-select__level">25 <span>level</span></p>
+            <a class="person-select__invite button" href="#">Позвать!</a>
           </li>
 
-          <li class="person-catalog__item cards-person">
+          <li class="person-select__item">
 
-            <img class="person-catalog__img" src="image/larisa.jpg" alt="Лариса Роговая." />
+            <img class="person-select__img" src="image/larisa.jpg" alt="Лариса Роговая." />
 
-            <a class="person-catalog__link link">
-              <h3 class="person-catalog__name">Лариса Роговая</h3>
+            <a class="person-select__link link">
+              <h3 class="person-select__name">Лариса Роговая</h3>
             </a>
 
-            <p class="person-catalog__indicator"><span>Доступен</span></p>
-            <div class="person-catalog__like">
-              <button class="person-catalog__like-button button-love" type="button" name="like">
+            <p class="person-select__indicator"><span class="visually-hidden">Доступен</span></p>
+            <div class="person-select__like">
+              <button class="person-select__like-button button-love" type="button" name="like">
                 <span class="visually-hidden">Добавить в избранное</span>
                 <svg class="button-love__icon" width="13" height="11" viewBox="0 0 13 11"
                   xmlns="http://www.w3.org/2000/svg">
@@ -1179,10 +1224,10 @@
                     d="M3.255.474c1.693 0 3.064 1.348 3.064 3.01 0-1.662 1.371-3.01 3.064-3.01s3.064 1.348 3.064 3.01c0 2.505-2.477 3.389-5.828 7.377a.394.394 0 0 1-.6 0C2.669 6.873.19 5.989.19 3.484c0-1.662 1.372-3.01 3.064-3.01Z" />
                 </svg>
               </button>
-              <p class="person-catalog__like-count">23</p>
+              <p class="person-select__like-count">23</p>
             </div>
 
-            <ul class="person-catalog__tag hashtag">
+            <ul class="person-select__tag hashtag">
               <li class="hashtag__item">
                 <a class="hashtag__link link" href="#">#образование</a>
               </li>
@@ -1197,35 +1242,37 @@
               </li>
             </ul>
 
-            <h4 class="person-catalog__subtitle">хочет посетить:</h4>
-            <ul class="person-catalog__flag flag-country">
-              <li class="flag-country__item">
+            <h4 class="person-select__subtitle person-select__subtitle--country"> хочет&#160;посетить:</h4>
+            <ul class="person-select__flag flag-country">
+              <li class="flag-country__item flag-country__item--eng">
                 <a class="flag-country__link link" href="#"> <span>Великобритания</span>
                 </a>
               </li>
-              <li class="flag-country__item">
+              <li class="flag-country__item flag-country__item--germany">
                 <a class="flag-country__link link" href="#"> <span>Германия</span>
                 </a>
               </li>
             </ul>
 
-            <h4 class="person-catalog__subtitle">транспорт:</h4>
-            <ul class="person-catalog__move moving">
-              <li class="moving__item">
+            <h4 class="person-select__subtitle person-select__subtitle--transport">транспорт:</h4>
+            <ul class="person-select__move moving">
+              <li class="moving__item moving__item--plane">
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Самолет</span></a>
               </li>
-              <li class="moving__item">
+              <li class="moving__item moving__item--auto">
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Машина</span></a>
               </li>
-              <li class="moving__item">
+              <li class="moving__item moving__item--bike">
                 <a class="moving__link"><span class="visually-hidden">Велосипед</span></a>
               </li>
-              <li class="moving__item">
+              <li class="moving__item moving__item--walk">
                 <a class="moving__link"><span class="visually-hidden">Пешком</span></a>
               </li>
             </ul>
-            <p class="person-catalog__level"> 50 <span>level</span></p>
-            <a class="person-catalog__invite" href="#">Позвать!</a>
+
+            <h4 class="person-select__subtitle person-select__subtitle--level">левел:</h4>
+            <p class="person-select__level"> 50 <span>level</span></p>
+            <a class="person-select__invite button" href="#">Позвать!</a>
           </li>
         </ul>
         <button class="catalog-traveler__offers-button button-all" type="button" name="Show more">Показать
@@ -1233,16 +1280,17 @@
 
         <div class="catalog-traveler__offers-pagination">
           <div class="catalog-traveler__offers-pagination-number">
-            <a class="catalog-traveler__offers-pagination-number-item" href="#">1</a>
+            <a class="catalog-traveler__offers-pagination-number-item catalog-traveler__offers-pagination-number-item--current"
+              href="#">1</a>
             <a class="catalog-traveler__offers-pagination-number-item" href="#">2</a>
             <a class="catalog-traveler__offers-pagination-number-item" href="#">3</a>
             <a class="catalog-traveler__offers-pagination-number-item" href="#">4</a>
           </div>
 
           <a class="catalog-traveler__offers-pagination-item  catalog-traveler__offers-pagination-item--prev"
-            href="#">Предыдущая</a>
-          <a class="catalog-traveler__offers-pagination-item  catalog-traveler__offers-pagination-item--next"
-            href="#">Следующая</a>
+            href="#"><span class="visually-hidden">Предыдущая</span></a>
+          <a class="catalog-traveler__offers-pagination-item  catalog-traveler__offers-pagination-item--next" href="#">
+            <span class="visually-hidden">Следующая</span></a>
         </div>
 
 
@@ -1253,24 +1301,24 @@
     <!-- </div> -->
   </main>
 
-  <footer class="inner-footer">
-    <div class="container inner-footer__wrapper">
-      <a class="inner-footer__logo">
-        <img class="inner-footer__logo-image" src="image/logo-black.svg" width="96" height="15"
-          alt="Логотип Погнали." />
+  <footer class="footer">
+    <div class="container footer-container">
+      <a class="footer__logo" href="index.html">
+        <span class="visually-hidden">Логотип Погнали</span>
       </a>
-      <ul class="inner-footer__list social">
-        <li class="social__item">
-          <a class="social-link link social-link--tm" href=""><span class="visually-hidden">Telegram</span></a>
+
+      <ul class="footer__list social">
+        <li class="social__item social__item--tm">
+          <a class="social-link link" href=""><span class="visually-hidden">Telegram</span></a>
         </li>
-        <li class="social__item">
-          <a class="social-link link social-link--vk" href=""><span class="visually-hidden">Vk</span></a>
+        <li class="social__item social__item--vk">
+          <a class="social-link link" href=""><span class="visually-hidden">Vk</span></a>
         </li>
-        <li class="social__item">
-          <a class="social-link link social-link--youtube" href=""><span class="visually-hidden">Youtube</span></a>
+        <li class="social__item social__item--you">
+          <a class="social-link link" href=""><span class="visually-hidden">Youtube</span></a>
         </li>
       </ul>
-      <div class="inner-footer__copyright copyright">
+      <div class="footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link link" href="https://htmlacademy.ru/intensive/adaptive"><span
             class="visually-hidden">HTML
