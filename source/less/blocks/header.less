@@ -23,6 +23,16 @@
 
 .header__wrapper--open {
   background-color: #ffffff;
+
+  @media (min-width: @desktop-width) {
+    background-color: #182044;
+  }
+}
+
+.catalog .header__wrapper--open {
+  @media (min-width: @desktop-width) {
+    background-color: #182044;
+  }
 }
 
 .header__login-tablet {
@@ -55,7 +65,6 @@
 }
 
 .header__dropdown {
-  display: none;
   background-color: #ffffff;
   width: 100vw;
   padding-left: 25px;
@@ -106,8 +115,6 @@
   }
 }
 
-// Закомментировать для декстопа
-
 .header__logo--open {
   background-image: url("..//image/logo-black.svg");
   width: 96px;
@@ -118,9 +125,14 @@
     height: 50px;
     width: 50%;
   }
-}
 
-// Конец
+  @media (min-width: @desktop-width) {
+    background-image: url("..//image/logo_full.svg");
+    width: 200px;
+    height: 50px;
+    margin: 0;
+  }
+}
 
 .header__toggle {
   width: 74px;

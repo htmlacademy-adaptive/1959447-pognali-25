@@ -38,6 +38,7 @@
     grid-column: 1/-1;
     padding-bottom: 34px;
     border-bottom: 1px solid #cbced9;
+    display: flex;
   }
 
   @media (min-width: @desktop-width) {
@@ -55,6 +56,12 @@
   font-size: 16px;
   line-height: 1;
   margin-right: 5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    order: 2;
+    margin-left: auto;
+  }
 }
 
 .complete-plan__item-people {
@@ -104,5 +111,6 @@
     font-size: 20px;
     line-height: 1;
     letter-spacing: 0.1em;
+    justify-self: end;
   }
 }

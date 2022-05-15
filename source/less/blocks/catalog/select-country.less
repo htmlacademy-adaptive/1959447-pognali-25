@@ -1,9 +1,9 @@
 .select-country__alphabet {
   display: grid;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(5, 1fr);
 
   @media (min-width: @tablet-width) {
-    column-gap: 10px;
+    column-gap: 5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -66,6 +66,11 @@
     margin: 0 auto;
     margin-top: 55px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 37px;
+    padding-bottom: 37px;
+  }
 }
 
 .select-country__button-filter::before {
@@ -90,7 +95,7 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    padding-left: 10px;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -100,11 +105,10 @@
 
 .select-country-name {
   @media (min-width: @tablet-width) {
-    margin-left: 95px;
+    margin-left: auto;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
     width: 100%;
     margin-bottom: 30px;
   }

@@ -4,12 +4,18 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 30px;
+    background-image: url("..//image/globe-back-mobile1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   @media (min-width: @desktop-width) {
-    background-image: none;
+    background-image: url("..//image/globe-back-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
+
 
 .promo__wrapper {
   padding-bottom: 39px;
@@ -21,7 +27,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-color: #161c36;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
     position: relative;
@@ -82,10 +87,7 @@
 }
 
 .promo__illustration {
-  background-image: url("..//image/globe-back-mobile1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: calc(100% + 50px);
+
   margin-left: -25px;
   margin-right: -25px;
 
@@ -98,7 +100,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("..//image/globe-back-desktop.png");
     margin: 0;
     grid-column: 1/3;
     grid-row: 1/-1;
@@ -207,6 +208,10 @@
 
 .promo__offers-text:nth-child(1) {
   background-color: @special_orange;
+
+  @media (min-width: @desktop-width) {
+    border-radius: 10px 0 0 10px;
+  }
 }
 
 .promo__offers-text:nth-child(2) {

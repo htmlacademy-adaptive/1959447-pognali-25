@@ -10,12 +10,12 @@
 
 <body class="page__body form">
   <header class="header">
-    <div class="header__wrapper container">
-      <a class="header__logo" href="index.html">
+    <div class="header__wrapper container header__wrapper--open">
+      <a class="header__logo header__logo--open" href="index.html">
         <span class="visually-hidden">Логотип Погнали</span>
       </a>
 
-      <button class="header__toggle header__toggle--closed" type="button">
+      <button class="header__toggle header__toggle--opened" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
@@ -72,7 +72,7 @@
         <div class="title__wrap">
           <div class="title__box container">
             <h1 class="title__text">Направления</h1>
-            <a class="title__link link" href="index.html">На главную</a>
+            <!-- <a class="title__link link" href="index.html">На главную</a> -->
           </div>
         </div>
       </div>
@@ -95,22 +95,30 @@
           </div>
           <div class="person-info__move-wrapper">
             <p class="person-info__move-name label-title">Транспорт</p>
+
             <ul class="person-info__move moving">
-              <li class="moving__item">
-                <label class="moving__item-title" for="plane"><span class="visually-hidden">Самолет</span></label>
-                <input class="moving__item-mark" type="checkbox" value="Самолет" id="plane" checked>
+              <li class="moving__select">
+                <label class="moving__select-title moving__select-title--plane" for="plane"><span
+                    class="visually-hidden">Самолет</span></label>
+                <input class="moving__select-mark moving__select-mark--current" type="checkbox" value="Самолет"
+                  id="plane" checked>
               </li>
-              <li class="moving__item">
-                <label class="moving__item-title" for="car"><span class="visually-hidden">Машина</span></label>
-                <input class="moving__item-mark" type="checkbox" value="Машина" id="car" checked>
+              <li class="moving__select">
+                <label class="moving__select-title moving__select-title--auto" for="car"><span
+                    class="visually-hidden">Машина</span></label>
+                <input class="moving__select-mark moving__select-mark--current" type="checkbox" value="Машина" id="car"
+                  checked>
               </li>
-              <li class="moving__item">
-                <label class="moving__item-title" for="bike"><span class="visually-hidden">Велосипед</span></label>
-                <input class="moving__item-mark" type="checkbox" value="Велосипед" id="bike">
+              <li class="moving__select">
+                <label class="moving__select-title moving__select-title--bike moving__select-title--no" for="bike"><span
+                    class="visually-hidden">Велосипед</span></label>
+                <input class="moving__select-mark" type="checkbox" value="Велосипед" id="bike">
               </li>
-              <li class="moving__item">
-                <label class="moving__item-title" for="walk"><span class="visually-hidden">Пешком</span></label>
-                <input class="moving__item-mark" type="checkbox" value="Пешком" id="walk" checked>
+              <li class="moving__select">
+                <label class="moving__select-title moving__select-title--walk" for="walk"><span
+                    class="visually-hidden">Пешком</span></label>
+                <input class="moving__select-mark moving__select-mark--current" type="checkbox" value="Пешком" id="walk"
+                  checked>
               </li>
             </ul>
           </div>
@@ -158,51 +166,66 @@
             </ol>
           </div>
 
-          <section class="constructor__plan-item step" id="step1">
-            <h3 class="step__title">Шаг&#160;1. <span class="step__title-name">Даты&#160;пребывания</span>
-            </h3>
-            <p class="step__description">
-              Укажите предпочтительное количество попутчиков, которых
-              вы&#160;хотели&#160;бы позвать в&#160;поездку, и&#160;ее&#160;предполагаемую длительность.
-            </p>
+          <!-- Три шага одинаковая структура header form actions -->
 
-            <ul class="step__navigation">
-              <li class="step__navigation-item">
-                <a class="step__navigation-link step__navigation-link--current">Даты</a>
-              </li>
-              <li class="step__navigation-item">
-                <a class="step__navigation-link" href="#step2">Маршрут</a>
-              </li>
-              <li class="step__navigation-item">
-                <a class="step__navigation-link" href="#step3">Развлечения</a>
-              </li>
-            </ul>
+          <section class="constructor__plan-item step" id="step1">
+
+            <div class="step__header">
+              <h3 class="step__header-title">Шаг&#160;1.</h3>
+              <p class="step__header-name">Даты&#160;пребывания</p>
+              <p class="step__header-description">
+                Укажите предпочтительное количество попутчиков, которых
+                вы&#160;хотели&#160;бы позвать в&#160;поездку, и&#160;ее&#160;предполагаемую длительность.
+              </p>
+              <ul class="step__header-navigation step-navigation">
+                <li class="step-navigation__item">
+                  <a class="step-navigation__link step-navigation__link--current">Даты</a>
+                </li>
+                <li class="step-navigation__item">
+                  <a class="step-navigation__link" href="#step2">Маршрут</a>
+                </li>
+                <li class="step-navigation__item">
+                  <a class="step-navigation__link" href="#step3">Развлечения</a>
+                </li>
+              </ul>
+            </div>
 
             <div class="step__form">
-              <div class="step__form-сompanion сompanion">
-                <label class="сompanion__title" for="people">Ищу попутчиков: <span>чел.</span></label>
-                <button class="сompanion__button" type="button">Минус</button>
-                <input class="сompanion__form" type="number" step="1" placeholder="2" id="people">
-                <button class="сompanion__button сompanion__button--plus" type="button">Плюс</button>
+
+              <div class="step__form-сompanion">
+                <label class="step__name" for="people">Ищу попутчиков: <span>чел.</span></label>
+                <div class="counter-input">
+                  <button class="counter-input__button counter-input__button--minus" type="button"><span
+                      class="visually-hidden">Минус</span></button>
+                  <input class="counter-input__input" type="number" step="1" placeholder="2" id="people">
+                  <button class="counter-input__button counter-input__button--plus" type="button"><span
+                      class="visually-hidden">Плюс</span></button>
+                </div>
               </div>
 
-              <p class="step__form-child">
+              <div class="step__form-сompanion step__form-сompanion--child">
                 <input class="step__form-child-form" id="child" type="checkbox" value="child" checked>
-                <label class="step__form-child-title" for="child">Можно с детьми</label>
-              </p>
+                <label class="step__name" for="child">Можно с детьми</label>
+              </div>
 
-              <div class="step__form-continued continued">
-                <label class="continued__title" for="continued">Длительность: <span>дн.</span></label>
-                <button class="continued__button" type="button">Минус</button>
-                <input class="continued__form" type="number" step="1" placeholder="2" id="continued">
-                <button class="continued__button continued__button--plus" type="button">Плюс</button>
+              <div class="step__form-сompanion">
+                <label class="step__name" for="continued">Длительность: <span>дн.</span></label>
+                <div class="counter-input">
+                  <button class="counter-input__button counter-input__button--minus" type="button"><span
+                      class="visually-hidden">Минус</span></button>
+                  <input class="counter-input__input" type="number" step="1" placeholder="2" id="continued">
+                  <button class="counter-input__button counter-input__button--plus" type="button"><span
+                      class="visually-hidden">Плюс</span></button>
+                </div>
               </div>
 
               <div class=" step__form-calendar calendar">
                 <div class="calendar__monht">
-                  <button class="calendar__monht-button" type="button">Предыдущий</button>
+                  <button class="calendar__monht-button " type="button"><span
+                      class="visually-hidden">Предыдущий</span></button>
                   <p class="calendar__name">Март 2019</p>
-                  <button class="calendar__monht-button calendar__monht-button--next" type="button">Следующий</button>
+                  <button class="calendar__monht-button calendar__monht-button--next" type="button"><span
+                      class="visually-hidden">Следующий</span></button>
                 </div>
                 <table class="calendar__day">
                   <thead class="calendar__day-week week">
@@ -399,33 +422,40 @@
                 </table>
               </div>
             </div>
-            <a class="step__pagination button" href="#step2">Следующий шаг</a>
+
+            <div class="step__actions">
+              <a class="step__pagination button" href="#step2">Следующий шаг</a>
+            </div>
+
           </section>
 
 
           <section class="constructor__plan-item step" id="step2">
-            <h3 class="step__title">Шаг&#160;2.<span class="step__title-name">Маршрут</span>
-            </h3>
-            <p class="step__description"> Укажите страны, которые вы&#160;хотели&#160;бы посетить. Это может быть одна
-              или
-              сразу несколько.</p>
 
-            <ul class="step__navigation">
-              <li class="step__navigation-item">
-                <a class="step__navigation-link" href="#">Даты</a>
-              </li>
-              <li class="step__navigation-item">
-                <a class="step__navigation-link step__navigation-link--current">Маршрут</a>
-              </li>
-              <li class="step__navigation-item">
-                <a class="step__navigation-link" href="#step3">Развлечения</a>
-              </li>
-            </ul>
+            <div class="step__header">
+              <h3 class="step__header-title">Шаг&#160;2.</h3>
+              <p class="step__header-name">Маршрут</p>
+              <p class="step__header-description"> Укажите страны, которые вы&#160;хотели&#160;бы посетить. Это может
+                быть одна
+                или сразу несколько.</p>
+              <ul class="step__header-navigation step-navigation">
+                <li class="step-navigation__item">
+                  <a class="step-navigation__link" href="#step1">Даты</a>
+                </li>
+                <li class="step-navigation__item">
+                  <a class="step-navigation__link step-navigation__link--current">Маршрут</a>
+                </li>
+                <li class="step-navigation__item">
+                  <a class="step-navigation__link" href="#step3">Развлечения</a>
+                </li>
+              </ul>
+            </div>
 
             <div class="step__form">
+
               <div class="step__form-country country">
                 <ul class="country__list">
-                  <li class="country__list-item">
+                  <li class="country__list-item country__list-item--bosnia">
                     <button class="country__list-button country__list-button--select" type="button"
                       aria-label="Выбрать страну. Выбрана - Босния и Герцеговина.">Босния и Герцеговина</button>
                     <button class="country__list-button country__list-button--del" type="button"><span
@@ -519,7 +549,8 @@
                 </div>
               </div>
             </div>
-            <div class="step__pagination-list">
+
+            <div class="step__actions">
               <a class="step__pagination button" href="#step3">Следующий шаг</a>
               <a class="step__pagination button button--back" href="#step1">На шаг назад</a>
             </div>
@@ -527,21 +558,25 @@
 
 
           <section class="constructor__plan-item step" id="step3">
-            <h3 class="step__title">Шаг&#160;3.<span class="step__title-name"> Развлечения</span></h3>
-            <p class="step__description">Наконец, расскажите о&#160;своих планах времяпровождения. Можно писать
-              в&#160;свободной форме и&#160;ставить тэги.</p>
 
-            <ul class="step__navigation">
-              <li class="step__navigation-item">
-                <a class="step__navigation-link" href="#step1">Даты</a>
-              </li>
-              <li class="step__navigation-item">
-                <a class="step__navigation-link" href="#step2">Маршрут</a>
-              </li>
-              <li class="step__navigation-item">
-                <a class="step__navigation-link step__navigation-link--current">Развлечения</a>
-              </li>
-            </ul>
+            <div class="step__header">
+              <h3 class="step__header-title">Шаг&#160;3.</h3>
+              <p class="step__header-name">Развлечения</p>
+              <p class="step__header-description">Наконец, расскажите о&#160;своих планах времяпровождения. Можно писать
+                в&#160;свободной форме и&#160;ставить тэги.
+              </p>
+              <ul class="step__header-navigation step-navigation">
+                <li class="step-navigation__item">
+                  <a class="step-navigation__link" href="#step1">Даты</a>
+                </li>
+                <li class="step-navigation__item">
+                  <a class="step-navigation__link" href="#step2">Маршрут</a>
+                </li>
+                <li class="step-navigation__item">
+                  <a class="step-navigation__link step-navigation__link--current">Развлечения</a>
+                </li>
+              </ul>
+            </div>
 
             <div class="step__form ">
               <div class="step__form-fun fun fun--bosnia">
@@ -554,13 +589,13 @@
                   placeholder="План действий">Пить пиво и&#160;лазить по&#160;старым замкам, наслаждаться архитектурой и&#160;вот это все.</textarea>
               </div>
             </div>
+
             <div class="step__pagination-list">
-              <button class="constructor__plan-form button" type="submit">Отправить</button>
+              <button class="step__pagination-submit button" type="submit">Отправить</button>
               <a class="step__pagination step__pagination--back button button--back" href="#step2">На шаг назад</a>
             </div>
-          </section>
-          <!-- <button class="constructor__plan-form button" type="submit">Отправить</button> -->
 
+          </section>
         </div>
       </section>
     </form>

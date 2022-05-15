@@ -14,6 +14,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
+  padding-bottom: 34px;
 
   @media (min-width: @tablet-width) {
     padding-top: 60px;
@@ -133,6 +134,7 @@
   margin-top: 33px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     grid-column: 1/-1;
@@ -148,6 +150,10 @@
 
 .person-info__move-wrapper {
   width: 100%;
+  border: 2px solid #cbced9;
+  border-radius: 20px;
+  padding-bottom: 25px;
+
 
   @media (min-width: @tablet-width) {
     grid-column: 2/3;
@@ -165,37 +171,8 @@
   display: flex;
   padding: 0;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 26px 68px;
+  }
 }
-
-// .person-info__move {
-//   .moving__item {
-//     margin-right: 10px;
-//     width: 32px;
-//     height: 32px;
-//     background-color: #edeff6;
-//     border-radius: 50%;
-//     background-size: center;
-//     background-repeat: no-repeat;
-//     background-position: center center;
-
-//     @media (min-width: @tablet-width) {
-//       background-color: transparent;
-//     }
-//   }
-
-//   .moving__item--plane {
-//     background-image: url("..//image/plane.svg");
-//   }
-
-//   .moving__item--auto {
-//     background-image: url("..//image/auto.svg");
-//   }
-
-//   .moving__item--bike {
-//     background-image: url("..//image/bicycle.svg");
-//   }
-
-//   .moving__item--walk {
-//     background-image: url("..//image/run.svg");
-//   }
-// }

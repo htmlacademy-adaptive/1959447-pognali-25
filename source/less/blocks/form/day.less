@@ -1,0 +1,39 @@
+.day__item input {
+  display: none;
+}
+
+.day__item label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  color: #1d2e5b;
+}
+
+.day__item span span {
+  position: absolute;
+  opacity: 0;
+}
+
+.day__item {
+  border: 1px solid #d6d9e6;
+  background-color: #edeff6;
+  position: relative;
+}
+
+.day__item--off label {
+  opacity: 0.3;
+  color: @special_grey;
+}
+
+.day__item--off {
+  background-color: transparent;
+}
+
+.day__item--check {
+  background: #1d2e5b;
+  border: 1px solid #cbced9;
+
+  label {
+    color: #ffffff;
+  }
+}

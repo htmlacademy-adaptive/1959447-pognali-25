@@ -2,7 +2,10 @@
   background-color: #ffffff;
   border-radius: 10px;
   color: #1d2e5b;
-  padding: 25px;
+  padding-top: 23px;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-bottom: 17px;
   text-align: left;
 
   @media (min-width: @tablet-width) {
@@ -16,29 +19,31 @@
   }
 }
 
-.step__title {
+.step__header-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+  }
+}
+
+.step__header-name {
   font-weight: 700;
   font-size: 20px;
   line-height: 1;
   margin: 0;
   margin-bottom: 16px;
-  width: 50%;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
   }
-
-  @media (min-width: @desktop-width) {
-    display: flex;
-    margin-bottom: 33px;
-  }
 }
 
-.step__title-name {
-  margin: 0;
-}
 
-.step__description {
+.step__header-description {
   width: 90%;
   margin: 0;
 
@@ -50,7 +55,8 @@
   }
 }
 
-.step__pagination {
+.step__pagination,
+.step__pagination-submit {
   border-radius: 20px;
   line-height: 1.38;
   padding-top: 7px;
@@ -68,6 +74,10 @@
   @media (min-width: @desktop-width) {
     line-height: 1;
   }
+}
+
+.step__pagination-submit {
+  width: 100%;
 }
 
 .step__form {
@@ -95,11 +105,6 @@
   }
 }
 
-.step__form-continued {
-  margin-bottom: 20px;
-}
-
-
 .step__form-calendar {
   @media (min-width: @desktop-width) {
     width: 100%;
@@ -126,7 +131,7 @@
   }
 }
 
-.step__navigation {
+.step__header-navigation {
   display: none;
 
   @media (min-width: @desktop-width) {
@@ -135,7 +140,7 @@
   }
 }
 
-.step__navigation-link {
+.step-navigation__link {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.1em;
@@ -145,10 +150,39 @@
   text-decoration: none;
 }
 
-.step__navigation-link--current {
+.step-navigation__link--current {
   opacity: 1;
 }
 
-.step__navigation-item {
+.step-navigation__item {
   margin-bottom: 27px;
+}
+
+.step__name {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #1d2e5b;
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    opacity: 0.3;
+  }
+}
+
+.step__form-child-form {
+  width: 26px;
+  height: 26px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  background-color: transparent;
+  margin-right: 13px;
+}
+
+.step__form-сompanion--child {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }

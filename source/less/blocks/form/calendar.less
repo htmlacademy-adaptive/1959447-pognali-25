@@ -1,0 +1,52 @@
+.calendar__monht {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #d6d9e6;
+  border-top: 1px solid #d6d9e6;
+}
+
+.calendar__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  color: @basic_blue_light;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+  }
+}
+
+.calendar__monht-button {
+  width: 15px;
+  height: 21px;
+  background-color: transparent;
+  border: none;
+  background-image: url("..//image/arrow-back.svg");
+  margin-right: auto;
+}
+
+.calendar__monht-button--next {
+  transform: rotate(180deg);
+  margin: 0;
+  margin-left: auto;
+}
+
+.calendar__day {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+
+.calendar__day-content {
+  height: 32px;
+
+  @media (min-width: @tablet-width) {
+    height: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 76px;
+  }
+}

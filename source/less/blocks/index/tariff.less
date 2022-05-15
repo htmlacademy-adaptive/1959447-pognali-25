@@ -5,6 +5,10 @@
 .tariff__box {
   background-color: #e6e8f1;
   border-radius: 0 0 30px 30px;
+
+  @media (min-width: @desktop-width) {
+    border-radius: 0 0 50px 50px;
+  }
 }
 
 .tariff-container {
@@ -19,6 +23,10 @@
     background-position: bottom 10% right 12%;
     padding-top: 72px;
     padding-bottom: 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 165px;
   }
 }
 
@@ -39,6 +47,10 @@
     text-align: center;
     width: 100%;
     margin-bottom: 73px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 135px;
   }
 }
 
@@ -64,9 +76,9 @@
   @media (min-width: @desktop-width) {
     padding: 0;
     margin: 0 auto;
-    padding-right: 200px;
-    padding-bottom: 30px;
-    width: auto;
+    padding-bottom: 35px;
+    padding-left: 70px;
+    padding-right: 130px;
   }
 }
 
@@ -102,7 +114,7 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    margin-right: auto;
+    margin-left: 80px;
   }
 }
 
@@ -129,6 +141,11 @@
   @media (min-width: @tablet-width) {
     border-bottom: 1px solid #e1e3e9;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
+    justify-content: flex-start;
+  }
 }
 
 .tariff__price {
@@ -140,7 +157,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 300px;
+    width: 50%;
+    text-align: center;
   }
 }
 
