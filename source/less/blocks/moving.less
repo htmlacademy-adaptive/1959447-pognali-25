@@ -1,3 +1,21 @@
 .moving {
   list-style: none;
+  color: #1d2e5b;
+}
+
+.moving__link {
+  fill: @basic_blue_light;
+  opacity: 0.15;
+  padding: 7px;
+
+  &--current {
+    opacity: 1;
+  }
+}
+
+.moving__item {
+  @media (min-width: @tablet-width) {
+    margin-right: 3px;
+    margin-left: 3px;
+  }
 }

@@ -1,14 +1,23 @@
 .concept {
+  background-color: #edeff6;
+}
+
+.concept__box {
   background-color: @basic_blue;
-  margin: 0 auto;
   border-radius: 0 0 30px 30px;
-  position: relative;
-  z-index: 8;
-  padding-top: 30px;
-  padding-bottom: 82px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 70px;
+  }
 }
 
 .concept-container {
+  padding-top: 30px;
+  padding-bottom: 83px;
   background-image: url("../image/about-mobile.png");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -34,6 +43,7 @@
 
   @media (min-width: @tablet-width) {
     width: 50%;
+    padding-left: 32px;
   }
 }
 
@@ -60,17 +70,20 @@
 
   @media (min-width: @tablet-width) {
     font-size: 28px;
+    line-height: 1.18;
+    margin-top: 40px;
   }
 }
 
 .concept__description-text span {
   font-weight: 700;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 18px;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
     line-height: 1.19;
+    margin-top: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -83,13 +96,13 @@
   display: none;
 
   @media (min-width: @tablet-width) {
-    display: block;
     margin-left: 40px;
     max-width: 276px;
-    font-weight: 700;
     font-size: 24px;
     line-height: 1;
     margin-top: 56px;
+    display: flex;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {

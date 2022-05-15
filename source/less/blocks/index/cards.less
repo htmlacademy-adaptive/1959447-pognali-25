@@ -11,6 +11,8 @@
   background-color: #ffffff;
   border-radius: 10px;
   padding: 25px;
+  padding-top: 0;
+  padding-bottom: 23px;
   width: 100%;
   position: relative;
   margin-top: -16px;
@@ -22,7 +24,10 @@
     margin: 0;
     border-radius: 10px 0 0 10px;
     display: block;
-    padding: 30px 20px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 0;
     text-align: left;
   }
 }
@@ -35,12 +40,19 @@
   color: #000000;
   margin: 0;
   margin-bottom: 2px;
+  margin-top: -12px;
   justify-self: left;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 5px;
     font-size: 24px;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -52,9 +64,18 @@
   content: "";
   width: 35px;
   height: 24px;
-  position: absolute;
-  top: -35px;
   border-radius: 5px;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    width: 70px;
+    height: 47px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    order: 2;
+    margin: 0;
+    margin-right: -35px;
+  }
 }
 
 .cards__item:nth-child(1) .cards__name::before {
@@ -75,7 +96,6 @@
   color: #444444;
   opacity: 0.3;
   margin: 0;
-  margin-right: 70px;
   grid-column: 1/-1;
   text-align: left;
 
@@ -93,13 +113,17 @@
   opacity: 0.3;
   font-weight: 500;
   margin: 0;
+  margin-top: 23px;
   grid-row: 1/2;
   grid-column: 2/3;
   justify-self: right;
-  position: relative;
+  display: flex;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
-    margin-top: 17px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1;
   }
 }
 
@@ -108,9 +132,16 @@
   width: 14px;
   height: 14px;
   background-image: url("..//image/person.svg");
-  position: absolute;
-  top: 5px;
-  left: -15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 5px;
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 24px;
+    top: auto;
+    left: -10%;
+  }
 }
 
 .cards__img {
@@ -120,6 +151,6 @@
   @media (min-width: @tablet-width) {
     order: 2;
     border-radius: 0 10px 10px 0;
-    width: 50%;
+    width: 30%;
   }
 }
