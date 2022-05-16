@@ -6,8 +6,16 @@
   border: 1px solid #cbced9;
   border-radius: 4px;
   margin-top: 8px;
-}
 
+  @media (min-width: @tablet-width) {
+    margin-top: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-left: 57px;
+  }
+}
 
 .counter-input__button {
   width: 40px;
@@ -34,4 +42,8 @@
   color: #1d2e5b;
   border: none;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
 }

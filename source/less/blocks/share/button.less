@@ -73,6 +73,28 @@
 .button--back {
   background-color: transparent;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 0;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
+.button--back::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("..//image/arrow.svg");
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 19px;
+  }
 }
 
 .button--no {
@@ -88,5 +110,26 @@
   &:active {
     background-color: transparent;
     opacity: 0.3;
+  }
+}
+
+.button--step {
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.button--step::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("..//image/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 }

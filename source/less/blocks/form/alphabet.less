@@ -1,0 +1,48 @@
+.alphabet {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(5, auto) [last-line];
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(5, auto);
+    column-gap: 16px;
+    row-gap: 14px;
+  }
+}
+
+.alphabet__letter {
+  font-family: "Blogger Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1d2e5b;
+  padding: 11px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #cbced9;
+
+  &:hover {
+    border: 1px solid #959bb2;
+  }
+
+  &:active {
+    background: #1d2e5b;
+    color: #ffffff;
+    border-color: #1d2e5b;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    width: 55px;
+    height: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    width: 60px;
+  }
+}

@@ -6,12 +6,57 @@
 .country__list-item {
   display: flex;
   flex-wrap: nowrap;
-  margin-bottom: 22px;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+  height: 42px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    height: 70px;
+  }
+}
+
+.country__list-item:not(:first-child)::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  background-image: url("..//image/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 15%;
+  margin-top: -20px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.country__list-wrap {
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  padding: 11px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 60%;
+  }
+}
+
+.country__list-wrap--add {
+  background-color: #edeff6;
 }
 
 .country__list-button {
-  padding: 11px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
@@ -19,60 +64,138 @@
   text-transform: uppercase;
   color: @basic_blue_light;
   background-color: transparent;
-  border: 1px solid #cbced9;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
+  border: none;
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0;
+  text-align: left;
 }
 
-.country__list-button--select::after {
-  content: "";
-  width: 35px;
-  height: 24px;
+.country__list__select {
+  width: 16px;
   background-image: url("..//image/arrow-back.svg");
-  transform: rotate(-90deg);
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: auto;
-  order: 2;
+  transform: rotate(-90deg);
+  margin-left: 10px;
 }
 
-.country__list-button--select::before {
+.country__list-wrap--add .country__list__select {
+  background-image: url("..//image/plus.svg");
+}
+
+.country__list-flag {
+  padding: 9px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  position: relative;
+  height: 100%;
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+    border: none;
+    padding-left: 19px;
+    border-radius: 0;
+    border-left: 1px solid #e1e3e9;
+  }
+}
+
+.country__list-pic {
+  width: 35px;
+  height: 24px;
+  border-radius: 4px;
+
+  @media (min-width: @tablet-width) {
+    width: 70px;
+    height: 47px;
+    display: block;
+  }
+}
+
+.country__list-flag::before {
   content: "";
   width: 8px;
   height: 8px;
   border: 1px solid #cbced9;
   border-radius: 50%;
-  order: 1;
-  margin-left: auto;
+  background-color: @basic_blue_light;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  bottom: 0;
+  transform: translateY(-50%);
+  margin-left: -5px;
+
+  @media (min-width: @tablet-width) {
+    width: 14px;
+    height: 14px;
+    margin-left: -7px;
+  }
 }
 
 .country__list-button--del {
   width: 21px;
   height: 21px;
   border-radius: 50%;
-  background-color: rgb(237, 239, 246);
+  background-color: #edeff6;
+  flex-shrink: 0;
   background-image: url("..//image/close.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border: none;
-  margin-left: -12px;
-  margin-top: -12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: -11px;
+  margin-top: -10px;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     width: 24px;
     height: 24px;
     background-color: transparent;
-    background-size: contain;
-    opacity: 0.1;
+    background-image: url("..//image/plus.svg");
+    transform: rotate(45deg);
+    margin: 0;
+    margin-left: 22px;
+  }
+}
 
-    &:hover {
-      opacity: 0.3;
-    }
+.country__list-flag--empty {
+  display: none;
 
-    &:active {
-      opacity: 0.05;
-    }
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin: 0;
+  }
+}
+
+.country__list-button--empty {
+  display: flex;
+  align-items: center;
+}
+
+.country__list-button--empty::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #cbced9;
+  margin-left: auto;
+  margin-right: 21px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.country__list-wrap--add + .country__list-button--del {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    order: 3;
+    opacity: 0;
   }
 }

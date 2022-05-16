@@ -230,13 +230,13 @@
                 <table class="calendar__day">
                   <thead class="calendar__day-week week">
                     <tr class="week__list">
-                      <td class="week__list-name">П</td>
-                      <td class="week__list-name">В</td>
-                      <td class="week__list-name">С</td>
-                      <td class="week__list-name">Ч</td>
-                      <td class="week__list-name">П</td>
-                      <td class="week__list-name week__list-name--end">С</td>
-                      <td class="week__list-name week__list-name--end">В</td>
+                      <td class="week__list-name">П<span class="week__list-mob">н</span></td>
+                      <td class="week__list-name">В<span class="week__list-mob">т</span></td>
+                      <td class="week__list-name">С<span class="week__list-mob">р</span></td>
+                      <td class="week__list-name">Ч<span class="week__list-mob">т</span></td>
+                      <td class="week__list-name">П<span class="week__list-mob">т</span></td>
+                      <td class="week__list-name week__list-name--end">С<span class="week__list-mob">б</span></td>
+                      <td class="week__list-name week__list-name--end">В<span class="week__list-mob">с</span></td>
                     </tr>
                   </thead>
                   <tr class="calendar__day-content day">
@@ -424,7 +424,7 @@
             </div>
 
             <div class="step__actions">
-              <a class="step__pagination button" href="#step2">Следующий шаг</a>
+              <a class="step__pagination button button--step" href="#step2">Следующий шаг</a>
             </div>
 
           </section>
@@ -455,63 +455,152 @@
 
               <div class="step__form-country country">
                 <ul class="country__list">
-                  <li class="country__list-item country__list-item--bosnia">
-                    <button class="country__list-button country__list-button--select" type="button"
-                      aria-label="Выбрать страну. Выбрана - Босния и Герцеговина.">Босния и Герцеговина</button>
+
+                  <li class="country__list-item country__list-item--done">
+
+                    <div class="country__list-wrap">
+                      <button class="country__list-button country__list-button--select" type="button"
+                        aria-label="Выбрать страну. Выбрана - Босния и Герцеговина.">Босния и Герцеговина</button>
+
+                      <div class="country__list__select">
+                        <span class="country__list__select-arrow">
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="country__list-flag">
+                      <img class="country__list-pic" src="..//image/bosnia.jpg" alt="Флаг Босния и Герцеговина">
+                    </div>
+
                     <button class="country__list-button country__list-button--del" type="button"><span
                         class="visually-hidden">Удалить значение</span></button>
                   </li>
-                  <li class="country__list-item">
-                    <button class="country__list-button country__list-button--select" type="button"
-                      aria-label="Выбрать страну. Выбрана - Чехия.">Чехия</button>
+
+                  <li class="country__list-item country__list-item--done">
+
+                    <div class="country__list-wrap">
+                      <button class="country__list-button country__list-button--select" type="button"
+                        aria-label="Выбрать страну. Выбрана - Чехия.">Чехия</button>
+                      <div class="country__list__select">
+                        <span class="country__list__select-arrow">
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="country__list-flag">
+                      <img class="country__list-pic" src="..//image/czech.jpg" alt="Флаг Чехия">
+                    </div>
+
                     <button class="country__list-button country__list-button--del" type="button"><span
                         class="visually-hidden">Удалить значение</span></button>
                   </li>
+
                   <li class="country__list-item">
-                    <button class="country__list-button country__list-button--select" type="button"
-                      aria-label="Выберите страну.">Выберите страну</button>
+
+                    <div class="country__list-wrap">
+                      <button class="country__list-button country__list-button--empty" type="button"
+                        aria-label="Выберите страну.">Выберите страну</button>
+                      <div class="country__list__select">
+                        <span class="country__list__select-arrow">
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="country__list-flag country__list-flag--empty">
+                    </div>
                     <button class="country__list-button country__list-button--del" type="button"><span
                         class="visually-hidden">Удалить значение</span></button>
                   </li>
+
                   <li class="country__list-item">
-                    <button class="country__list-button country__list-button--select" type="button"
-                      aria-label="Добавить странy.">Добавить странy</button>
+
+                    <div class="country__list-wrap country__list-wrap--add">
+                      <button class="country__list-button country__list-button--empty" type="button"
+                        aria-label="Добавить странy.">Добавить страну</button>
+                      <div class="country__list__select">
+                        <span class="country__list__select-arrow">
+                        </span>
+                      </div>
+                    </div>
+
                     <button class="country__list-button country__list-button--del" type="button"><span
                         class="visually-hidden">Удалить значение</span></button>
+
+                    <div class="country__list-flag country__list-flag--empty">
+                    </div>
                   </li>
                 </ul>
               </div>
 
-              <div class="step__form-modal select-country">
-                <div class="select-country__alphabet">
-                  <button class="select-country__alphabet-letter select-country__alphabet-letter--current"
-                    type="button">А</button>
-                  <button class="select-country__alphabet-letter" type="button">Б</button>
-                  <button class="select-country__alphabet-letter" type="button">В</button>
-                  <button class="select-country__alphabet-letter" type="button">Г</button>
-                  <button class="select-country__alphabet-letter" type="button">Е</button>
-                  <button class="select-country__alphabet-letter" type="button">З</button>
-                  <button class="select-country__alphabet-letter" type="button">И</button>
-                  <button class="select-country__alphabet-letter" type="button">К</button>
-                  <button class="select-country__alphabet-letter" type="button">Л</button>
-                  <button class="select-country__alphabet-letter" type="button">М</button>
-                  <button class="select-country__alphabet-letter" type="button">Н</button>
-                  <button class="select-country__alphabet-letter" type="button">О</button>
-                  <button class="select-country__alphabet-letter" type="button">П</button>
-                  <button class="select-country__alphabet-letter" type="button">Р</button>
-                  <button class="select-country__alphabet-letter" type="button">С</button>
-                  <button class="select-country__alphabet-letter" type="button">Т</button>
-                  <button class="select-country__alphabet-letter" type="button">У</button>
-                  <button class="select-country__alphabet-letter" type="button">Ф</button>
-                  <button class="select-country__alphabet-letter" type="button">Х</button>
-                  <button class="select-country__alphabet-letter" type="button">Ч</button>
-                  <button class="select-country__alphabet-letter" type="button">Ш</button>
-                  <button class="select-country__alphabet-letter" type="button">Э</button>
-                  <button class="select-country__alphabet-letter" type="button">Ю</button>
-                  <button class="select-country__alphabet-letter" type="button">Я</button>
+              <div class="step__form-modal select-form">
+
+                <div class="select-form__alphabet alphabet">
+                  <button class="alphabet__letter alphabet__letter--current" type="button">А</button>
+                  <button class="alphabet__letter" type="button">Б</button>
+                  <button class="alphabet__letter" type="button">В</button>
+                  <button class="alphabet__letter" type="button">Г</button>
+                  <button class="alphabet__letter" type="button">Д</button>
+                  <button class="alphabet__letter" type="button">Е</button>
+                  <button class="alphabet__letter" type="button">З</button>
+                  <button class="alphabet__letter" type="button">И</button>
+                  <button class="alphabet__letter" type="button">К</button>
+                  <button class="alphabet__letter" type="button">Л</button>
+                  <button class="alphabet__letter" type="button">М</button>
+                  <button class="alphabet__letter" type="button">Н</button>
+                  <button class="alphabet__letter" type="button">О</button>
+                  <button class="alphabet__letter" type="button">П</button>
+                  <button class="alphabet__letter" type="button">Р</button>
+                  <button class="alphabet__letter" type="button">С</button>
+                  <button class="alphabet__letter" type="button">Т</button>
+                  <button class="alphabet__letter" type="button">У</button>
+                  <button class="alphabet__letter" type="button">Ф</button>
+                  <button class="alphabet__letter" type="button">Х</button>
+                  <button class="alphabet__letter" type="button">Ч</button>
+                  <button class="alphabet__letter" type="button">Ш</button>
+                  <button class="alphabet__letter" type="button">Э</button>
+                  <button class="alphabet__letter" type="button">Ю</button>
+                  <button class="alphabet__letter" type="button">Я</button>
                 </div>
-                <div class="select-country-name country-all">
+
+                <div class="select-form__name country-all">
+
                   <ul class="country-all__list">
+                    <li class="country-all__list-item">
+                      <a class="country-all__list-link" href="#">Австралия</a>
+                    </li>
+                    <li class="country-all__list-item">
+                      <a class="country-all__list-link" href="#">Австрия</a>
+                    </li>
+                    <li class="country-all__list-item">
+                      <a class="country-all__list-link" href="#">Азербайджан</a>
+                    </li>
+                    <li class="country-all__list-item">
+                      <a class="country-all__list-link" href="#">Албания</a>
+                    </li>
+                    <li class="country-all__list-item">
+                      <a class="country-all__list-link" href="#">Алжир</a>
+                    </li>
+                    <li class="country-all__list-item">
+                      <a class="country-all__list-link" href="#">Ангола</a>
+                    </li>
+                    <li class="country-all__list-item">
+                      <a class="country-all__list-link" href="#">Андорра</a>
+                    </li>
+                    <li class="country-all__list-item">
+                      <a class="country-all__list-link" href="#">Антигуа и Барбуда</a>
+                    </li>
+                    <li class="country-all__list-item">
+                      <a class="country-all__list-link" href="#">Аргентина</a>
+                    </li>
+                    <li class="country-all__list-item">
+                      <a class="country-all__list-link" href="#">Армения</a>
+                    </li>
+                    <li class="country-all__list-item">
+                      <a class="country-all__list-link" href="#">Афганистан</a>
+                    </li>
+                  </ul>
+
+                  <!-- <ul class="country-all__list">
                     <li class="country-all__list-item">
                       <button class="country-all__list-button" type="button">Австралия </button>
                     </li>
@@ -545,13 +634,13 @@
                     <li class="country-all__list-item">
                       <button class="country-all__list-button" type="button">Афганистан</button>
                     </li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
             </div>
 
             <div class="step__actions">
-              <a class="step__pagination button" href="#step3">Следующий шаг</a>
+              <a class="step__pagination button button--step" href="#step3">Следующий шаг</a>
               <a class="step__pagination button button--back" href="#step1">На шаг назад</a>
             </div>
           </section>
@@ -591,7 +680,7 @@
             </div>
 
             <div class="step__pagination-list">
-              <button class="step__pagination-submit button" type="submit">Отправить</button>
+              <button class="step__pagination-submit button button--step" type="submit">Отправить</button>
               <a class="step__pagination step__pagination--back button button--back" href="#step2">На шаг назад</a>
             </div>
 
