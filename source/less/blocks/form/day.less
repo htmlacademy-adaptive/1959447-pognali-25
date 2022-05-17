@@ -7,11 +7,11 @@
   font-size: 18px;
   line-height: 1;
   color: #1d2e5b;
-}
 
-.day__item span span {
-  position: absolute;
-  opacity: 0;
+  @media (min-width: @desktop-width) {
+    margin-left: 10px;
+    margin-right: -10px;
+  }
 }
 
 .day__item {
@@ -32,8 +32,47 @@
 .day__item--check {
   background: #1d2e5b;
   border: 1px solid #cbced9;
+  position: relative;
 
   label {
     color: #ffffff;
+  }
+}
+
+.day__item--check-in {
+  @media (min-width: @desktop-width) {
+    border: 4px solid #ff5c23;
+  }
+}
+
+.day__item--check-in::after {
+  @media (min-width: @desktop-width) {
+    content: "Заезд";
+    width: 43px;
+    height: 20px;
+    position: absolute;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.11;
+    bottom: 0;
+    left: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.day__item--check-out::after {
+  @media (min-width: @desktop-width) {
+    content: "Выезд";
+    width: 43px;
+    height: 20px;
+    position: absolute;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.11;
+    bottom: 0;
+    left: 10px;
+    margin-bottom: 10px;
   }
 }

@@ -192,30 +192,32 @@
 
             <div class="step__form">
 
-              <div class="step__form-сompanion">
-                <label class="step__name" for="people">Ищу попутчиков: <span>чел.</span></label>
-                <div class="counter-input">
-                  <button class="counter-input__button counter-input__button--minus" type="button"><span
-                      class="visually-hidden">Минус</span></button>
-                  <input class="counter-input__input" type="number" step="1" placeholder="2" id="people">
-                  <button class="counter-input__button counter-input__button--plus" type="button"><span
-                      class="visually-hidden">Плюс</span></button>
+              <div class="step__container">
+                <div class="step__form-сompanion">
+                  <label class="step__name" for="people">Ищу попутчиков: <span>чел.</span></label>
+                  <div class="counter-input">
+                    <button class="counter-input__button counter-input__button--minus" type="button"><span
+                        class="visually-hidden">Минус</span></button>
+                    <input class="counter-input__input" type="number" step="1" placeholder="2" id="people">
+                    <button class="counter-input__button counter-input__button--plus" type="button"><span
+                        class="visually-hidden">Плюс</span></button>
+                  </div>
                 </div>
-              </div>
 
-              <div class="step__form-сompanion step__form-сompanion--child">
-                <input class="step__form-child-form" id="child" type="checkbox" value="child" checked>
-                <label class="step__name" for="child">Можно с детьми</label>
-              </div>
+                <div class="step__form-сompanion step__form-сompanion--child">
+                  <input class="step__form-child-form" id="child" type="checkbox" value="child" checked hidden>
+                  <label class="step__name step__name--child" for="child">Можно с детьми</label>
+                </div>
 
-              <div class="step__form-сompanion">
-                <label class="step__name" for="continued">Длительность: <span>дн.</span></label>
-                <div class="counter-input">
-                  <button class="counter-input__button counter-input__button--minus" type="button"><span
-                      class="visually-hidden">Минус</span></button>
-                  <input class="counter-input__input" type="number" step="1" placeholder="2" id="continued">
-                  <button class="counter-input__button counter-input__button--plus" type="button"><span
-                      class="visually-hidden">Плюс</span></button>
+                <div class="step__form-сompanion">
+                  <label class="step__name" for="continued">Длительность: <span>дн.</span></label>
+                  <div class="counter-input">
+                    <button class="counter-input__button counter-input__button--minus" type="button"><span
+                        class="visually-hidden">Минус</span></button>
+                    <input class="counter-input__input" type="number" step="1" placeholder="2" id="continued">
+                    <button class="counter-input__button counter-input__button--plus" type="button"><span
+                        class="visually-hidden">Плюс</span></button>
+                  </div>
                 </div>
               </div>
 
@@ -372,17 +374,17 @@
                       <input type="checkbox" value="25" id="25mar" disabled>
                       <label for="25mar"><span>25</span></label>
                     </td>
-                    <td class="day__item day__item--check">
+                    <td class="day__item day__item--check day__item--check-in">
                       <input type="checkbox" value="26" id="26mar" checked>
-                      <label for="26mar"><span>26 <span> Заезд </span></span></label>
+                      <label for="26mar"><span>26 </span></label>
                     </td>
                     <td class="day__item day__item--check">
                       <input type="checkbox" value="27" id="27mar" checked>
                       <label for="27mar"><span>27</span></label>
                     </td>
-                    <td class="day__item day__item--check">
+                    <td class="day__item day__item--check day__item--check-out">
                       <input type="checkbox" value="28" id="28mar" checked>
-                      <label for="28mar"><span>28 <span> Выезд </span></span></label>
+                      <label for="28mar"><span>28 </span></label>
                     </td>
                     <td class="day__item">
                       <input type="checkbox" value="29" id="29mar">
@@ -674,12 +676,12 @@
               </div>
               <div class="step__form-fun fun fun--сzech">
                 <label class="fun__title">Чехия</label>
-                <textarea class="fun__comment" rows=5
+                <textarea class="fun__comment fun__comment--write" rows=5
                   placeholder="План действий">Пить пиво и&#160;лазить по&#160;старым замкам, наслаждаться архитектурой и&#160;вот это все.</textarea>
               </div>
             </div>
 
-            <div class="step__pagination-list">
+            <div class="step__actions">
               <button class="step__pagination-submit button button--step" type="submit">Отправить</button>
               <a class="step__pagination step__pagination--back button button--back" href="#step2">На шаг назад</a>
             </div>
