@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Погнали</title>
+
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="image/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="image/favicons/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="msapplication-config" content="image/favicons/browserconfig.xml" />
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body class="page__body">
@@ -165,7 +175,12 @@
 
           <ul class="destination__offers cards">
             <li class="cards__item">
-              <img class="cards__img" src="image/thailand-mobile.jpg" alt="Таиланд." />
+              <picture>
+                <source media="(min-width: 768px)" srcset="image/thailand-tablet.jpg 1x, image/thailand-tablet@2.jpg 2x">
+                <img class="cards__img" width="270" height="110" src="image/thailand-mobile.jpg" srcset="image/thailand-mobile@2.jpg"
+                  alt="Таиланд." />
+              </picture>
+
               <div class="cards__wrapper">
                 <h3 class="cards__name">Таиланд</h3>
                 <p class="cards__slogan">Джунгли зовут!</p>
@@ -175,7 +190,11 @@
               </div>
             </li>
             <li class="cards__item">
-              <img class="cards__img" src="image/france-mobile.jpg" alt="Франция." />
+              <picture>
+                <source media="(min-width: 768px)" srcset="image/france-tablet.jpg 1x, image/france-tablet@2.jpg 2x">
+                <img class="cards__img" width="270" height="110" src="image/france-mobile.jpg" srcset="image/france-mobile@2.jpg"
+                  alt="Франция." />
+              </picture>
               <div class="cards__wrapper">
                 <h3 class="cards__name">Франция</h3>
                 <p class="cards__slogan">Трэ бьен, манифик!</p>
@@ -184,7 +203,12 @@
               </div>
             </li>
             <li class="cards__item">
-              <img class="cards__img" src="image/czech-mobile.jpg" alt="Чехия." />
+              <picture>
+                <source class="cards__img" media="(min-width: 768px)"
+                  srcset="image/czech-tablet.jpg 1x, image/czech-tablet@2.jpg 2x">
+                <img class="cards__img" width="270" height="110" src="image/czech-mobile.jpg" srcset="image/czech-mobile@2.jpg" alt="Чехия." />
+              </picture>
+
               <div class="cards__wrapper">
                 <h3 class="cards__name">Чехия</h3>
                 <p class="cards__slogan">Закоулки старой Европы</p>
@@ -222,7 +246,10 @@
 
               <div class="cards-person__pic">
                 <p class="cards-person__level"> <span class="cards-person__level-text">99 <span>level</span></span></p>
-                <img class="cards-person__img" src="image/tanya.jpg" alt="Таня Фирсова." />
+                <picture>
+                  <source class="cards-person__img" media="(min-width: 768px)" srcset="image/tanya-tablet.jpg 1x, image/tanya-tablet@2.jpg 2x">
+                  <img class="cards-person__img" width="270" height="270" src="image/tanya.jpg" srcset="image/tanya@2.jpg" alt="Таня Фирсова." />
+                </picture>
               </div>
 
               <ul class="cards-person__flag flag-country">
@@ -313,7 +340,10 @@
 
               <div class="cards-person__pic">
                 <p class="cards-person__level"> <span class="cards-person__level-text">80 <span>level</span></span></p>
-                <img class="cards-person__img" src="image/petya.jpg" alt="Петя Демин." />
+                <picture>
+                  <source class="cards-person__img" media="(min-width: 768px)" srcset="image/petya-tablet.jpg 1x, image/petya-tablet@2.jpg 2x">
+                  <img class="cards-person__img" width="270" height="270" src="image/petya.jpg" srcset="image/petya@2.jpg" alt="Петя Демин." />
+                </picture>
               </div>
 
               <ul class="cards-person__flag flag-country">
