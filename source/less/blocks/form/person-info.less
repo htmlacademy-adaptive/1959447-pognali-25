@@ -65,6 +65,11 @@
   }
 }
 
+.picture-wrapper {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
 .person-info__img-avatar {
   width: 100px;
   border-radius: 50%;
@@ -73,14 +78,16 @@
   @media (min-width: @tablet-width) {
     grid-column: 3/4;
     grid-row: 1/2;
-    width: 190px;
     border-radius: 7px;
   }
 
   @media (min-width: @desktop-width) {
+    border-radius: 0;
+    width: 190px;
+    height: 190px;
     margin: 0;
     align-self: end;
-    border-radius: 0;
+    object-fit: cover;
   }
 }
 
@@ -100,6 +107,8 @@
     padding: 0;
     margin: 0;
     align-self: flex-start;
+    margin-top: -5px;
+    margin-left: 10px;
   }
 }
 

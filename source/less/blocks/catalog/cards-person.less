@@ -31,14 +31,13 @@
   }
 }
 
-
 .cards-person__pic {
   order: -1;
   width: 100%;
   display: grid;
 }
 
-.cards-person__pic picture {
+.picture-wrap {
   grid-row: 1/-1;
   grid-column: 1/-1;
   order: -1;
@@ -47,10 +46,8 @@
 .cards-person__img {
   display: block;
   width: 100%;
+  height: auto;
   border-radius: 10px 10px 0 0;
-  grid-row: 1/-1;
-  grid-column: 1/-1;
-  order: -1;
 }
 
 .cards-person__level {
@@ -143,8 +140,6 @@
   display: flex;
   padding: 0;
 }
-
-// Вложенные селекторы убрать!!
 
 .cards-person__flag {
   display: flex;

@@ -83,7 +83,16 @@
         <div class="container person-info__container">
           <h2 class="person-info__title visually-hidden">Заполнение личной информации</h2>
           <p class="person-info__level">80 <span class="person-info__level-text">level</span></p>
-          <img class="person-info__img-avatar" src="image/petya.jpg" alt="Петя Демин.">
+
+          <div class="picture-wrapper">
+            <picture>
+              <source class="person-info__img-avatar" media="(min-width: 1366px)"
+                srcset="image/petya-cat-tablet.jpg 1x, image/petya-cat-tablet@2.jpg 2x">
+              <img class="person-info__img-avatar" width="100" height="100" src="image/petya-form-mobile.jpg"
+                srcset="image/petya-form-mobile@2.jpg" alt="Петя Демин." />
+            </picture>
+          </div>
+
           <div class="person-info__img-wrapper">
             <label class="person-info__img-title" for="img"><span class="person-info__img-title-none">Сменить</span>
               фото</label>
@@ -604,41 +613,6 @@
                     </li>
                   </ul>
 
-                  <!-- <ul class="country-all__list">
-                    <li class="country-all__list-item">
-                      <button class="country-all__list-button" type="button">Австралия </button>
-                    </li>
-                    <li class="country-all__list-item">
-                      <button class="country-all__list-button" type="button">Австрия</button>
-                    </li>
-                    <li class="country-all__list-item">
-                      <button class="country-all__list-button" type="button">Азербайджан</button>
-                    </li>
-                    <li class="country-all__list-item">
-                      <button class="country-all__list-button" type="button">Албания</button>
-                    </li>
-                    <li class="country-all__list-item">
-                      <button class="country-all__list-button" type="button">Алжир</button>
-                    </li>
-                    <li class="country-all__list-item">
-                      <button class="country-all__list-button" type="button">Ангола</button>
-                    </li>
-                    <li class="country-all__list-item">
-                      <button class="country-all__list-button" type="button">Андорра</button>
-                    </li>
-                    <li class="country-all__list-item">
-                      <button class="country-all__list-button" type="button">Антигуа и Барбуда</button>
-                    </li>
-                    <li class="country-all__list-item">
-                      <button class="country-all__list-button" type="button">Аргентина</button>
-                    </li>
-                    <li class="country-all__list-item">
-                      <button class="country-all__list-button" type="button">Армения</button>
-                    </li>
-                    <li class="country-all__list-item">
-                      <button class="country-all__list-button" type="button">Афганистан</button>
-                    </li>
-                  </ul> -->
                 </div>
               </div>
             </div>
