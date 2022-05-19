@@ -11,8 +11,19 @@
 <body class="page__body catalog">
   <header class="header">
     <div class="header__wrapper container header__wrapper--open">
-      <a class="header__logo header__logo--open" href="index.html">
-        <span class="visually-hidden">Логотип Погнали</span>
+
+      <a class="header__logo header__logo--white"  href="index.html">
+        <picture>
+          <source class="header__logo-img" media="(min-width: 768px)" srcset="image/logo_full.svg">
+          <img class="header__logo-img" width="96" height="15" src="image/lobo_mobile.svg" alt="Логотип Погнали." />
+        </picture>
+      </a>
+
+      <a class="header__logo header__logo--dark"  href="index.html">
+        <picture>
+          <source class="header__logo-img" media="(min-width: 768px)" srcset="image/logo_full-dark.svg">
+          <img class="header__logo-img" width="96" height="15" src="image/logo_mobile-dark.svg" alt="Логотип Погнали." />
+        </picture>
       </a>
 
       <button class="header__toggle header__toggle--opened" type="button">

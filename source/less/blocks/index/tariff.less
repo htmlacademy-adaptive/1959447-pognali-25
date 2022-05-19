@@ -162,7 +162,7 @@
   }
 }
 
-.tariff__plan dt::after {
+.tariff__name::after {
   counter-increment: orderedlist;
   content: counter(orderedlist);
   font-weight: 400;
@@ -185,6 +185,11 @@
   }
 }
 
-.tariff__plan dt:nth-child(1)::before {
+dt.tariff__name:nth-of-type(1)::after {
   background-color: @special_orange;
 }
+
+dt.tariff__name:nth-of-type(3)::after {
+  background-color: @basic_yellow;
+}
+

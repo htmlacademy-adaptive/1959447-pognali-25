@@ -322,11 +322,34 @@
   display: none;
 
   @media (min-width: @tablet-width) {
-    display: block;
+    display: flex;
     margin-left: 10px;
   }
 }
 
+.catalog-traveler__offers-pagination-number-item {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: @basic_blue_light;
+  padding: 15px 15px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    background-color: @basic_yellow;
+    border-radius: 50%;
+    opacity: 1;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 12px 17px;
+  }
+}
 
 .catalog-traveler__offers-pagination-number-item--current {
   @media (min-width: @tablet-width) {
@@ -360,28 +383,5 @@
   @media (min-width: @desktop-width) {
     width: 100%;
     padding-top: 0;
-  }
-}
-
-.catalog-traveler__offers-pagination-number-item {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 20px;
-  color: @basic_blue_light;
-  padding: 15px 20px;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    background-color: @basic_yellow;
-    border-radius: 50%;
-    opacity: 1;
-  }
-
-  @media (min-width: @tablet-width) {
-    padding: 12px 17px;
   }
 }

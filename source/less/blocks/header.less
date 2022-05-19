@@ -92,48 +92,66 @@
   }
 }
 
+.header__logo--white {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.header__logo--dark {
+  display: block;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .header__logo {
-  background-image: url("..//image/logo_mobile.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 96px;
-  height: 15px;
   align-self: center;
   flex-shrink: 0;
 
   @media (min-width: @tablet-width) {
-    background-image: url("..//image/logo_full.svg");
-    width: 166px;
-    height: 42px;
     margin-top: 40px;
     margin-bottom: 40px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 200px;
-    height: 50px;
     margin: 0;
   }
 }
 
-.header__logo--open {
-  background-image: url("..//image/logo-black.svg");
+.header__logo-img {
   width: 96px;
   height: 15px;
 
   @media (min-width: @tablet-width) {
-    background-image: url("..//image/logo_full_black.svg");
-    height: 50px;
-    width: 50%;
+    width: 166px;
+    height: 42px;
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("..//image/logo_full.svg");
     width: 200px;
     height: 50px;
-    margin: 0;
   }
 }
+
+// .header__logo--open {
+//   width: 96px;
+//   height: 15px;
+
+//   @media (min-width: @tablet-width) {
+//     height: 50px;
+//     width: 50%;
+//   }
+
+//   @media (min-width: @desktop-width) {
+//     width: 200px;
+//     height: 50px;
+//     margin: 0;
+//   }
+// }
 
 .header__toggle {
   width: 74px;
