@@ -4,14 +4,22 @@
 }
 
 .moving__link {
-  fill: @basic_blue_light;
-  opacity: 0.15;
   padding: 7px;
 
   &--current {
     opacity: 1;
   }
 }
+
+.moving__link-svg {
+  fill: @basic_blue_light;
+  opacity: 0.15;
+}
+
+.moving__link--current .moving__link-svg {
+  opacity: 1;
+}
+
 
 .moving__select {
   margin-right: 20px;

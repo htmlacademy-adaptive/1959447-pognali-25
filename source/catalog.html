@@ -9,21 +9,32 @@
 </head>
 
 <body class="page__body catalog">
+
+
+  <svg style="display: none;">
+    <symbol viewBox="0 0 13 11" id="icon-love">
+      <path
+        d="M3.255.474c1.693 0 3.064 1.348 3.064 3.01 0-1.662 1.371-3.01 3.064-3.01s3.064 1.348 3.064 3.01c0 2.505-2.477 3.389-5.828 7.377a.394.394 0 0 1-.6 0C2.669 6.873.19 5.989.19 3.484c0-1.662 1.372-3.01 3.064-3.01Z" />
+    </symbol>
+  </svg>
+
   <header class="header">
     <div class="header__wrapper container header__wrapper--open">
 
-      <a class="header__logo header__logo--white"  href="index.html">
-        <picture>
-          <source class="header__logo-img" media="(min-width: 768px)" srcset="image/logo_full.svg">
-          <img class="header__logo-img" width="96" height="15" src="image/lobo_mobile.svg" alt="Логотип Погнали." />
-        </picture>
-      </a>
-
-      <a class="header__logo header__logo--dark"  href="index.html">
-        <picture>
-          <source class="header__logo-img" media="(min-width: 768px)" srcset="image/logo_full-dark.svg">
-          <img class="header__logo-img" width="96" height="15" src="image/logo_mobile-dark.svg" alt="Логотип Погнали." />
-        </picture>
+      <a class="header__logo-link" href="index.html">
+        <div class=" header__logo header__logo--white">
+          <picture>
+            <source class="header__logo-img" media="(min-width: 768px)" srcset="image/logo_full.svg">
+            <img class="header__logo-img" width="96" height="15" src="image/lobo_mobile.svg" alt="Логотип Погнали." />
+          </picture>
+        </div>
+        <div class="header__logo header__logo--dark">
+          <picture>
+            <source class="header__logo-img" media="(min-width: 768px)" srcset="image/logo_full-dark.svg">
+            <img class="header__logo-img" width="96" height="15" src="image/logo_mobile-dark.svg"
+              alt="Логотип Погнали." />
+          </picture>
+        </div>
       </a>
 
       <button class="header__toggle header__toggle--opened" type="button">
@@ -1012,12 +1023,11 @@
             <div class="person-select__like">
               <button class="person-select__like-button button-love button-love--like" type="button" name="like">
                 <span class="visually-hidden">Добавить в избранное</span>
-                <svg class="button-love__icon button-love__icon--like" width="13" height="11" viewBox="0 0 13 11"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.255.474c1.693 0 3.064 1.348 3.064 3.01 0-1.662 1.371-3.01 3.064-3.01s3.064 1.348 3.064 3.01c0 2.505-2.477 3.389-5.828 7.377a.394.394 0 0 1-.6 0C2.669 6.873.19 5.989.19 3.484c0-1.662 1.372-3.01 3.064-3.01Z" />
+                <svg class="button-love__icon button-love__icon--like" width="13" height="11">
+                  <use xlink:href="#icon-love"></use>
                 </svg>
               </button>
+
               <p class="person-select__like-count">1,5 М</p>
             </div>
 
@@ -1099,10 +1109,8 @@
             <div class="person-select__like">
               <button class="person-select__like-button button-love" type="button" name="like">
                 <span class="visually-hidden">Добавить в избранное</span>
-                <svg class="button-love__icon" width="13" height="11" viewBox="0 0 13 11"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.255.474c1.693 0 3.064 1.348 3.064 3.01 0-1.662 1.371-3.01 3.064-3.01s3.064 1.348 3.064 3.01c0 2.505-2.477 3.389-5.828 7.377a.394.394 0 0 1-.6 0C2.669 6.873.19 5.989.19 3.484c0-1.662 1.372-3.01 3.064-3.01Z" />
+                <svg class="button-love__icon button-love__icon--like" width="13" height="11">
+                  <use xlink:href="#icon-love"></use>
                 </svg>
               </button>
               <p class="person-select__like-count">1500</p>
@@ -1180,10 +1188,8 @@
             <div class="person-select__like">
               <button class="person-select__like-button button-love" type="button" name="like">
                 <span class="visually-hidden">Добавить в избранное</span>
-                <svg class="button-love__icon" width="13" height="11" viewBox="0 0 13 11"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.255.474c1.693 0 3.064 1.348 3.064 3.01 0-1.662 1.371-3.01 3.064-3.01s3.064 1.348 3.064 3.01c0 2.505-2.477 3.389-5.828 7.377a.394.394 0 0 1-.6 0C2.669 6.873.19 5.989.19 3.484c0-1.662 1.372-3.01 3.064-3.01Z" />
+                <svg class="button-love__icon button-love__icon--like" width="13" height="11">
+                  <use xlink:href="#icon-love"></use>
                 </svg>
               </button>
               <p class="person-select__like-count">170</p>
@@ -1264,10 +1270,8 @@
             <div class="person-select__like">
               <button class="person-select__like-button button-love" type="button" name="like">
                 <span class="visually-hidden">Добавить в избранное</span>
-                <svg class="button-love__icon" width="13" height="11" viewBox="0 0 13 11"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M3.255.474c1.693 0 3.064 1.348 3.064 3.01 0-1.662 1.371-3.01 3.064-3.01s3.064 1.348 3.064 3.01c0 2.505-2.477 3.389-5.828 7.377a.394.394 0 0 1-.6 0C2.669 6.873.19 5.989.19 3.484c0-1.662 1.372-3.01 3.064-3.01Z" />
+                <svg class="button-love__icon button-love__icon--like" width="13" height="11">
+                  <use xlink:href="#icon-love"></use>
                 </svg>
               </button>
               <p class="person-select__like-count">23</p>
