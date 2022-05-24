@@ -10,3 +10,43 @@
     line-height: 1;
   }
 }
+
+.mail__link::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: @special_yellow_dark;
+  border-radius: 50%;
+  display: block;
+  background-image: url("../image/icon/mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: @tablet-width) {
+    height: 68px;
+    width: 68px;
+    background-size: 50%;
+    margin-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 50px;
+    width: 50px;
+    background-color: @special_yellow_dark;
+    background-image: url("../image/icon_mail.svg");
+    margin: 0;
+  }
+}
+
+.mail__link:hover {
+  &::before {
+    background-color: #f26926;
+  }
+}
+
+.mail__link:active {
+  &::before {
+    background-color: #f26926;
+    opacity: 0.3;
+  }
+}

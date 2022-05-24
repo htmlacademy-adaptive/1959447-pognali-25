@@ -17,10 +17,11 @@
   line-height: 1.38;
   color: @special_grey;
   overflow: hidden;
-  resize: none;
+  resize: vertical;
   margin-top: 18px;
   width: 100%;
   opacity: 0.3;
+  min-height: 100px;
 
   &:hover {
     border: 1px solid #959bb2;
@@ -39,6 +40,7 @@
 
   @media (min-width: @desktop-width) {
     padding: 25px;
+    width: 730px;
   }
 }
 
@@ -56,10 +58,16 @@
   color: @basic_blue_light;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 
   @media (min-width: @tablet-width) {
     font-weight: 700;
     font-size: 30px;
+  }
+
+  span {
+    margin-right: 10px;
+    overflow: hidden;
   }
 }
 
@@ -67,13 +75,25 @@
   content: "";
   width: 15px;
   height: 6px;
-  background-image: url("..//image/step3.svg");
+  background-image: url("../image/step3.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 5px;
+  flex-shrink: 0;
+  margin-left: -12px;
 
   @media (min-width: @tablet-width) {
-    display: none;
+    background-image: none;
+    width: 14px;
+    height: 14px;
+    background-color: @basic_blue_light;
+    border-radius: 50%;
+    order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: auto;
+    margin-right: 34px;
   }
 }
 
@@ -84,18 +104,25 @@
   background-repeat: no-repeat;
   background-size: contain;
   margin-left: auto;
+  flex-shrink: 0;
 
 
   @media (min-width: @tablet-width) {
     width: 70px;
     height: 47px;
+    margin-right: 40px;
+
+    @media (min-width: @desktop-width) {
+      order: 4;
+      margin-left: 0;
+    }
   }
 }
 
 .fun--сzech .fun__title::after {
-  background-image: url("..//image/czech.jpg");
+  background-image: url("../image/czech.jpg");
 }
 
 .fun--bosnia .fun__title::after {
-  background-image: url("..//image/bosnia.jpg");
+  background-image: url("../image/bosnia.jpg");
 }

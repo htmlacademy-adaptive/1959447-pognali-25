@@ -60,21 +60,21 @@
 
   </svg>
 
-  <header class="header">
+  <header class="header header--opened">
 
-    <div class="header__wrapper container header__wrapper--open">
+    <div class="header__wrapper container">
 
       <a class="header__logo-link">
-        <div class="header__logo header__logo--white">
+        <div class="header__logo">
           <picture>
             <source class="header__logo-img" media="(min-width: 768px)" srcset="image/logo_full.svg">
             <img class="header__logo-img" width="96" height="15" src="image/lobo_mobile.svg" alt="Логотип Погнали." />
           </picture>
         </div>
-        <div class="header__logo header__logo--dark">
+        <div class="header__logo header__logo--opened">
           <picture>
-            <source class="header__logo-img" media="(min-width: 768px)" srcset="image/logo_full-dark.svg">
-            <img class="header__logo-img" width="96" height="15" src="image/logo_mobile-dark.svg"
+            <source class="header__logo-img header__logo-img--opened" media="(min-width: 768px)" srcset="image/logo_full-dark.svg">
+            <img class="header__logo-img header__logo-img--opened" width="96" height="15" src="image/logo_mobile-dark.svg"
               alt="Логотип Погнали." />
           </picture>
         </div>
@@ -105,12 +105,12 @@
         <a class="header__login login button" href="#">Авторизация</a>
 
         <ul class="header__contacts">
-          <li class="header__tel contacts-phone">
-            <a class="contacts-phone__link link" href="tel:+78005558628"> <span class="link__text-hidden">8 800
+          <li class="header__tel">
+            <a class="header__tel-link link" href="tel:+78005558628"> <span class="link__text-hidden">8 800
                 555-86-28</span></a>
           </li>
-          <li class="header__mail mail">
-            <a class="mail__link link" href="mailto:mail@htmlacademy.ru"><span
+          <li class="header__mail">
+            <a class="header__mail-link link" href="mailto:mail@htmlacademy.ru"><span
                 class="link__text-hidden">mail@htmlacademy.ru</span></a>
           </li>
         </ul>
@@ -485,30 +485,37 @@
           <h2 class="tariff__title">Добавьте свой профиль</h2>
 
           <dl class="tariff__plan ">
-            <dt class="tariff__name">
-              Базовое размещение
-            </dt>
-            <dd class="tariff__price">
-              Бесплатно
-            </dd>
-            <dt class="tariff__name">
-              Вывод на первых позициях
-            </dt>
-            <dd class="tariff__price">
-              99 руб./мес
-            </dd>
-            <dt class="tariff__name">
-              Кастомный цвет карточки
-            </dt>
-            <dd class="tariff__price">
-              59 руб./мес
-            </dd>
+            <div class="tariff__wrap">
+              <dt class="tariff__name">
+                Базовое размещение
+              </dt>
+              <dd class="tariff__price">
+                Бесплатно
+              </dd>
+            </div>
+            <div class="tariff__wrap">
+              <dt class="tariff__name">
+                Вывод на первых позициях
+              </dt>
+              <dd class="tariff__price">
+                99 руб./мес
+              </dd>
+            </div>
+            <div class="tariff__wrap">
+              <dt class="tariff__name">
+                Кастомный цвет карточки
+              </dt>
+              <dd class="tariff__price">
+                59 руб./мес
+              </dd>
+            </div>
           </dl>
+
           <a class="tariff__button button button--no" href="#">Показать тарифы для бизнеса</a>
         </div>
       </div>
 
-      <div class="tarif__modale">
+      <!-- <div class="tarif__modale">
         <div class="tarif__content">
           <h3 class="tarif__title">Бизнес-тарифы</h3>
           <dl class="tariff__plan ">
@@ -532,22 +539,20 @@
             </dd>
 
         </div>
-
-
-      </div>
+ -->
     </section>
 
 
     <section class="registration">
       <div class="registration__box">
         <div class="container">
+          <h2 class="registration__title visually-hidden">Авторизация и контакты</h2>
+          <p class="registration__name">Заинтересовались?</p>
+          <p class="registration__description">
+            Зарегистрируйтесь, это&nbsp;быстро и&nbsp;бесплатно! Уже&nbsp;зарегистрированы? Тогда скорее <a
+              class="registration__login" href="#">авторизуйтесь.</a>
+          </p>
           <form>
-            <h2 class="registration__title visually-hidden">Авторизация и контакты</h2>
-            <h3 class="registration__name">Заинтересовались?</h3>
-            <p class="registration__description">
-              Зарегистрируйтесь, это&nbsp;быстро и&nbsp;бесплатно! Уже&nbsp;зарегистрированы? Тогда скорее <a
-                class="registration__login" href="#">авторизуйтесь.</a>
-            </p>
             <div class="registration__form">
               <input class="registration__email" type="email" placeholder="E-mail" />
               <button class="registration__email-button" type="submit">
@@ -597,8 +602,12 @@
 
   <footer class="footer">
     <div class="container footer-container">
-      <a class="footer__logo" href="index.html">
-        <span class="visually-hidden">Логотип Погнали</span>
+      <a class="footer__logo-link" href="index.html">
+        <picture>
+          <source class="footer__logo-img" media="(min-width: 768px)" srcset="image/logo_full-dark.svg">
+          <img class="footer__logo-img" width="96" height="15" src="image/logo_mobile-dark.svg"
+            alt="Логотип Погнали." />
+        </picture>
       </a>
       <ul class="footer__list social">
         <li class="social__item social__item--tm">

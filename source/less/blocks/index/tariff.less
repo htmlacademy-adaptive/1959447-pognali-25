@@ -3,33 +3,42 @@
 }
 
 .tariff__box {
-  background-color: #e6e8f1;
+  background-color: #edeff6;
   border-radius: 0 0 30px 30px;
+  padding-top: 50px;
+
+  @media (min-width: @tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
 
   @media (min-width: @desktop-width) {
-    border-radius: 0 0 50px 50px;
+    border-radius: 0 0 56px 56px;
   }
 }
 
 .tariff-container {
-  padding-top: 50px;
-  padding-bottom: 40px;
   text-align: left;
   background-image: url("../image/rates.svg");
   background-repeat: no-repeat;
-  background-position: 90% 10%;
+  background-position: top right 25px;
+  padding-left: 49px;
+  padding-right: 25px;
+  padding-bottom: 38px;
 
   @media (min-width: @tablet-width) {
-    background-position: bottom 10% right 12%;
-    padding-top: 72px;
-    padding-bottom: 87px;
+    background-image: url("../image/rates-tab.png");
+    background-position: bottom 125px right 40px;
+    padding: 40px;
+    padding-bottom: 165px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 165px;
+    background-image: url("../image/rates-desk.png");
+    background-position: center right;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 }
-
 
 .tariff__title {
   font-weight: 700;
@@ -37,8 +46,7 @@
   line-height: 1;
   color: @special_orange;
   margin: 0;
-  margin-left: 24px;
-  margin-bottom: 43px;
+  margin-bottom: 50px;
   width: 40%;
 
   @media (min-width: @tablet-width) {
@@ -57,28 +65,11 @@
 .tariff__plan {
   margin: 0;
   padding: 0;
-  padding-bottom: 15px;
-  padding-left: 24px;
   counter-reset: orderedlist;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
-    padding-right: 35px;
-    padding-top: 5px;
-    margin: 0;
-    margin-bottom: 56px;
-    align-items: center;
-  }
 
   @media (min-width: @desktop-width) {
     padding: 0;
     margin: 0 auto;
-    padding-bottom: 35px;
-    padding-left: 70px;
-    padding-right: 130px;
   }
 }
 
@@ -101,20 +92,20 @@
   color: #132576;
   display: block;
   text-transform: none;
-  margin-top: 20px;
+  margin-top: 25px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     text-transform: none;
     text-align: left;
-    margin-left: 89px;
     display: flex;
     align-items: center;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    margin-left: 80px;
+    padding: 0;
+    margin-top: 30px;
   }
 }
 
@@ -124,7 +115,7 @@
     content: "";
     width: 68px;
     height: 68px;
-    background-image: url("..//image/icon_businessman.svg");
+    background-image: url("../image/icon_businessman.svg");
     background-repeat: no-repeat;
     background-color: #e2e5f2;
     background-position: center;
@@ -134,26 +125,28 @@
 }
 
 .tariff__name {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  width: 85%;
 
   @media (min-width: @tablet-width) {
-    border-bottom: 1px solid #e1e3e9;
+    width: auto;
+    padding-top: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 50%;
-    justify-content: flex-start;
+    padding: 0;
   }
 }
 
 .tariff__price {
-  padding-bottom: 9px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #e1e3e9;
+  order: 3;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 35px;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -162,22 +155,39 @@
   }
 }
 
-.tariff__box .tariff__name::after {
+.tariff__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.tariff__wrap::after {
   counter-increment: orderedlist;
   content: counter(orderedlist);
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
-  padding: 10px 13px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   color: #ffffff;
   background-color: @special_yellow_dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
 
   @media (min-width: @tablet-width) {
     font-size: 28px;
-    padding: 19px 25px;
+    width: 68px;
+    height: 68px;
     order: -1;
-    margin-right: 25px;
+    margin: 0;
+    margin-right: 22px;
   }
 
   @media (min-width: @desktop-width) {

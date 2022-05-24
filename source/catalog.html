@@ -19,16 +19,16 @@
   </svg>
 
   <header class="header">
-    <div class="header__wrapper container header__wrapper--open">
+    <div class="header__wrapper container">
 
       <a class="header__logo-link" href="index.html">
-        <div class=" header__logo header__logo--white">
+        <div class="header__logo">
           <picture>
             <source class="header__logo-img" media="(min-width: 768px)" srcset="image/logo_full.svg">
             <img class="header__logo-img" width="96" height="15" src="image/lobo_mobile.svg" alt="Логотип Погнали." />
           </picture>
         </div>
-        <div class="header__logo header__logo--dark">
+        <div class="header__logo header__logo--opened">
           <picture>
             <source class="header__logo-img" media="(min-width: 768px)" srcset="image/logo_full-dark.svg">
             <img class="header__logo-img" width="96" height="15" src="image/logo_mobile-dark.svg"
@@ -1068,7 +1068,7 @@
             <h4 class="person-select__subtitle person-select__subtitle--hidden person-select__subtitle--transport">
               транспорт:</h4>
             <ul class="person-select__move moving">
-              <li class="moving__item moving__item--plane">
+              <li class="moving__item moving__item--plane moving__item--current">
                 <a class="moving__link moving__link--current moving__link--plane"><span
                     class="visually-hidden">Самолет</span></a>
               </li>
@@ -1148,16 +1148,16 @@
 
             <h4 class="person-select__subtitle person-select__subtitle--transport">транспорт:</h4>
             <ul class="person-select__move moving">
-              <li class="moving__item moving__item--plane">
+              <li class="moving__item moving__item--plane moving__item--current">
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Самолет</span></a>
               </li>
-              <li class="moving__item moving__item--auto">
+              <li class="moving__item moving__item--auto moving__item--current">
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Машина</span></a>
               </li>
               <li class="moving__item moving__item--bike">
                 <a class="moving__link "><span class="visually-hidden">Велосипед</span></a>
               </li>
-              <li class="moving__item moving__item--walk">
+              <li class="moving__item moving__item--walk moving__item--current">
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Пешком</span></a>
               </li>
             </ul>
@@ -1231,13 +1231,13 @@
 
             <h4 class="person-select__subtitle person-select__subtitle--transport">транспорт:</h4>
             <ul class="person-select__move moving">
-              <li class="moving__item moving__item--plane">
+              <li class="moving__item moving__item--plane moving__item--current">
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Самолет</span></a>
               </li>
               <li class="moving__item moving__item--auto">
                 <a class="moving__link"><span class="visually-hidden">Машина</span></a>
               </li>
-              <li class="moving__item moving__item--bike">
+              <li class="moving__item moving__item--bike moving__item--current">
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Велосипед</span></a>
               </li>
               <li class="moving__item moving__item--walk">
@@ -1306,10 +1306,10 @@
 
             <h4 class="person-select__subtitle person-select__subtitle--transport">транспорт:</h4>
             <ul class="person-select__move moving">
-              <li class="moving__item moving__item--plane">
+              <li class="moving__item moving__item--plane moving__item--current">
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Самолет</span></a>
               </li>
-              <li class="moving__item moving__item--auto">
+              <li class="moving__item moving__item--auto moving__item--current">
                 <a class="moving__link moving__link--current"><span class="visually-hidden">Машина</span></a>
               </li>
               <li class="moving__item moving__item--bike">
@@ -1353,19 +1353,22 @@
 
   <footer class="footer">
     <div class="container footer-container">
-      <a class="footer__logo" href="index.html">
-        <span class="visually-hidden">Логотип Погнали</span>
+      <a class="footer__logo-link" href="index.html">
+        <picture>
+          <source class="footer__logo-img" media="(min-width: 768px)" srcset="image/logo_full-dark.svg">
+          <img class="footer__logo-img" width="96" height="15" src="image/logo_mobile-dark.svg"
+            alt="Логотип Погнали." />
+        </picture>
       </a>
-
       <ul class="footer__list social">
         <li class="social__item social__item--tm">
-          <a class="social-link link" href=""><span class="visually-hidden">Telegram</span></a>
+          <a class="social-link link social-link--tm" href=""><span class="visually-hidden">Telegram</span></a>
         </li>
         <li class="social__item social__item--vk">
-          <a class="social-link link" href=""><span class="visually-hidden">Vk</span></a>
+          <a class="social-link link social-link--vk" href=""><span class="visually-hidden">Vk</span></a>
         </li>
         <li class="social__item social__item--you">
-          <a class="social-link link" href=""><span class="visually-hidden">Youtube</span></a>
+          <a class="social-link link social-link--youtube" href=""><span class="visually-hidden">Youtube</span></a>
         </li>
       </ul>
       <div class="footer__copyright copyright">

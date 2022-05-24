@@ -84,8 +84,13 @@
   top: 50%;
   bottom: 0;
   transform: translateY(-50%);
-}
 
+  @media (min-width: @tablet-width) {
+    width: 21px;
+    height: 21px;
+    left: 73px;
+  }
+}
 
 .range__input {
   width: 100%;
@@ -120,4 +125,8 @@
   border-left: 1px solid #cbced9;
   border-right: 1px solid #cbced9;
   border-radius: 0 4px 4px 0;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
+  }
 }
