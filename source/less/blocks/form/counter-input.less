@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   border: 1px solid #cbced9;
   border-radius: 4px;
   margin-top: 8px;
@@ -10,25 +10,30 @@
   padding-right: 14px;
   width: 100%;
 
+  &:hover {
+    border: 1px solid #959bb2;
+  }
+
+  &:active {
+    border: 1px solid #161c35;
+  }
+
   @media (min-width: @tablet-width) {
     margin-top: 24px;
-    padding-left: 23px;
-    padding-right: 23px;
+    padding: 23px;
+    width: min-content;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    width: 180px;
-    justify-content: center;
     border: 1px solid #cbced9;
-    margin-left: 30px;
-    margin-right: 30px;
   }
 }
 
 .counter-input__button {
   width: 40px;
   height: 40px;
+  display: block;
   background-color: transparent;
   border: none;
   background-repeat: no-repeat;
@@ -37,10 +42,12 @@
 
 .counter-input__button--minus {
   background-image: url("../image/minus.svg");
+  margin-right: auto;
 }
 
 .counter-input__button--plus {
   background-image: url("../image/plus.svg");
+  margin-left: auto;
 }
 
 .counter-input__input {
@@ -51,11 +58,12 @@
   color: #1d2e5b;
   border: none;
   text-align: center;
+  appearance: none;
+  display: block;
+  padding: 0;
 
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    padding-top: 26px;
-    padding-bottom: 26px;
   }
 }

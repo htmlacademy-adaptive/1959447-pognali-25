@@ -73,9 +73,10 @@
         </div>
         <div class="header__logo header__logo--opened">
           <picture>
-            <source class="header__logo-img header__logo-img--opened" media="(min-width: 768px)" srcset="image/logo_full-dark.svg">
-            <img class="header__logo-img header__logo-img--opened" width="96" height="15" src="image/logo_mobile-dark.svg"
-              alt="Логотип Погнали." />
+            <source class="header__logo-img header__logo-img--opened" media="(min-width: 768px)"
+              srcset="image/logo_full-dark.svg">
+            <img class="header__logo-img header__logo-img--opened" width="96" height="15"
+              src="image/logo_mobile-dark.svg" alt="Логотип Погнали." />
           </picture>
         </div>
       </a>
@@ -275,7 +276,7 @@
               </div>
             </li>
           </ul>
-          <a class="destination__button button button--all button--icon" href="#">Показать всe</a>
+          <a class="destination__button button button--all button--icon" href="form.html">Показать всe</a>
         </div>
 
       </div>
@@ -473,7 +474,9 @@
               </ul>
             </li>
           </ul>
-          <button class="person__button button button--all" type="button" name="Show all">Показать всех</button>
+          <button class="person__button button button--all" type="button" name="Show all"
+            onclick="document.location='catalog.html'">Показать всех</button>
+
         </div>
       </div>
     </section>
@@ -485,7 +488,7 @@
           <h2 class="tariff__title">Добавьте свой профиль</h2>
 
           <dl class="tariff__plan ">
-            <div class="tariff__wrap">
+            <div class="tariff__wrap tariff__wrap--main">
               <dt class="tariff__name">
                 Базовое размещение
               </dt>
@@ -493,7 +496,7 @@
                 Бесплатно
               </dd>
             </div>
-            <div class="tariff__wrap">
+            <div class="tariff__wrap tariff__wrap--main">
               <dt class="tariff__name">
                 Вывод на первых позициях
               </dt>
@@ -501,7 +504,7 @@
                 99 руб./мес
               </dd>
             </div>
-            <div class="tariff__wrap">
+            <div class="tariff__wrap tariff__wrap--main">
               <dt class="tariff__name">
                 Кастомный цвет карточки
               </dt>
@@ -515,31 +518,49 @@
         </div>
       </div>
 
-      <!-- <div class="tarif__modale">
-        <div class="tarif__content">
-          <h3 class="tarif__title">Бизнес-тарифы</h3>
-          <dl class="tariff__plan ">
-            <dt class="tariff__name">
-              Базовое размещение
-            </dt>
-            <dd class="tariff__price">
-              Бесплатно
-            </dd>
-            <dt class="tariff__name">
-              Базовое размещение
-            </dt>
-            <dd class="tariff__price">
-              Бесплатно
-            </dd>
-            <dt class="tariff__name">
-              Базовое размещение
-            </dt>
-            <dd class="tariff__price">
-              Бесплатно
-            </dd>
+      <div class="tariff__modale">
+        <div class="tariff__content">
+          <h3 class="tariff__title tariff__title--modale">Бизнес-тарифы</h3>
+          <dl class="tariff__plan tariff__plan--modale">
+            <div class="tariff__wrap tariff__wrap--modale">
+              <dt class="tariff__name tariff__name--modale">
+                Реклама у блоггера
+              </dt>
+              <dd class="tariff__price tariff__price--modale">
+                300 000 руб./пост
+              </dd>
+            </div>
+            <div class="tariff__wrap tariff__wrap--modale">
+              <dt class="tariff__name tariff__name--modale">
+                Накрутка подписчиков
+              </dt>
+              <dd class="tariff__price tariff__price--modale">
+                от 1 руб./шт.
+              </dd>
+            </div>
+            <div class="tariff__wrap tariff__wrap--modale">
+              <dt class="tariff__name tariff__name--modale">
+                Лайки от ботов
+              </dt>
+              <dd class="tariff__price tariff__price--modale">
+                от 20 коп./лайк
+              </dd>
+            </div>
+            <div class="tariff__wrap tariff__wrap--modale">
+              <dt class="tariff__name tariff__name--modale">
+                Ваш продакт-плейсмент
+              </dt>
+              <dd class="tariff__price tariff__price--modale">
+                Индивидуально
+              </dd>
+            </div>
+          </dl>
 
+          <button class="tariff__button-modale">Закрыть окно</button>
         </div>
- -->
+      </div>
+
+
     </section>
 
 
