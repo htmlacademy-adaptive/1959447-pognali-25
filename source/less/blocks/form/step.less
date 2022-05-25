@@ -307,12 +307,15 @@
 
 .step__form-modal {
   position: absolute;
-  width: 100%;
   margin: 0 auto;
   border: 1px solid #cccfd9;
   border-radius: 4px;
   box-shadow: 0 2px 16px rgba(212, 217, 235, 0.25);
   background-color: #ffffff;
+  z-index: 10;
+  top: 100%;
+  left: 0;
+  right: 0;
 
   @media (min-width: @desktop-width) {
     padding-left: 26px;
