@@ -279,9 +279,14 @@ dt.tariff__name:nth-of-type(3)::after {
   min-height: 200px;
   box-shadow: 0 2px 8px #1d2e5b24;
   border-radius: 20px;
-  position: absolute;
+  position: fixed;
   z-index: 1;
-  display: none;
+  // display: none;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  overflow: auto;
+  max-height: 80vh;
 
   @media (min-width: @tablet-width) {
     width: 688px;
@@ -290,6 +295,8 @@ dt.tariff__name:nth-of-type(3)::after {
 
   @media (min-width: @desktop-width) {
     width: 750px;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
