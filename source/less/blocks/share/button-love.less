@@ -1,0 +1,62 @@
+.button-love {
+  width: 31px;
+  height: 31px;
+  background-color: #e2e5f2;
+  border-radius: 50%;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.button-love:hover {
+  .button-love__icon {
+    opacity: 1;
+  }
+}
+
+.button-love:active {
+  .button-love__icon {
+    opacity: 0.1;
+  }
+}
+
+.button-love--like {
+  background-color: #f9eaea;
+}
+
+.button-love--like:hover {
+  background-color: #f9d8d8;
+}
+
+.button-love--like:active {
+  background-color: #f9d8d8;
+
+  .button-love__icon {
+    opacity: 0.5;
+  }
+}
+
+.button-love--like .button-love__icon {
+  fill: #f02323;
+  stroke: #f02323;
+  opacity: 1;
+}
+
+
+.button-love__icon {
+  width: 13px;
+  height: 13px;
+  display: block;
+  margin: auto;
+  fill: none;
+  stroke: #192144;
+  opacity: 0.5;
+
+  @media (min-width: @tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -4,6 +4,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-direction: row-reverse;
   }
 }
 
@@ -131,7 +132,7 @@
   content: "";
   width: 14px;
   height: 14px;
-  background-image: url("..//image/person.svg");
+  background-image: url("../image/person.svg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: 5px;
@@ -149,8 +150,8 @@
   border-radius: 10px 10px 0 0;
 
   @media (min-width: @tablet-width) {
-    order: 2;
     border-radius: 0 10px 10px 0;
-    width: 30%;
+    object-fit: cover;
+    height: 100%;
   }
 }

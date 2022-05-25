@@ -1,0 +1,132 @@
+.range {
+  padding: 0 16px;
+  background-color: transparent;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.range__scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(29, 46, 91, 0.2);
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.range__bar {
+  position: absolute;
+  width: 138px;
+  height: 4px;
+  background-color: #1d2e5b;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 2px;
+}
+
+.range__toggle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-style: none;
+  border-radius: 50%;
+  padding: 0;
+  background-color: #1d2e5b;
+  cursor: pointer;
+  top: 50%;
+  bottom: 0;
+  transform: translateY(-50%);
+}
+
+
+.range__toggle--max {
+  right: 0;
+}
+
+.range__toggle--min {
+  left: 0;
+}
+
+.range__toggle--min:hover,
+.range__toggle--max:hover {
+  border: 6px solid #fcfcfc;
+  background-color: #2d3440;
+}
+
+.range__toggle--min:focus,
+.range__toggle--max:focus {
+  border: 6px solid #fcfcfc;
+  background-color: #2d3440;
+  outline: 2px solid #2d3440;
+}
+
+.toggle_min:active,
+.toggle_max:active {
+  background-color: #2d3440;
+}
+
+.range__wrap {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.range__wrap::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: linear-gradient(#ffffff 8px, #cbced9 8px, #cbced9 9px, #ffffff 9px);
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  bottom: 0;
+  transform: translateY(-50%);
+
+  @media (min-width: @tablet-width) {
+    width: 21px;
+    height: 21px;
+    left: 73px;
+  }
+}
+
+.range__input {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.93;
+  letter-spacing: 0.06em;
+  color: @basic_blue_light;
+  padding-left: 40px;
+  border-top: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+  }
+}
+
+
+.range__input--min {
+  border-left: 1px solid #cbced9;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  position: relative;
+}
+
+.range__input--max {
+  border-left: 1px solid #cbced9;
+  border-right: 1px solid #cbced9;
+  border-radius: 0 4px 4px 0;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
+  }
+}

@@ -13,6 +13,18 @@
   text-align: left;
 }
 
+.country-all__list-item {
+  & + .country-all__list-item {
+    margin-top: 4px;
+  }
+
+  @media (min-width: @tablet-width) {
+    & + .country-all__list-item {
+      margin-top: 8px;
+    }
+  }
+}
+
 .country-all__letter-name {
   display: none;
 
@@ -23,6 +35,7 @@
     line-height: 1;
     color: #192144;
     text-align: left;
+    margin-bottom: 30px;
   }
 }
 
@@ -54,11 +67,14 @@
 
 .country-all__list-link {
   text-decoration: none;
-  color: #444444;
+  color: @special_grey;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
 
   @media (min-width: @tablet-width) {
     font-weight: 400;
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1;
   }
 }

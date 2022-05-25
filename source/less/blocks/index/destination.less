@@ -5,6 +5,16 @@
 .destination__box {
   border-radius: 0 0 30px 30px;
   background-color: #edeff6;
+
+  @media (min-width: @tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-radius: 0 0 56px 56px;
+    padding-bottom: 87px;
+    padding-top: 88px;
+  }
 }
 
 .destination-container {
@@ -12,21 +22,20 @@
   padding-bottom: 34px;
 
   @media (min-width: @tablet-width) {
-    background-image: url("..//image/flags-back%201.png");
+    background-image: url("../image/flags-back.png");
     background-repeat: no-repeat;
-    background-position: 90% top;
+    background-position: top 80px right 40px;
     padding-bottom: 77px;
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("..//image/flags-back.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-position: top 88px right;
     display: grid;
     grid-template-columns: 50% 30%;
     grid-template-rows: repeat(3, auto);
     align-items: center;
     column-gap: 150px;
+    padding-bottom: 0;
   }
 }
 

@@ -1,0 +1,77 @@
+.hobby {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.hobby__item {
+  @media (min-width: @tablet-width) {
+    width: 33%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    margin-bottom: 16px;
+  }
+}
+
+.hobby__item-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.33;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+.hobby__item-mark + .hobby__item-title::before {
+  content: "";
+  background-color: #ffffff;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  margin-right: 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.hobby__item-mark {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.hobby__item-mark:checked + .hobby__item-title::before {
+  background-image: url("../image/yes.svg");
+}

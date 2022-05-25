@@ -1,6 +1,10 @@
 .select-country__alphabet {
   display: grid;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(5, 1fr);
+
+  @media (min-width: @tablet-width) {
+    column-gap: 5px;
+  }
 
   @media (min-width: @desktop-width) {
     display: none;
@@ -8,14 +12,40 @@
 }
 
 .select-country__alphabet-letter {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   text-align: center;
   text-transform: uppercase;
   color: #1d2e5b;
-  padding: 13px;
+  padding: 12px;
   cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #cbced9;
+
+  &:hover {
+    border: 1px solid #959bb2;
+  }
+
+  &:active {
+    background: #1d2e5b;
+    color: #ffffff;
+    border-color: #1d2e5b;
+  }
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    background-color: transparent;
+    font-family: "Blogger Sans", sans-serif;
+    font-size: 60px;
+    color: #192144;
+    opacity: 0.3;
+  }
+}
+
+
+.select-country__alphabet-letter--current {
+  background-color: #edeff6;
 }
 
 .select-country__button-filter {
@@ -29,14 +59,34 @@
   padding-top: 12px;
   padding-bottom: 12px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 12px;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
     font-size: 20px;
-    padding-top: 42px;
-    padding-bottom: 42px;
+    margin: 0 auto;
+    margin-top: 55px;
+    padding-top: 37px;
+    padding-bottom: 37px;
+  }
+}
+
+.select-country__button-filter::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-image: url("../image/icon_close.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 22px;
+    height: 24px;
   }
 }
 
@@ -46,6 +96,7 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -54,12 +105,15 @@
 }
 
 .select-country-name {
+  padding-left: 19px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   @media (min-width: @tablet-width) {
     margin-left: auto;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
     width: 100%;
     margin-bottom: 30px;
   }

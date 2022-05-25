@@ -1,8 +1,6 @@
 .person-info {
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 64px;
-  z-index: 2;
+
 
   @media (min-width: @desktop-width) {
     padding-top: 0;
@@ -16,17 +14,22 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
+  padding-bottom: 34px;
 
   @media (min-width: @tablet-width) {
     padding-top: 60px;
     display: grid;
     grid-template-columns: repeat(3, auto);
+    padding-left: 75px;
+    padding-right: 75px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 50% auto auto;
     padding-top: 0;
     margin-top: -190px;
+    padding-left: 64px;
+    padding-right: 0;
   }
 }
 
@@ -66,6 +69,11 @@
   }
 }
 
+.picture-wrapper {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
 .person-info__img-avatar {
   width: 100px;
   border-radius: 50%;
@@ -74,13 +82,16 @@
   @media (min-width: @tablet-width) {
     grid-column: 3/4;
     grid-row: 1/2;
-    width: 190px;
-    border-radius: 0;
+    border-radius: 7px;
   }
 
   @media (min-width: @desktop-width) {
+    border-radius: 0;
+    width: 190px;
+    height: 190px;
     margin: 0;
     align-self: end;
+    object-fit: cover;
   }
 }
 
@@ -91,6 +102,7 @@
   @media (min-width: @tablet-width) {
     grid-column: 1/-1;
     grid-row: 2/3;
+    margin-top: 40px;
   }
 
   @media (min-width: @desktop-width) {
@@ -100,6 +112,9 @@
     padding: 0;
     margin: 0;
     align-self: flex-start;
+    margin-top: -5px;
+    margin-left: 10px;
+    margin-bottom: 27px;
   }
 }
 
@@ -118,6 +133,12 @@
   background-color: #dfe3f0;
   border-radius: 20px;
   display: block;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
   @media (min-width: @desktop-width) {
     border-radius: 0 0 20px 20px;
@@ -133,6 +154,9 @@
 .person-info__tag {
   width: 100%;
   margin-top: 33px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     grid-column: 1/-1;
@@ -143,20 +167,42 @@
     grid-column: 1/2;
     grid-row: 3/4;
     margin: 0;
+    align-self: stretch;
+    position: relative;
   }
 }
 
 .person-info__move-wrapper {
   width: 100%;
+  border: 2px solid #cbced9;
+  border-radius: 20px;
 
   @media (min-width: @tablet-width) {
     grid-column: 2/3;
     grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 2/4;
     grid-row: 3/4;
+    align-self: stretch;
+  }
+}
+
+.person-info__move-name {
+  padding: 0 10px;
+  margin: 0 auto;
+  margin-top: -10px;
+  background-color: #edeff6;
+  width: min-content;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    margin: 0 auto;
+    margin-bottom: -10px;
   }
 }
 
@@ -165,4 +211,10 @@
   display: flex;
   padding: 0;
   justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding: 26px 68px 50px;
+  }
 }

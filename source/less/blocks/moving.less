@@ -4,8 +4,6 @@
 }
 
 .moving__link {
-  fill: @basic_blue_light;
-  opacity: 0.15;
   padding: 7px;
 
   &--current {
@@ -13,9 +11,111 @@
   }
 }
 
-.moving__item {
+.moving__link-svg {
+  fill: @basic_blue_light;
+  opacity: 0.15;
+}
+
+.moving__link--current .moving__link-svg {
+  opacity: 1;
+}
+
+
+.moving__select {
+  margin-right: 20px;
+
   @media (min-width: @tablet-width) {
-    margin-right: 3px;
-    margin-left: 3px;
+    margin-right: 25px;
+  }
+}
+
+.feature .moving {
+  display: flex;
+}
+
+.moving__select-mark {
+  opacity: 0;
+  position: relative;
+}
+
+.moving__select-title--auto::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-position: center;
+  border-radius: 50%;
+  position: absolute;
+  margin-right: 10px;
+  background-image: url("../image/auto.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 44px;
+    height: 44px;
+    background-size: 50%;
+  }
+}
+
+
+.moving__select-title--plane::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-size: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-position: center;
+  border-radius: 50%;
+  position: absolute;
+  margin-right: 10px;
+  background-image: url("../image/plane.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 44px;
+    height: 44px;
+    background-size: 50%;
+  }
+}
+
+
+.moving__select-title--bike::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-size: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-position: center;
+  border-radius: 50%;
+  position: absolute;
+  margin-right: 10px;
+  background-image: url("../image/bicycle.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 44px;
+    height: 44px;
+    background-size: 50%;
+  }
+}
+
+.moving__select-title--walk::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-size: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-position: center;
+  border-radius: 50%;
+  position: absolute;
+  margin-right: 10px;
+  background-image: url("../image/run.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 44px;
+    height: 44px;
+    background-size: 50%;
   }
 }

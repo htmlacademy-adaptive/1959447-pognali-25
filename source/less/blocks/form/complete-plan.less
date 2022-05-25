@@ -1,5 +1,6 @@
 .complete-plan {
   list-style: none;
+  counter-reset: orderedlist;
 }
 
 
@@ -12,7 +13,7 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(3, auto);
     grid-template-rows: auto auto;
     align-items: center;
     padding: 40px 40px 15px 40px;
@@ -22,6 +23,7 @@
     grid-template-columns: 40% 20% 20% 20%;
     padding-top: 35px;
     padding-bottom: 35px;
+    margin-bottom: 11px;
   }
 }
 
@@ -37,6 +39,8 @@
     grid-column: 1/-1;
     padding-bottom: 34px;
     border-bottom: 1px solid #cbced9;
+    display: flex;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -44,6 +48,27 @@
     margin: 0;
     padding: 0;
     border-bottom: none;
+  }
+}
+
+.complete-plan__item-title::before {
+  counter-increment: orderedlist;
+  content: counter(orderedlist) ".";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  margin-right: 5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    order: 2;
+    margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: -1;
+    margin: 0;
+    margin-right: 36px;
   }
 }
 
@@ -59,6 +84,10 @@
     font-size: 20px;
     line-height: 1;
     letter-spacing: 0.1em;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-self: center;
   }
 }
 
@@ -94,5 +123,6 @@
     font-size: 20px;
     line-height: 1;
     letter-spacing: 0.1em;
+    justify-self: end;
   }
 }

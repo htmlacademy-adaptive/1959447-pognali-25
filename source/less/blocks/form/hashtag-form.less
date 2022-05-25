@@ -1,5 +1,43 @@
+.hashtag-form {
+  border: 2px solid #cbced9;
+  border-radius: 20px;
+}
+
+.hashtag-form__content {
+  background-color: transparent;
+  border: none;
+  padding: 25px 26px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.12;
+  color: @special_grey;
+  opacity: 0.6;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    padding: 35px 40px 10px;
+  }
+}
+
 .hashtag-form__title {
-  text-align: center;
-  text-transform: uppercase;
-  color: #1d2e5b;
+  padding: 0 10px;
+  margin: 0 auto;
+  margin-top: -10px;
+  background-color: #edeff6;
+  width: min-content;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    margin: 0 auto;
+    margin-bottom: -10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    bottom: -2px;
+    left: 10px;
+  }
 }

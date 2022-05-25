@@ -1,0 +1,128 @@
+.fun {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 44px;
+  }
+}
+
+.fun__comment {
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+  color: @special_grey;
+  overflow: hidden;
+  resize: vertical;
+  margin-top: 18px;
+  width: 100%;
+  opacity: 0.3;
+  min-height: 100px;
+
+  &:hover {
+    border: 1px solid #959bb2;
+  }
+
+  &:active {
+    border: 1px solid #161c35;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 1.15;
+    padding: 18px;
+    margin-top: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 25px;
+    width: 730px;
+  }
+}
+
+
+.fun__comment--write {
+  opacity: 1;
+}
+
+.fun__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: @basic_blue_light;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  span {
+    margin-right: 10px;
+    overflow: hidden;
+  }
+}
+
+.fun__title::before {
+  content: "";
+  width: 15px;
+  height: 6px;
+  background-image: url("../image/step3.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 5px;
+  flex-shrink: 0;
+  margin-left: -12px;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+    width: 14px;
+    height: 14px;
+    background-color: @basic_blue_light;
+    border-radius: 50%;
+    order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: auto;
+    margin-right: 34px;
+  }
+}
+
+.fun__title::after {
+  content: "";
+  width: 35px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: auto;
+  flex-shrink: 0;
+
+
+  @media (min-width: @tablet-width) {
+    width: 70px;
+    height: 47px;
+    margin-right: 40px;
+
+    @media (min-width: @desktop-width) {
+      order: 4;
+      margin-left: 0;
+    }
+  }
+}
+
+.fun--сzech .fun__title::after {
+  background-image: url("../image/czech.jpg");
+}
+
+.fun--bosnia .fun__title::after {
+  background-image: url("../image/bosnia.jpg");
+}

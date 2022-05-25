@@ -2,8 +2,15 @@
   background: #ffd74b;
   border-radius: 20px;
   color: #1d2e5b;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 25px;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 46px;
+    padding-right: 46px;
+    padding-top: 46px;
+    padding-bottom: 48px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-top: 0;
@@ -11,11 +18,24 @@
 }
 
 .companion-selection__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: 0.02em;
   margin: 0;
+  text-align: left;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f3c72b;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     font-size: 30px;
     text-align: left;
     margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: 18px;
   }
 }

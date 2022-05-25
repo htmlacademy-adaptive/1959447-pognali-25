@@ -13,8 +13,80 @@
 .flag-country__link {
   padding: 0;
   margin: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.07;
+  text-transform: uppercase;
+  color: @basic_blue_light;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+  }
 }
 
 .flag-country__img {
   border-radius: 5px;
+}
+
+
+.person-select__flag .flag-country__link::before {
+  content: "";
+  width: 26px;
+  height: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 14px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+
+  @media (min-width: @tablet-width) {
+    width: 35px;
+    height: 24px;
+  }
+}
+
+.flag-country__item--shrilanka .flag-country__link::before {
+  background-image: url("../image/sri-lanka.jpg");
+}
+
+.flag-country__item--thailand .flag-country__link::before {
+  background-image: url("../image/thailand.jpg");
+}
+
+.flag-country__item--seychelles .flag-country__link::before {
+  background-image: url("../image/seychelles.jpg");
+}
+
+.flag-country__item--belgium .flag-country__link::before {
+  background-image: url("../image/belgium.jpg");
+}
+
+.flag-country__item--сzechia .flag-country__link::before {
+  background-image: url("../image/czech.jpg");
+}
+
+.flag-country__item--usa .flag-country__link::before {
+  background-image: url("../image/usa.jpg");
+}
+
+.flag-country__item--australia .flag-country__link::before {
+  background-image: url("../image/australia.jpg");
+}
+
+.flag-country__item--domin .flag-country__link::before {
+  background-image: url("../image/dominica.png");
+}
+
+.flag-country__item--eng .flag-country__link::before {
+  background-image: url("../image/eng.png");
+}
+
+.flag-country__item--germany .flag-country__link::before {
+  background-image: url("../image/germany.png");
+}
+
+.person-select__flag .flag-country__link {
+  display: flex;
 }
