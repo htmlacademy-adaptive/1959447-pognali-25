@@ -13,12 +13,15 @@
   text-align: left;
 }
 
-.country-all__list-item
-& + .country-all__list-item {
-  margin-top: 4px;
+.country-all__list-item {
+  & + .country-all__list-item {
+    margin-top: 4px;
+  }
 
   @media (min-width: @tablet-width) {
-    margin-top: 8px;
+    & + .country-all__list-item {
+      margin-top: 8px;
+    }
   }
 }
 
