@@ -17,11 +17,12 @@
   padding-bottom: 34px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 60px;
+    padding-top: 62px;
     display: grid;
     grid-template-columns: repeat(3, auto);
     padding-left: 75px;
     padding-right: 75px;
+    align-items: flex-start;
   }
 
   @media (min-width: @desktop-width) {
@@ -30,6 +31,8 @@
     margin-top: -190px;
     padding-left: 64px;
     padding-right: 0;
+    align-items: flex-end;
+    padding-bottom: 63px;
   }
 }
 
@@ -46,16 +49,17 @@
 
   @media (min-width: @tablet-width) {
     grid-column: 1/2;
+    margin-left: 0;
+    padding: 18px;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 2/3;
     grid-row: 1/2;
     margin: 0;
-
-    @media (min-width: @desktop-width) {
-      color: #ffffff;
-    }
+    margin-left: 152px;
+    margin-bottom: 61px;
+    color: #ffffff;
   }
 }
 
@@ -72,6 +76,10 @@
 .picture-wrapper {
   grid-column: 3/4;
   grid-row: 1/2;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 96px;
+  }
 }
 
 .person-info__img-avatar {
@@ -80,9 +88,10 @@
   margin-right: 20px;
 
   @media (min-width: @tablet-width) {
-    grid-column: 3/4;
-    grid-row: 1/2;
     border-radius: 7px;
+    width: 94px;
+    height: 94px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -102,7 +111,7 @@
   @media (min-width: @tablet-width) {
     grid-column: 1/-1;
     grid-row: 2/3;
-    margin-top: 40px;
+    margin-top: 46px;
   }
 
   @media (min-width: @desktop-width) {
@@ -113,7 +122,6 @@
     margin: 0;
     align-self: flex-start;
     margin-top: -5px;
-    margin-left: 10px;
     margin-bottom: 27px;
   }
 }
@@ -138,10 +146,14 @@
   @media (min-width: @tablet-width) {
     padding-top: 20px;
     padding-bottom: 20px;
+    border-radius: 10px;
+    letter-spacing: 0.09em;
   }
 
   @media (min-width: @desktop-width) {
     border-radius: 0 0 20px 20px;
+    padding-top: 14px;
+    padding-bottom: 16px;
   }
 }
 
@@ -161,6 +173,7 @@
   @media (min-width: @tablet-width) {
     grid-column: 1/-1;
     grid-row: 3/4;
+    margin-top: 53px;
   }
 
   @media (min-width: @desktop-width) {
@@ -215,6 +228,9 @@
   padding-bottom: 25px;
 
   @media (min-width: @tablet-width) {
-    padding: 26px 68px 50px;
+    padding-top: 26px;
+    padding-right: 68px;
+    padding-bottom: 30px;
+    padding-left: 68px;
   }
 }

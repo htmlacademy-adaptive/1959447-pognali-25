@@ -6,8 +6,8 @@
   border: 1px solid #cbced9;
   border-radius: 4px;
   margin-top: 8px;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 4px;
+  padding-right: 4px;
   width: 100%;
 
   &:hover {
@@ -21,23 +21,27 @@
   @media (min-width: @tablet-width) {
     margin-top: 24px;
     padding: 23px;
-    width: min-content;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
     border: 1px solid #cbced9;
+    width: min-content;
   }
 }
 
 .counter-input__button {
   width: 40px;
-  height: 40px;
+  height: 41px;
   display: block;
   background-color: transparent;
   border: none;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    height: 20px;
+  }
 }
 
 .counter-input__button--minus {

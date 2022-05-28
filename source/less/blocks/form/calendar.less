@@ -18,8 +18,10 @@
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
-    margin-top: 27px;
-    margin-bottom: 23px;
+    margin-top: 13px;
+    margin-bottom: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -30,6 +32,13 @@
   border: none;
   background-image: url("../image/arrow-back.svg");
   margin-right: auto;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    height: 42px;
+    width: 26px;
+    background-size: cover;
+  }
 }
 
 .calendar__monht-button--next {
