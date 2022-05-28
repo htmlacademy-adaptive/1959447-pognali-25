@@ -5,7 +5,7 @@
   padding-top: 23px;
   padding-left: 23px;
   padding-right: 23px;
-  padding-bottom: 17px;
+  padding-bottom: 23px;
   text-align: left;
 
   @media (min-width: @tablet-width) {
@@ -107,7 +107,7 @@
 
 .step__form {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
     margin-top: 26px;
@@ -127,20 +127,18 @@
 }
 
 .step__form-сompanion {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 
   &--child {
-    border-bottom: 1px solid #e1e3e9;
-    padding-bottom: 25px;
+    order: 3;
     flex-wrap: nowrap;
+    margin-bottom: 25px;
 
     @media (min-width: @desktop-width) {
-      padding: 0;
-      border: none;
       justify-self: end;
       justify-content: center;
     }
@@ -264,6 +262,7 @@
   display: flex;
   align-items: center;
   white-space: nowrap;
+  letter-spacing: normal;
 
   @media (min-width: @tablet-width) {
     font-weight: 500;
@@ -283,12 +282,12 @@
 
 .step__form-child-form + .step__name--child::before {
   content: "";
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   background-color: transparent;
   border: 1px solid rgb(203, 206, 217);
   border-radius: 4px;
-  margin-right: 13px;
+  margin-right: 12px;
   flex-shrink: 0;
 
   @media (min-width: @tablet-width) {
