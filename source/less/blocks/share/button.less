@@ -66,9 +66,27 @@
   }
 }
 
-.button--back {
-  background-color: transparent;
+.button-back {
+  font-family: "Blogger Sans", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.18;
+  text-align: center;
   text-transform: uppercase;
+  color: @basic_blue;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     padding-right: 0;
@@ -77,10 +95,11 @@
     align-items: center;
     margin-left: auto;
     font-size: 24px;
+    line-height: 1;
   }
 }
 
-.button--back::before {
+.button-back::before {
   @media (min-width: @tablet-width) {
     content: "";
     width: 16px;
