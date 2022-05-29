@@ -109,6 +109,10 @@
   height: 265px;
   background: url("../image/traveller-illustration-mobile.png") bottom right 48px no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background: url("../image/traveller-illustration-mobile@2.png") bottom right 48px no-repeat;
+    background-size: 192px auto;
+  }
 
   @media (min-width: @tablet-width) {
     background: url("../image/traveller-illustration-tablet.png");
@@ -118,6 +122,11 @@
     width: 372px;
     height: 451px;
     order: 2;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../image/traveller-illustration-tablet@2.png");
+      background-size: contain;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -126,6 +135,10 @@
     height: 640px;
     margin-bottom: 0;
     margin-right: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../image/traveller-illustration-desktop@2.png");
+    }
   }
 }
 

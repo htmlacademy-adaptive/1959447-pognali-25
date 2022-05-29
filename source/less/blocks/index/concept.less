@@ -24,10 +24,21 @@
   background-repeat: no-repeat;
   background-position: bottom;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../image/about-mobile@2.png");
+    background-size: contain;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../image/img_tablet.png");
-    background-position: right;
+    background-position: top 40px right 10px;
     padding-bottom: 92px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../image/img_tablet@2.png");
+      background-size: 52%;
+      background-position: top 47px right;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -36,6 +47,10 @@
     background-size: contain;
     background-repeat: no-repeat;
     padding-bottom: 168px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../image/img_back@2.png");
+    }
   }
 }
 

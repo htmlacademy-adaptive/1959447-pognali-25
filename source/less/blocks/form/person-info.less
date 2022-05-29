@@ -187,8 +187,7 @@
 
 .person-info__move-wrapper {
   width: 100%;
-  border: 2px solid #cbced9;
-  border-radius: 10px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     grid-column: 2/3;
@@ -202,15 +201,21 @@
     grid-column: 2/4;
     grid-row: 3/4;
     align-self: stretch;
+    justify-self: flex-end;
+    width: auto;
   }
 }
 
 .person-info__move-name {
   padding: 0 10px;
   margin: 0 auto;
-  margin-top: -10px;
   background-color: #edeff6;
   width: min-content;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -10px;
 
   @media (min-width: @tablet-width) {
     order: 2;
@@ -220,17 +225,23 @@
 }
 
 .person-info__move {
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   padding: 0;
   justify-content: center;
-  padding-top: 5px;
-  padding-bottom: 25px;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+  padding-top: 32px;
+  padding-bottom: 27px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 26px;
-    padding-right: 68px;
-    padding-bottom: 30px;
-    padding-left: 68px;
+    padding-top: 46px;
+    padding-right: 38px;
+    padding-bottom: 43px;
+    padding-left: 55px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-right: 70px;
+    padding-left: 70px;
   }
 }
