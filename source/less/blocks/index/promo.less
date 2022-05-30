@@ -24,7 +24,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: auto auto 344px;
     grid-template-rows: repeat(3, auto);
     position: relative;
     padding-bottom: 0;
@@ -80,6 +80,10 @@
     margin-left: 32px;
     align-self: center;
     max-width: min-content;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
@@ -331,8 +335,10 @@
   @media (min-width: @desktop-width) {
     grid-column: -1/-2;
     grid-row: 1/2;
-    align-self: center;
     margin: 0;
-    margin-left: 50px;
+    padding: 0;
+    align-self: start;
+    margin-top: 106px;
+    margin-left: 58px;
   }
 }
