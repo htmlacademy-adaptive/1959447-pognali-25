@@ -26,13 +26,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 50% auto auto;
+    grid-template-columns: 732px 1fr auto auto 44px 190px 95px;
     padding-top: 0;
     margin-top: -190px;
     padding-left: 64px;
     padding-right: 0;
     align-items: flex-end;
     padding-bottom: 63px;
+    column-gap: 0;
   }
 }
 
@@ -54,11 +55,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-column: 2/3;
+    grid-column: 3/5;
     grid-row: 1/2;
     margin: 0;
-    margin-left: 152px;
-    margin-bottom: 61px;
+    margin-bottom: 54px;
     color: #ffffff;
   }
 }
@@ -78,7 +78,7 @@
   grid-row: 1/2;
 
   @media (min-width: @desktop-width) {
-    margin-right: 96px;
+    grid-column: -2/-3;
   }
 }
 
@@ -115,7 +115,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-column: 3/4;
+    grid-column: -2/-3;
     grid-row: 2/3;
     width: 190px;
     padding: 0;
@@ -198,11 +198,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-column: 2/4;
+    grid-column: -1/-5;
     grid-row: 3/4;
     align-self: stretch;
     justify-self: flex-end;
-    width: auto;
   }
 }
 

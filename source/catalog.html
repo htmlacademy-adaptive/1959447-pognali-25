@@ -69,7 +69,7 @@
     </symbol>
   </svg>
 
-  <header class="header">
+  <!-- <header class="header">
     <div class="header__wrapper container">
 
       <a class="header__logo-link" href="index.html">
@@ -92,7 +92,7 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
-      <a class="header__login-tablet login button" href="#">Авторизация</a>
+      <a class="header__login-tablet login button" href="#"><span>Авторизация</span></a>
 
       <div class="header__dropdown">
 
@@ -150,6 +150,93 @@
           </li>
         </ul>
 
+      </div>
+    </div>
+  </header> -->
+
+  <header class="header header--opened">
+
+    <div class="header__wrapper container">
+
+      <a class="header__logo-link">
+        <div class="header__logo">
+          <picture>
+            <source class="header__logo-img" media="(min-width: 768px)" srcset="image/logo_full.svg">
+            <img class="header__logo-img" width="96" height="15" src="image/lobo_mobile.svg" alt="Логотип Погнали." />
+          </picture>
+        </div>
+        <div class="header__logo header__logo--opened">
+          <picture>
+            <source class="header__logo-img header__logo-img--opened" media="(min-width: 768px)"
+              srcset="image/logo_full-dark.svg">
+            <img class="header__logo-img header__logo-img--opened" width="96" height="15"
+              src="image/logo_mobile-dark.svg" alt="Логотип Погнали." />
+          </picture>
+        </div>
+      </a>
+
+      <button class="header__toggle header__toggle--opened" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
+      <a class="header__login-tablet login" href="#">Авторизация</a>
+
+      <div class="header__dropdown">
+
+        <nav class="header__nav navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link link" href="index.html">О&nbsp;сервисе</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="form.html">Направления</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="#">Попутчики</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="header__login login button" href="#">Авторизация</a>
+
+        <ul class="header__contacts">
+          <li class="header__tel">
+            <a class="header__tel-link link" href="tel:+78005558628"> <span class="link__text-hidden">8 800
+                555-86-28</span></a>
+          </li>
+          <li class="header__mail">
+            <a class="header__mail-link link" href="mailto:mail@htmlacademy.ru"><span
+                class="link__text-hidden">mail@htmlacademy.ru</span></a>
+          </li>
+        </ul>
+
+        <ul class="header__social social">
+          <li class="social__item social__item--tm">
+            <a class="social__link link social__link--tm" href="tg://resolve?domain=htmlacademy" title="Наш Телеграм">
+              <svg class="social__link-svg" width="22" height="20" viewBox="0 0 22 20">
+                <use xlink:href="#icon-tm"></use>
+              </svg>
+              <span class="visually-hidden">Telegram</span></a>
+          </li>
+
+          <li class="social__item social__item--vk">
+            <a class="social__link link social__link--vk" href="https://vk.com/htmlacademy" title="Наш Вконтакте">
+              <svg class="social__link-svg" width="22" height="12" viewBox="0 0 22 12">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+              <span class="visually-hidden">Vk</span>
+            </a>
+          </li>
+
+          <li class="social__item social__item--you">
+            <a class="social__link link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+              title="Наш канал на YouTube">
+              <svg class="social__link-svg" width="22" height="16" viewBox="0 0 22 16">
+                <use xlink:href="#icon-youtube"></use>
+              </svg>
+              <span class="visually-hidden">Youtube</span></a>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
@@ -235,19 +322,19 @@
                 <dd class="country-all__letter-list country-all__letter-list--current">
                   <ul class="country-all__list">
                     <li class="country-all__list-item">
-                      <a class="country-all__list-link" href="#">Австралия</a>
+                      <a class="country-all__list-link" href="Australia.html">Австралия</a>
                     </li>
                     <li class="country-all__list-item">
-                      <a class="country-all__list-link" href="#">Австрия</a>
+                      <a class="country-all__list-link" href="Austria.html">Австрия</a>
                     </li>
                     <li class="country-all__list-item">
-                      <a class="country-all__list-link" href="#">Азербайджан</a>
+                      <a class="country-all__list-link" href="Magomaev_Muslim.html">Азербайджан</a>
                     </li>
                     <li class="country-all__list-item">
-                      <a class="country-all__list-link" href="#">Албания</a>
+                      <a class="country-all__list-link" href="Albania.html">Албания</a>
                     </li>
                     <li class="country-all__list-item">
-                      <a class="country-all__list-link" href="#">Алжир</a>
+                      <a class="country-all__list-link" href="Algeria.html">Алжир</a>
                     </li>
                     <li class="country-all__list-item">
                       <a class="country-all__list-link" href="#">Ангола</a>
@@ -1071,17 +1158,19 @@
           <li class="person-select__item">
 
             <div class="picture-container">
-              <picture>
-                <source class="person-select__img" media="(min-width: 1366px)"
-                  srcset="image/tanya-tablet.jpg 1x, image/tanya-tablet@2.jpg 2x">
-                <source class="person-select__img" media="(min-width: 768px)"
-                  srcset="image/tanya-cat-tablet.jpg 1x, image/tanya-cat-tablet@2.jpg 2x">
-                <img class="person-select__img" width="70" height="70" src="image/tanya-cat-mobile.jpg"
-                  srcset="image/tanya@2.jpg" alt="Таня Фирсова." />
-              </picture>
+              <a class="picture-link" href="TanjaFirsova.html">
+                <picture>
+                  <source class="person-select__img" media="(min-width: 1366px)"
+                    srcset="image/tanya-tablet.jpg 1x, image/tanya-tablet@2.jpg 2x">
+                  <source class="person-select__img" media="(min-width: 768px)"
+                    srcset="image/tanya-cat-tablet.jpg 1x, image/tanya-cat-tablet@2.jpg 2x">
+                  <img class="person-select__img" width="70" height="70" src="image/tanya-cat-mobile.jpg"
+                    srcset="image/tanya@2.jpg" alt="Таня Фирсова." />
+                </picture>
+              </a>
             </div>
 
-            <a class="person-select__link link">
+            <a class="person-select__link link" href="TanjaFirsova.html">
               <h3 class="person-select__name">Таня Фирсова</h3>
             </a>
 
@@ -1151,23 +1240,25 @@
             </ul>
             <h4 class="person-select__subtitle person-select__subtitle--level">левел:</h4>
             <p class="person-select__level">99 <span>level</span></p>
-            <a class="person-select__invite button" href="#">Позвать!</a>
+            <a class="person-select__invite button" href="response.html"><span>Позвать!</span></a>
           </li>
 
           <li class="person-select__item">
 
             <div class="picture-container">
-              <picture>
-                <source class="person-select__img" media="(min-width: 1366px)"
-                  srcset="image/petya-tablet.jpg 1x, image/petya-tablet@2.jpg 2x">
-                <source class="person-select__img" media="(min-width: 768px)"
-                  srcset="image/petya-cat-tablet.jpg 1x,  image/petya-cat-tablet@2.jpg 2x">
-                <img class="person-select__img" width="70" height="70" src="image/petya-cat-mobile.jpg"
-                  srcset="image/petya-cat-mobile@2.jpg" alt="Петя Демин." />
-              </picture>
+              <a class="picture-link" href="PetyaDemin.html">
+                <picture>
+                  <source class="person-select__img" media="(min-width: 1366px)"
+                    srcset="image/petya-tablet.jpg 1x, image/petya-tablet@2.jpg 2x">
+                  <source class="person-select__img" media="(min-width: 768px)"
+                    srcset="image/petya-cat-tablet.jpg 1x,  image/petya-cat-tablet@2.jpg 2x">
+                  <img class="person-select__img" width="70" height="70" src="image/petya-cat-mobile.jpg"
+                    srcset="image/petya-cat-mobile@2.jpg" alt="Петя Демин." />
+                </picture>
+              </a>
             </div>
 
-            <a class="person-select__link link">
+            <a class="person-select__link link" href="PetyaDemin.html">
               <h3 class="person-select__name">Петя Демин</h3>
             </a>
 
@@ -1230,23 +1321,25 @@
             </ul>
             <h4 class="person-select__subtitle person-select__subtitle--level">левел:</h4>
             <p class="person-select__level">80 <span>level</span></p>
-            <a class="person-select__invite button" href="#">Позвать!</a>
+            <a class="person-select__invite button" href="response.html"><span>Позвать!</span></a>
           </li>
 
           <li class="person-select__item">
 
             <div class="picture-container">
-              <picture>
-                <source class="person-select__img" media="(min-width: 1366px)"
-                  srcset="image/mark-cat-desctop.jpg 1x, image/mark-cat-desctop@2.jpg 2x">
-                <source class="person-select__img" media="(min-width: 768px)"
-                  srcset="image/mark-cat-tablet.jpg 1x,  image/mark-cat-tablet@2.jpg 2x">
-                <img class="person-select__img" width="70" height="70" src="image/mark-cat-mobile.jpg"
-                  srcset="image/mark-cat-mobile@2.jpg" alt="Марк Смолов." />
-              </picture>
+              <a class="picture-link" href="MarkSmolov.html">
+                <picture>
+                  <source class="person-select__img" media="(min-width: 1366px)"
+                    srcset="image/mark-cat-desctop.jpg 1x, image/mark-cat-desctop@2.jpg 2x">
+                  <source class="person-select__img" media="(min-width: 768px)"
+                    srcset="image/mark-cat-tablet.jpg 1x,  image/mark-cat-tablet@2.jpg 2x">
+                  <img class="person-select__img" width="70" height="70" src="image/mark-cat-mobile.jpg"
+                    srcset="image/mark-cat-mobile@2.jpg" alt="Марк Смолов." />
+                </picture>
+              </a>
             </div>
 
-            <a class="person-select__link link">
+            <a class="person-select__link link" href="MarkSmolov.html">
               <h3 class="person-select__name">Марк Смолов</h3>
             </a>
 
@@ -1313,23 +1406,25 @@
             </ul>
             <h4 class="person-select__subtitle person-select__subtitle--level">левел:</h4>
             <p class="person-select__level">25 <span>level</span></p>
-            <a class="person-select__invite button" href="#">Позвать!</a>
+            <a class="person-select__invite button" href="response.html"><span>Позвать!</span></a>
           </li>
 
           <li class="person-select__item">
 
             <div class="picture-container">
-              <picture>
-                <source class="person-select__img" media="(min-width: 1366px)"
-                  srcset="image/larisa-cat-desctop.jpg 1x, image/larisa-cat-desctop@2.jpg 2x">
-                <source class="person-select__img" media="(min-width: 768px)"
-                  srcset="image/larisa-cat-tablet.jpg 1x,  image/larisa-cat-tablet@2.jpg 2x">
-                <img class="person-select__img" width="70" height="70" src="image/larisa-cat-mobile.jpg"
-                  srcset="image/larisa-cat-mobile@2.jpg" alt="Лариса Роговая." />
-              </picture>
+              <a class="picture-link" href="LarisaRogovaya">
+                <picture>
+                  <source class="person-select__img" media="(min-width: 1366px)"
+                    srcset="image/larisa-cat-desctop.jpg 1x, image/larisa-cat-desctop@2.jpg 2x">
+                  <source class="person-select__img" media="(min-width: 768px)"
+                    srcset="image/larisa-cat-tablet.jpg 1x,  image/larisa-cat-tablet@2.jpg 2x">
+                  <img class="person-select__img" width="70" height="70" src="image/larisa-cat-mobile.jpg"
+                    srcset="image/larisa-cat-mobile@2.jpg" alt="Лариса Роговая." />
+                </picture>
+              </a>
             </div>
 
-            <a class="person-select__link link">
+            <a class="person-select__link link" href="LarisaRogovaya">
               <h3 class="person-select__name">Лариса Роговая</h3>
             </a>
 
@@ -1389,11 +1484,12 @@
 
             <h4 class="person-select__subtitle person-select__subtitle--level">левел:</h4>
             <p class="person-select__level"> 50 <span>level</span></p>
-            <a class="person-select__invite button" href="#">Позвать!</a>
+            <a class="person-select__invite button" href="response.html"><span>Позвать!</span></a>
           </li>
         </ul>
-        <button class="catalog-traveler__offers-button button-all" type="button" name="Show more">Показать
-          еще</button>
+
+          <a class="catalog-traveler__offers-button button-all" href="newtraveler.html">Показать
+            еще</a>
 
         <div class="catalog-traveler__offers-pagination">
           <div class="catalog-traveler__offers-pagination-number">

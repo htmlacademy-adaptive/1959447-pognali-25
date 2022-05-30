@@ -10,8 +10,11 @@
 
 .catalog .header,
 .form .header {
-  background-color: #182044;
+  @media (min-width: @desktop-width) {
+    background-color: #182044;
+  }
 }
+
 
 .header__logo-link {
   padding-top: 4px;

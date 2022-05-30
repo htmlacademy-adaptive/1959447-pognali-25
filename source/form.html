@@ -67,7 +67,7 @@
 
   </svg>
 
-  <header class="header">
+  <!-- <header class="header">
 
     <div class="header__wrapper container">
 
@@ -151,6 +151,93 @@
 
       </div>
     </div>
+  </header> -->
+
+  <header class="header header--opened">
+
+    <div class="header__wrapper container">
+
+      <a class="header__logo-link">
+        <div class="header__logo">
+          <picture>
+            <source class="header__logo-img" media="(min-width: 768px)" srcset="image/logo_full.svg">
+            <img class="header__logo-img" width="96" height="15" src="image/lobo_mobile.svg" alt="Логотип Погнали." />
+          </picture>
+        </div>
+        <div class="header__logo header__logo--opened">
+          <picture>
+            <source class="header__logo-img header__logo-img--opened" media="(min-width: 768px)"
+              srcset="image/logo_full-dark.svg">
+            <img class="header__logo-img header__logo-img--opened" width="96" height="15"
+              src="image/logo_mobile-dark.svg" alt="Логотип Погнали." />
+          </picture>
+        </div>
+      </a>
+
+      <button class="header__toggle header__toggle--opened" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
+      <a class="header__login-tablet login" href="#">Авторизация</a>
+
+      <div class="header__dropdown">
+
+        <nav class="header__nav navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link link" href="index.html">О&nbsp;сервисе</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link">Направления</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="header__login login button" href="#">Авторизация</a>
+
+        <ul class="header__contacts">
+          <li class="header__tel">
+            <a class="header__tel-link link" href="tel:+78005558628"> <span class="link__text-hidden">8 800
+                555-86-28</span></a>
+          </li>
+          <li class="header__mail">
+            <a class="header__mail-link link" href="mailto:mail@htmlacademy.ru"><span
+                class="link__text-hidden">mail@htmlacademy.ru</span></a>
+          </li>
+        </ul>
+
+        <ul class="header__social social">
+          <li class="social__item social__item--tm">
+            <a class="social__link link social__link--tm" href="tg://resolve?domain=htmlacademy" title="Наш Телеграм">
+              <svg class="social__link-svg" width="22" height="20" viewBox="0 0 22 20">
+                <use xlink:href="#icon-tm"></use>
+              </svg>
+              <span class="visually-hidden">Telegram</span></a>
+          </li>
+
+          <li class="social__item social__item--vk">
+            <a class="social__link link social__link--vk" href="https://vk.com/htmlacademy" title="Наш Вконтакте">
+              <svg class="social__link-svg" width="22" height="12" viewBox="0 0 22 12">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+              <span class="visually-hidden">Vk</span>
+            </a>
+          </li>
+
+          <li class="social__item social__item--you">
+            <a class="social__link link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+              title="Наш канал на YouTube">
+              <svg class="social__link-svg" width="22" height="16" viewBox="0 0 22 16">
+                <use xlink:href="#icon-youtube"></use>
+              </svg>
+              <span class="visually-hidden">Youtube</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
 
   <main class="form-container">
@@ -201,8 +288,8 @@
                     class="visually-hidden">Самолет</span></label>
               </li>
               <li class="moving__select">
-                <input class="moving__select-mark moving__select-mark--current visually-hidden" type="checkbox" value="Машина" id="car"
-                  checked>
+                <input class="moving__select-mark moving__select-mark--current visually-hidden" type="checkbox"
+                  value="Машина" id="car" checked>
                 <label class="moving__select-title moving__select-title--auto" for="car"><span
                     class="visually-hidden">Машина</span></label>
               </li>
@@ -212,8 +299,8 @@
                     class="visually-hidden">Велосипед</span></label>
               </li>
               <li class="moving__select">
-                <input class="moving__select-mark moving__select-mark--current visually-hidden" type="checkbox" value="Пешком" id="walk"
-                  checked>
+                <input class="moving__select-mark moving__select-mark--current visually-hidden" type="checkbox"
+                  value="Пешком" id="walk" checked>
                 <label class="moving__select-title moving__select-title--walk" for="walk"><span
                     class="visually-hidden">Пешком</span></label>
               </li>
@@ -266,12 +353,12 @@
 
             <!-- Три шага одинаковая структура header form actions -->
 
-            <section class="constructor__plan-item step" id="step1">
+            <section class="constructor__plan-item step step--1" id="step1">
 
               <div class="step__header">
                 <h3 class="step__header-title">Шаг&#160;1.</h3>
                 <p class="step__header-name">Даты&#160;пребывания</p>
-                <p class="step__header-description">
+                <p class="step__header-description step__header-description--one">
                   Укажите предпочтительное количество попутчиков, которых
                   вы&#160;хотели&#160;бы позвать в&#160;поездку, и&#160;ее&#160;предполагаемую длительность.
                 </p>
@@ -316,7 +403,7 @@
                     <label class="step__name step__name--child" for="child">Можно с детьми</label>
                   </div>
 
-                  <div class="step__form-companion">
+                  <div class="step__form-companion step__form-companion--duration">
                     <label class="step__name" for="continued">Длительность:</label>
                     <span class="step__note">дн.</span>
                     <div class="counter-input">
@@ -548,7 +635,7 @@
             </section>
 
 
-            <section class="constructor__plan-item step" id="step2">
+            <section class="constructor__plan-item step step--2" id="step2">
 
               <div class="step__header">
                 <h3 class="step__header-title">Шаг&#160;2.</h3>
@@ -618,7 +705,7 @@
                       <div class="country__list-wrap country__list-wrap--opened">
                         <button class="country__list-button country__list-button--empty" type="button"
                           aria-label="Выберите страну.">Выберите страну</button>
-                        <div class="country__list__select">
+                        <div class="country__list__select country__list__select--opened">
                           <span class="country__list__select-arrow">
                           </span>
                         </div>
@@ -663,19 +750,19 @@
 
                           <ul class="country-all__list">
                             <li class="country-all__list-item">
-                              <a class="country-all__list-link" href="#">Австралия</a>
+                              <a class="country-all__list-link" href="Australia.html">Австралия</a>
                             </li>
                             <li class="country-all__list-item">
-                              <a class="country-all__list-link" href="#">Австрия</a>
+                              <a class="country-all__list-link" href="Austria.html">Австрия</a>
                             </li>
                             <li class="country-all__list-item">
-                              <a class="country-all__list-link" href="#">Азербайджан</a>
+                              <a class="country-all__list-link" href="Magomaev_Muslim.html">Азербайджан</a>
                             </li>
                             <li class="country-all__list-item">
-                              <a class="country-all__list-link" href="#">Албания</a>
+                              <a class="country-all__list-link" href="Albania.html">Албания</a>
                             </li>
                             <li class="country-all__list-item">
-                              <a class="country-all__list-link" href="#">Алжир</a>
+                              <a class="country-all__list-link" href="Algeria.html">Алжир</a>
                             </li>
                             <li class="country-all__list-item">
                               <a class="country-all__list-link" href="#">Ангола</a>
@@ -730,7 +817,7 @@
             </section>
 
 
-            <section class="constructor__plan-item step" id="step3">
+            <section class="constructor__plan-item step step--3" id="step3">
 
               <div class="step__header">
                 <h3 class="step__header-title">Шаг&#160;3.</h3>

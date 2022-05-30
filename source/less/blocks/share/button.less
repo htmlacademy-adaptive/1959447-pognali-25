@@ -18,7 +18,10 @@
 
   &:active {
     background-color: @special_yellow_dark;
-    color: rgb(22, 28, 53, 0.3);
+
+    & span {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: @tablet-width) {

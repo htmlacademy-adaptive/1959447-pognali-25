@@ -24,7 +24,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: auto auto 344px;
     grid-template-rows: repeat(3, auto);
     position: relative;
     padding-bottom: 0;
@@ -80,6 +80,10 @@
     margin-left: 32px;
     align-self: center;
     max-width: min-content;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
@@ -229,7 +233,8 @@
 
   @media (min-width: @desktop-width) {
     border-radius: 20px 0 0 20px;
-    width: 100%;
+    width: auto;
+    flex: 0 0 345px;
   }
 }
 
@@ -250,6 +255,8 @@
     z-index: 2;
     margin-left: -30px;
     border-radius: 20px 0 0 20px;
+    flex: 0 0 375px;
+    padding-left: 30px;
   }
 }
 
@@ -265,8 +272,10 @@
   @media (min-width: @desktop-width) {
     margin: 0;
     z-index: 3;
-    margin-left: -18px;
     border-radius: 20px 0 0 20px;
+    width: auto;
+    flex: 0 0 375px;
+    margin-left: -31px;
   }
 }
 
@@ -284,8 +293,13 @@
   @media (min-width: @desktop-width) {
     margin: 0;
     z-index: 4;
-    margin-left: -18px;
+    margin-left: -31px;
     border-radius: 20px;
+    padding-left: 32px;
+
+    &::after {
+      margin-right: 32px;
+    }
   }
 }
 
@@ -306,7 +320,7 @@
   @media (min-width: @desktop-width) {
     font-size: 24px;
     margin-top: 0;
-    margin-right: 57px;
+    margin-right: 60px;
   }
 }
 
@@ -331,8 +345,10 @@
   @media (min-width: @desktop-width) {
     grid-column: -1/-2;
     grid-row: 1/2;
-    align-self: center;
     margin: 0;
-    margin-left: 50px;
+    padding: 0;
+    align-self: start;
+    margin-top: 106px;
+    margin-left: 58px;
   }
 }
