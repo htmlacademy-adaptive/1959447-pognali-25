@@ -104,7 +104,12 @@
     grid-row: 2/3;
     padding: 0;
     margin-top: 18px;
-    width: 73%;
+    width: 55%;
+
+  &--one {
+    margin-top: 23px;
+    width: 75%;
+  }
   }
 }
 
@@ -154,7 +159,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 49px;
+    margin-bottom: 54px;
   }
 }
 
@@ -250,6 +255,7 @@
     margin-right: 48px;
     margin-top: 8px;
     align-self: flex-start;
+    list-style: none;
   }
 }
 
@@ -271,6 +277,23 @@
 
 .step-navigation__item {
   margin-bottom: 18px;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    margin-bottom: 19px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -40px;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: @basic_blue_light;
+    }
+  }
 }
 
 .step__name {

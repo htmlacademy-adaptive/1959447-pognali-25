@@ -16,6 +16,10 @@
     flex: 0 0 180px;
     margin-left: 58px;
     margin-right: 34px;
+
+    .step__form-companion--child & {
+      margin-left: 80px;
+    }
   }
 }
 
@@ -58,6 +62,13 @@
   width: 100%;
   padding-top: 16px;
   padding-bottom: 13px;
+
+  -moz-appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
 
   &:hover {
     border: 1px solid #959bb2;

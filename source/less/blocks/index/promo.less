@@ -233,7 +233,8 @@
 
   @media (min-width: @desktop-width) {
     border-radius: 20px 0 0 20px;
-    width: 100%;
+    width: auto;
+    flex: 0 0 345px;
   }
 }
 
@@ -254,6 +255,8 @@
     z-index: 2;
     margin-left: -30px;
     border-radius: 20px 0 0 20px;
+    flex: 0 0 375px;
+    padding-left: 30px;
   }
 }
 
@@ -269,8 +272,10 @@
   @media (min-width: @desktop-width) {
     margin: 0;
     z-index: 3;
-    margin-left: -18px;
     border-radius: 20px 0 0 20px;
+    width: auto;
+    flex: 0 0 375px;
+    margin-left: -31px;
   }
 }
 
@@ -288,8 +293,13 @@
   @media (min-width: @desktop-width) {
     margin: 0;
     z-index: 4;
-    margin-left: -18px;
+    margin-left: -31px;
     border-radius: 20px;
+    padding-left: 32px;
+
+    &::after {
+      margin-right: 32px;
+    }
   }
 }
 
@@ -310,7 +320,7 @@
   @media (min-width: @desktop-width) {
     font-size: 24px;
     margin-top: 0;
-    margin-right: 57px;
+    margin-right: 60px;
   }
 }
 
