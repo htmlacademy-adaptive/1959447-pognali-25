@@ -35,6 +35,7 @@
       margin-right: 51px;
     }
   }
+
   @media (min-width: @desktop-width) {
     margin-right: 58px;
   }
@@ -49,7 +50,7 @@
   align-items: center;
 }
 
-.moving__select-mark+.moving__select-title--auto::before {
+.moving__select-mark + .moving__select-title--auto::before {
   content: "";
   width: 32px;
   height: 32px;
@@ -69,11 +70,11 @@
   }
 }
 
-.moving__select-mark:checked+.moving__select-title--auto::before {
+.moving__select-mark:checked + .moving__select-title--auto::before {
   background-image: url("../image/auto.svg");
 }
 
-.moving__select-mark+.moving__select-title--plane::before {
+.moving__select-mark + .moving__select-title--plane::before {
   content: "";
   width: 32px;
   height: 32px;
@@ -93,11 +94,11 @@
   }
 }
 
-.moving__select-mark:checked+.moving__select-title--plane::before {
+.moving__select-mark:checked + .moving__select-title--plane::before {
   background-image: url("../image/plane.svg");
 }
 
-.moving__select-mark+.moving__select-title--bike::before {
+.moving__select-mark + .moving__select-title--bike::before {
   content: "";
   width: 32px;
   height: 32px;
@@ -117,12 +118,12 @@
   }
 }
 
-.moving__select-mark:checked+.moving__select-title--bike::before {
+.moving__select-mark:checked + .moving__select-title--bike::before {
   background-image: url("../image/bicycle.svg");
 }
 
 
-.moving__select-mark+.moving__select-title--walk::before {
+.moving__select-mark + .moving__select-title--walk::before {
   content: "";
   width: 32px;
   height: 32px;
@@ -142,6 +143,6 @@
   }
 }
 
-.moving__select-mark:checked+.moving__select-title--walk::before {
+.moving__select-mark:checked + .moving__select-title--walk::before {
   background-image: url("../image/run.svg");
 }
