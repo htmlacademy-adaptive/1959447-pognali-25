@@ -3,7 +3,8 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    border-top: 1px solid #e1e3e9;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -14,7 +15,11 @@
     }
 
     .country__list-wrap {
-      margin-top: 30px;
+      margin-top: 8px;
+
+      @media (min-width: @desktop-width) {
+        margin-top: 26px;
+      }
     }
 
     .country__list-flag::before {
@@ -160,6 +165,10 @@
     padding-top: 15px;
     align-self: stretch;
     height: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    // margin-left: 63px;
   }
 }
 

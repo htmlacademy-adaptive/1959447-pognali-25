@@ -1,6 +1,5 @@
 .header {
   background-color: #161c36;
-  margin-bottom: -1px;
 
   @media (max-width: @vMaxTablet) {
     &--opened {
@@ -12,6 +11,10 @@
 .catalog .header,
 .form .header {
   background-color: #182044;
+}
+
+.header__logo-link {
+  padding-top: 4px;
 }
 
 .header__logo {
@@ -60,19 +63,20 @@
   @media (min-width: @tablet-width) {
     position: relative;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 36px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 40px;
     margin-left: auto;
+    padding-bottom: 0;
   }
 }
 
 
 .header__login-tablet {
   display: none;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 1.18;
@@ -86,11 +90,13 @@
   @media (min-width: @tablet-width) {
     display: block;
     margin-left: auto;
+    margin-right: 5px;
     align-self: center;
     padding: 13px 28px 14px 28px;
     font-size: 20px;
     line-height: 1;
-    font-weight: 700;
+    font-weight: 400;
+    letter-spacing: 0.03em;
   }
 
   @media (min-width: @desktop-width) {
@@ -103,8 +109,8 @@
   width: 100vw;
   padding-left: 25px;
   padding-right: 25px;
-  padding-top: 43px;
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 37px;
   margin-left: -25px;
   margin-right: -25px;
 
@@ -112,6 +118,8 @@
     position: relative;
     margin-left: -40px;
     margin-right: -40px;
+    padding-top: 86px;
+    padding-left: 0;
   }
 
   @media (max-width: @vMaxTablet) {
@@ -198,10 +206,10 @@
 
 .header__login {
   display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   margin-top: 10px;
-  margin-bottom: 55px;
+  margin-bottom: 53px;
 
   @media (min-width: @tablet-width) and (max-width: @vMaxTablet) {
     display: none;
@@ -218,10 +226,10 @@
 
 
 .header__nav {
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 140px;
+    margin-bottom: 138px;
   }
 
   @media (min-width: @desktop-width) {
@@ -236,8 +244,8 @@
   text-align: left;
 
   @media (min-width: @tablet-width) {
-    margin-left: 100px;
-    margin-bottom: 120px;
+    margin-left: 98px;
+    margin-bottom: 132px;
   }
 
   @media (min-width: @desktop-width) {
@@ -251,10 +259,10 @@
 .header__social {
   padding: 0;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 43px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 90px;
+    margin-left: 105px;
     justify-content: left;
     margin-bottom: 40px;
   }

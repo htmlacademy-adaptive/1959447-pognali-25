@@ -66,6 +66,7 @@
     display: flex;
     font-size: 20px;
     line-height: 1;
+    margin-left: 21px;
   }
 }
 
@@ -97,6 +98,7 @@
 
   @media (min-width: @desktop-width) {
     background-color: #edeff6;
+    padding-top: 39px;
   }
 }
 
@@ -145,6 +147,7 @@
     font-size: 20px;
     display: flex;
     align-items: center;
+    order: -1;
   }
 
   @media (min-width: @desktop-width) {
@@ -218,19 +221,23 @@
   margin-left: 25px;
   margin-right: 25px;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     order: 3;
+    margin-top: 36px;
+    margin-left: 34px;
+    margin-right: 47px;
   }
 }
 
 .catalog-traveler__offers-button {
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 1.76;
   background-color: inherit;
   border: none;
   width: 100%;
+  margin-top: 20px;
   margin-bottom: 20px;
   color: @basic_blue_light;
   display: flex;
@@ -275,8 +282,8 @@
     justify-content: space-between;
     background-color: #ffffff;
     padding: 25px;
-    padding-top: 42px;
-    padding-bottom: 40px;
+    padding-top: 29px;
+    padding-bottom: 29px;
     border-radius: 20px;
     margin-bottom: 87px;
   }
@@ -383,6 +390,10 @@
 .catalog-traveler__offers {
   width: 100%;
   padding-top: 28px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 40px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 100%;

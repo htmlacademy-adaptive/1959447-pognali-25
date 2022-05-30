@@ -14,33 +14,49 @@
 
   @media (min-width: @desktop-width) {
     border-radius: 0 0 56px 56px;
-    padding-top: 70px;
-    padding-bottom: 54px;
+    padding-top: 100px;
+    padding-bottom: 50px;
   }
 }
 
 .person__container {
-  padding-top: 34px;
+  padding-top: 32px;
   padding-bottom: 31px;
   background-image: url("../image/back-person.png");
   background-repeat: no-repeat;
   background-position: top right 25px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../image/back-person@2.png");
+    background-size: contain;
+  }
+
   @media (min-width: @tablet-width) {
     padding-top: 60px;
-    padding-bottom: 80px;
+    padding-bottom: 86px;
     background-image: url("../image/back-person-tablet.jpg");
-    background-position: top center;
+    background-position: top -5px right 75px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../image/back-person-tablet@2.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../image/back-person-dt.jpg");
-    background-position: top left;
+    background-position: top -25px left;
     display: grid;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: auto auto;
-    align-items: center;
+    align-items: flex-start;
     padding-left: 70px;
+    padding-top: 29px;
+    column-gap: 50px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../image/back-person-dt@2.jpg");
+    background-position: top -25px left;
   }
 }
 
@@ -56,7 +72,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 45px;
-    margin-left: 30px;
+    margin-left: 32px;
   }
 
   @media (min-width: @desktop-width) {
@@ -68,18 +84,19 @@
   color: #ffffff;
   font-weight: 300;
   line-height: 1.38;
-  padding-top: 5px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-top: 6px;
+  padding-left: 24px;
+  padding-right: 24px;
   padding-bottom: 25px;
   text-align: left;
 
 
   @media (min-width: @tablet-width) {
     font-size: 28px;
-    line-height: 1.18;
     margin: 55px 0 10px 10px;
     width: 70%;
+    padding-top: 0;
+    line-height: 1.21;
   }
 
   @media (min-width: @desktop-width) {
@@ -87,6 +104,7 @@
     margin: 0;
     padding: 0;
     width: 80%;
+    margin-top: 10px;
   }
 }
 
@@ -107,13 +125,16 @@
 }
 
 .person__button {
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   border: none;
   margin-top: 20px;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     width: 90%;
+    padding-top: 24px;
+    padding-bottom: 30px;
+    padding-right: 36px;
   }
 
   @media (min-width: @desktop-width) {

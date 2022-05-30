@@ -17,11 +17,12 @@
   padding-bottom: 34px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 60px;
+    padding-top: 62px;
     display: grid;
     grid-template-columns: repeat(3, auto);
     padding-left: 75px;
     padding-right: 75px;
+    align-items: flex-start;
   }
 
   @media (min-width: @desktop-width) {
@@ -30,6 +31,8 @@
     margin-top: -190px;
     padding-left: 64px;
     padding-right: 0;
+    align-items: flex-end;
+    padding-bottom: 63px;
   }
 }
 
@@ -42,20 +45,21 @@
   padding: 20px;
   border: 3px solid #ff8d30;
   border-radius: 50%;
-  margin-left: 20px;
+  margin-left: 15px;
 
   @media (min-width: @tablet-width) {
     grid-column: 1/2;
+    margin-left: 0;
+    padding: 18px;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 2/3;
     grid-row: 1/2;
     margin: 0;
-
-    @media (min-width: @desktop-width) {
-      color: #ffffff;
-    }
+    margin-left: 152px;
+    margin-bottom: 61px;
+    color: #ffffff;
   }
 }
 
@@ -72,6 +76,10 @@
 .picture-wrapper {
   grid-column: 3/4;
   grid-row: 1/2;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 96px;
+  }
 }
 
 .person-info__img-avatar {
@@ -80,9 +88,10 @@
   margin-right: 20px;
 
   @media (min-width: @tablet-width) {
-    grid-column: 3/4;
-    grid-row: 1/2;
     border-radius: 7px;
+    width: 94px;
+    height: 94px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -96,13 +105,13 @@
 }
 
 .person-info__img-wrapper {
-  margin-top: 18px;
+  margin-top: 10px;
   width: 100%;
 
   @media (min-width: @tablet-width) {
     grid-column: 1/-1;
     grid-row: 2/3;
-    margin-top: 40px;
+    margin-top: 46px;
   }
 
   @media (min-width: @desktop-width) {
@@ -113,7 +122,6 @@
     margin: 0;
     align-self: flex-start;
     margin-top: -5px;
-    margin-left: 10px;
     margin-bottom: 27px;
   }
 }
@@ -138,10 +146,14 @@
   @media (min-width: @tablet-width) {
     padding-top: 20px;
     padding-bottom: 20px;
+    border-radius: 10px;
+    letter-spacing: 0.09em;
   }
 
   @media (min-width: @desktop-width) {
     border-radius: 0 0 20px 20px;
+    padding-top: 14px;
+    padding-bottom: 16px;
   }
 }
 
@@ -161,6 +173,7 @@
   @media (min-width: @tablet-width) {
     grid-column: 1/-1;
     grid-row: 3/4;
+    margin-top: 53px;
   }
 
   @media (min-width: @desktop-width) {
@@ -174,8 +187,7 @@
 
 .person-info__move-wrapper {
   width: 100%;
-  border: 2px solid #cbced9;
-  border-radius: 20px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     grid-column: 2/3;
@@ -189,15 +201,21 @@
     grid-column: 2/4;
     grid-row: 3/4;
     align-self: stretch;
+    justify-self: flex-end;
+    width: auto;
   }
 }
 
 .person-info__move-name {
   padding: 0 10px;
   margin: 0 auto;
-  margin-top: -10px;
   background-color: #edeff6;
   width: min-content;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -10px;
 
   @media (min-width: @tablet-width) {
     order: 2;
@@ -207,14 +225,24 @@
 }
 
 .person-info__move {
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   padding: 0;
   justify-content: center;
-  padding-top: 16px;
-  padding-bottom: 25px;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+  padding-top: 32px;
+  padding-bottom: 27px;
 
   @media (min-width: @tablet-width) {
-    padding: 26px 68px 50px;
+    padding-top: 46px;
+    padding-right: 38px;
+    padding-bottom: 43px;
+    padding-left: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 70px;
+    padding-left: 70px;
   }
 }

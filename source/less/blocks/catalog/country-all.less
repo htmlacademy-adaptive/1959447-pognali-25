@@ -2,7 +2,7 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    column-gap: 20px;
   }
 }
 
@@ -35,7 +35,7 @@
     line-height: 1;
     color: #192144;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 37px;
   }
 }
 
@@ -76,5 +76,9 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    // line-height: 1.5;
   }
 }

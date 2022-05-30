@@ -5,6 +5,24 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 44px;
+
+    &--bosnia {
+      margin-top: 30px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 67px;
+    margin-right: 92px;
+
+    &--czech {
+      margin-top: 25px;
+      margin-bottom: 0;
+    }
+
+    &--bosnia {
+      margin-top: 70px;
+    }
   }
 }
 
@@ -12,16 +30,18 @@
   border: 1px solid #cbced9;
   border-radius: 4px;
   padding: 10px;
+  padding-top: 6px;
+  padding-left: 13px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.38;
   color: @special_grey;
   overflow: hidden;
   resize: vertical;
-  margin-top: 18px;
+  margin-top: 14px;
   width: 100%;
   opacity: 0.3;
-  min-height: 100px;
+  min-height: 220px;
 
   &:hover {
     border: 1px solid #959bb2;
@@ -35,12 +55,19 @@
     font-size: 20px;
     line-height: 1.15;
     padding: 18px;
-    margin-top: 38px;
+    margin-top: 30px;
+    min-height: 140px;
+    width: 94%;
   }
 
   @media (min-width: @desktop-width) {
     padding: 25px;
     width: 730px;
+
+    &--write {
+      padding-bottom: 10px;
+      min-height: 100px;
+    }
   }
 }
 
@@ -78,7 +105,7 @@
   background-image: url("../image/step3.svg");
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 5px;
+  margin-right: 3px;
   flex-shrink: 0;
   margin-left: -12px;
 
@@ -93,7 +120,7 @@
 
   @media (min-width: @desktop-width) {
     margin-left: auto;
-    margin-right: 34px;
+    margin-right: 35px;
   }
 }
 
@@ -110,7 +137,7 @@
   @media (min-width: @tablet-width) {
     width: 70px;
     height: 47px;
-    margin-right: 40px;
+    margin-right: 26px;
 
     @media (min-width: @desktop-width) {
       order: 4;
@@ -119,7 +146,7 @@
   }
 }
 
-.fun--сzech .fun__title::after {
+.fun--czech .fun__title::after {
   background-image: url("../image/czech.jpg");
 }
 

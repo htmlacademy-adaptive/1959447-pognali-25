@@ -5,6 +5,8 @@
   justify-content: center;
   border-bottom: 1px solid #d6d9e6;
   border-top: 1px solid #d6d9e6;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .calendar__name {
@@ -12,11 +14,14 @@
   font-size: 20px;
   line-height: 1;
   color: @basic_blue_light;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
-    margin-top: 27px;
-    margin-bottom: 23px;
+    margin-top: 13px;
+    margin-bottom: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -27,6 +32,13 @@
   border: none;
   background-image: url("../image/arrow-back.svg");
   margin-right: auto;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    height: 42px;
+    width: 26px;
+    background-size: cover;
+  }
 }
 
 .calendar__monht-button--next {
@@ -43,6 +55,7 @@
   @media (min-width: @desktop-width) {
     text-align: left;
     table-layout: fixed;
+    margin-top: 10px;
   }
 }
 
@@ -54,6 +67,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: 76px;
+    height: 72px;
   }
 }

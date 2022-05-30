@@ -1,12 +1,13 @@
 .hashtag-form {
-  border: 2px solid #cbced9;
-  border-radius: 20px;
+  position: relative;
 }
 
 .hashtag-form__content {
   background-color: transparent;
-  border: none;
-  padding: 25px 26px;
+  padding-left: 22px;
+  padding-right: 26px;
+  padding-bottom: 27px;
+  padding-top: 25px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.12;
@@ -15,29 +16,41 @@
   outline: none;
   resize: none;
   overflow: hidden;
+  border: 2px solid #cbced9;
+  border-radius: 10px;
+
+  &:hover {
+    border-color: #aeb4cb;
+  }
+
+  &:active {
+    border-color: #161c35;
+    opacity: 1;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    padding: 35px 40px 10px;
+    padding: 35px 40px 13px 40px;
   }
 }
 
 .hashtag-form__title {
   padding: 0 10px;
   margin: 0 auto;
-  margin-top: -10px;
   background-color: #edeff6;
   width: min-content;
+  position: absolute;
+  z-index: 2;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
 
   @media (min-width: @tablet-width) {
-    order: 2;
-    margin: 0 auto;
-    margin-bottom: -10px;
+    top: auto;
+    bottom: -8px;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    bottom: -2px;
-    left: 10px;
+    left: 62px;
   }
 }

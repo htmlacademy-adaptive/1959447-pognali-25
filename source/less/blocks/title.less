@@ -1,13 +1,21 @@
 .title {
   background-color: #e2e5f2;
+
+  @media (min-width: @desktop-width) {
+    background-color: #edeff6;
+  }
 }
 
 .title--form {
   background-color: @basic_yellow;
   padding-bottom: 2px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     background-color: #edeff6;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -10px;
   }
 }
 
@@ -19,11 +27,12 @@
 
   @media (min-width: @tablet-width) {
     border-radius: 0 0 56px 56px;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 30px;
-    padding-bottom: 110px;
+    padding-top: 27px;
+    padding-bottom: 106px;
   }
 }
 
@@ -51,16 +60,16 @@
   margin-top: 14px;
 
   @media (min-width: @tablet-width) {
-    width: 288px;
+    width: 358px;
     height: 8px;
     margin-bottom: -4px;
-    margin-top: 70px;
-    margin-left: 30px;
+    margin-top: 89px;
+    margin-left: 33px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 358px;
-    margin-bottom: -114px;
+    margin-bottom: -112px;
+    margin-left: 16px;
   }
 }
 
@@ -75,7 +84,11 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 0.33;
-    margin-left: 30px;
+    margin-left: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 18px;
   }
 }
 
