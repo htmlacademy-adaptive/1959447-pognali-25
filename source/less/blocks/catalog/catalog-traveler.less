@@ -237,13 +237,14 @@
   background-color: inherit;
   border: none;
   width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 18px;
+  margin-bottom: 21px;
   color: @basic_blue_light;
   display: flex;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+  text-decoration: none;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -271,6 +272,17 @@
   }
 }
 
+.catalog-traveler__offers-button:hover {
+  &::before {
+    opacity: 0.6;
+  }
+}
+
+.catalog-traveler__offers-button:active {
+  &::before {
+    opacity: 0.3;
+  }
+}
 
 .catalog-traveler__offers-pagination {
   display: flex;
